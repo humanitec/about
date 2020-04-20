@@ -14,7 +14,7 @@ This section provides an overview of the most important features to be delivered
 
 ## Q2 2020 (current)
 
-1. Provisioning External Ressources
+1. [Provisioning External Ressources](https://github.com/Humanitec/direction/issues/1)
 2. Environment Management
 3. Published API
 4. Runtime Status
