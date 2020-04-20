@@ -8,7 +8,7 @@ This page describes the Humanitec product vision as well as a roadmap for the cu
 
 # Roadmap
 
-This section provides an overview of the most important features to be delivered this quarter and beyond.
+This section provides an overview of the most important features to be delivered this quarter and beyond. You can find a quarterly view [here](https://github.com/Humanitec/direction/projects/1).
 
 ## Q1 2020 (done)
 
