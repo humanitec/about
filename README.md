@@ -1,23 +1,20 @@
-# Direction
+# We are Humanitec
+we build an elegant, open API and a developer-focussed UI to master Continuous Delivery for Kubernetes-native applications. It helps teams increase development velocity by allowing engineers to easily spin up the tech they need on their own. Using Humanitec's abstractions and integrations, teams manage environments, simplify maintenance and prevent cloud vendor lock-in.
 
-This page describes the Humanitec product vision as well as a roadmap for the current quarter and beyond.
+# Our Vision 
+is best described here. It hels you understand why we get up in the morning.
 
-# Vision
+# Our Principals in Product-Design
+are best described here. It helps you understand how we make product design decisions.
 
-...
+# Our current roadmap 
+can be found [here](https://github.com/Humanitec/direction/projects/1). This section provides an overview of the most important features to be delivered this quarter and beyond. 
 
-# Roadmap
+# Our docs-site 
+can be found [here](docs.humanitec.com)
 
-This section provides an overview of the most important features to be delivered this quarter and beyond. You can find a quarterly view [here](https://github.com/Humanitec/direction/projects/1).
+# Our Blog
+can be found [here](humanitec.com/blog)
 
-## Q1 2020 (done)
-
-## Q2 2020 (current)
-
-1. [Provisioning External Ressources](https://github.com/Humanitec/direction/issues/1)
-2. Environment Management
-3. Published API
-4. Runtime Status
-5. Automatic Deployments
-
-## Q3 2020 and beyond
+# Open Positions
+[here](https://humanitec.com/open-positions) is the link to our job-page
