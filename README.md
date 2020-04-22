@@ -17,7 +17,7 @@ Can be found [here](docs.humanitec.com)
 Can be found [here](humanitec.com/blog)
 
 # Open Positions
-[Here](https://humanitec.com/open-positions) is the link to our job-page
+The link to our job-page can be found [here](https://humanitec.com/open-positions) 
 
 # Terms of Use
 Find the official doc [here](https://humanitec.com/terms-and-conditions)
