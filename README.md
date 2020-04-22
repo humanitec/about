@@ -7,7 +7,7 @@ Is best described here. It helps you understand why we get up in the morning.
 Are best described here. It helps you understand how we make product design decisions.
 
 # Our roadmap 
-We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in <docs/roadmap.md>.
+We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in [here](docs/roadmap.md).
 
 # Our docs-site 
 Can be found [here](docs.humanitec.com)
