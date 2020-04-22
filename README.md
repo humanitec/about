@@ -6,8 +6,8 @@ Is best described here. It helps you understand why we get up in the morning.
 # Our Principals in Product-Design
 Are best described here. It helps you understand how we make product design decisions.
 
-# Our current roadmap 
-Can be found [here](https://github.com/Humanitec/direction/projects/1). This section provides an overview of the most important features to be delivered this quarter and beyond. 
+# Our roadmap 
+We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in <docs/roadmap.md>.
 
 # Our docs-site 
 Can be found [here](docs.humanitec.com)
