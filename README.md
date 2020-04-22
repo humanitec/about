@@ -18,3 +18,12 @@ Can be found [here](humanitec.com/blog)
 
 # Open Positions
 [Here](https://humanitec.com/open-positions) is the link to our job-page
+
+# Terms of Use
+[Here] (https://humanitec.com/terms-and-conditions)
+
+# Technical Definitions
+[Here] (https://humanitec.com/technical-definitions)
+
+# Privacy Policy
+[Here] (https://humanitec.com/privacy-policy)
