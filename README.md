@@ -20,10 +20,10 @@ Can be found [here](humanitec.com/blog)
 [Here](https://humanitec.com/open-positions) is the link to our job-page
 
 # Terms of Use
-[Here] (https://humanitec.com/terms-and-conditions)
+[Here](https://humanitec.com/terms-and-conditions)
 
 # Technical Definitions
-[Here] (https://humanitec.com/technical-definitions)
+[Here](https://humanitec.com/technical-definitions)
 
 # Privacy Policy
-[Here] (https://humanitec.com/privacy-policy)
+[Here](https://humanitec.com/privacy-policy)
