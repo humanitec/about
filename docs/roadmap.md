@@ -17,15 +17,15 @@ Environment management across environments is complex and error-prone. With this
 * **Environment Specific:** Developers must either accept or update the value of the variable when being deployed to a different environment
 For example, a dynamic environmental variable definition which resolves to the external DNS name of a module called “api-server” would be:
 
-    API_SERVER_NAME = "${modules.api-server.service.externalName}"
+        API_SERVER_NAME = "${modules.api-server.service.externalName}"
 
 #### Deployment Sets
 
-**Deployment version history**
+***Deployment version history***
 
 The full state of each deployment to an environment is recorded as a “deployment set”. Deployment sets can be compared to show differences between them. A previous deployment set can be redeployed to perform a rollback. Cloning one environment to another is done by applying a deployment set from one environment into another. As part of this, the Dynamic Environment Variable Management feature ensures that environmental variables are correctly handled.
 
-**Serialization of Deployment Sets**
+***Serialization of Deployment Sets***
 
 The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. These charts can be directed towards a git repository and so form part of a “GitOps” process.
 
@@ -33,11 +33,11 @@ The deployment set is the unit of state that is used to serialize out Helm Chart
 
 The current version of the platform has a tight dependency on GitHub. This feature relaxes that dependency.
 
-**Connect your CI**
+***Connect your CI***
 
 Rather than building containers directly from source code, the platform will hook into the end of your CI pipeline. This allows any successfully built and tested container to be used directly in the platform.
 
-**Import any Git Repository**
+***Import any Git Repository***
 
 Rather than relying on the GitHub API, code can be pushed to the Humanitec platform using standard git primitives.  For example, customers could establish a remote branch with humanitec. Pushing code into the humanitec platform would then make that commit available to be deployed via the platform:
 
