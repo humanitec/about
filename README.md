@@ -4,19 +4,15 @@ We build an elegant, open API and a developer-focussed UI to master Continuous D
 
 # Our Vision 
 
-Is best described here. It helps you understand why we get up in the morning.
+We are still busy writing it down. Will be available shortly.
 
-# Our Principals in Product-Design
-
-Are best described here. It helps you understand how we make product design decisions.
-
-# Our roadmap 
+# Our Roadmap 
 We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in [docs/roadmap.md](docs/roadmap.md).
 
-# Our docs-site 
+# Our Docs-Site 
 Documentation is important to understand the basic concepts, the features, as well as to learn how to onboard to Humanitec in 10 minutes. All of this can be found [here](https://docs.humanitec.com).
 
-# Other resources
+# Other Resources
 
 ## Our Blog
 
