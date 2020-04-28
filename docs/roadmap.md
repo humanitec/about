@@ -80,12 +80,6 @@ The current version of Humanitec has a tight dependency on GitHub. This feature 
 
 Rather than building containers directly from source code, Humanitec will hook into the end of your CI pipeline. This allows any successfully built and tested container to be used directly in Humanitec.
 
-***Import any Git Repository***
-
-Rather than relying on the GitHub API, code can be pushed to Humanitec using standard git primitives.  For example, customers could establish a remote branch with humanitec. Pushing code into Humanitec pwould then make that commit available to be deployed via Humanitec:
-
-    $ git push humanitec master
-
 #### External Modules (3rd Party In-Cluster Components / Services)
 
 Many modern cloud-native applications make use of services and components based on popular open-source projects, for example, Redis or RabbitMQ. With this feature, we aim to build a growing set of curated, ready to deploy packages of these popular components and services. These packages can then be simply deployed into the cluster by developers.
