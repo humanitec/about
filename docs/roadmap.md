@@ -18,7 +18,7 @@ Much of what Humanitec can do will help with various forms of automation. For ex
 
 ### Runtime Status
 
-...
+Successful deployment does not mean successful running. Developers need to know the runtime status of what they have deployed. This feature aims to show developers an all-in-one overview of live pods statuses and monitoring of all services deployed with Humanitec.
 
 ### Automatic Deployments
 
