@@ -70,7 +70,7 @@ The full state of each deployment to an environment is recorded as a “deployme
 
 ***Serialization of Deployment Sets***
 
-The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. These charts can be directed towards a git repository and so form part of a “GitOps” process.
+The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. In the future, these charts can be directed towards a git repository and so form part of a “GitOps” process.
 
 #### Generalized Module Sources
 
