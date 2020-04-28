@@ -18,11 +18,11 @@ Much of what Humanitec can do will help with various forms of automation. For ex
 
 ### Runtime Status
 
-Successful deployment does not mean successful running. Developers need to know the runtime status of what they have deployed. This feature aims to show developers an all-in-one overview of live pods statuses and monitoring of all services deployed with Humanitec.
+Successful deployment does not mean successful running. Developers need to know the runtime status of what they have deployed. This feature aims to show developers an all-in-one overview of live pods statuses and provide basic monitoring of all services deployed with Humanitec.
 
 ### Automatic Deployments
 
-Most of the engineering teams are either running automated deployments or are hoping to run it in the future. Essentially, Humanitec needs to allow the teams to follow the best continuous delivery practices. This feature would allow developers to define deployment rules and triggers that would initiate a deployment as soon as new artifacts are available from the CI pipeline.
+Most of the engineering teams are either running automated deployments or aspire to in the future. Humanitec has all of the functionality required to automate deployments but lacks the ability to perform a deployment based on a trigger. This feature would allow developers to define deployment rules that could be run based on triggers. Rules would be of the form, if a new container image is built on branch _x_, deploy to environment _y_ and would be triggered on an event like: a new container image has been built by a CI pipeline.
 
 ## Q3 2020 and beyond
 
@@ -68,7 +68,7 @@ For example, a dynamic environmental variable definition which resolves to the e
 
 The full state of each deployment to an environment is recorded as a “deployment set”. Deployment sets can be compared to show differences between them. A previous deployment set can be redeployed to perform a rollback. Cloning one environment to another is done by applying a deployment set from one environment into another. As part of this, the Dynamic Environment Variable Management feature ensures that environmental variables are correctly handled.
 
-***Serialization of Deployment Sets***
+***Serialization of Deployment Sets*** [to be completed in Q2]
 
 The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. In the future, these charts can be directed towards a git repository and so form part of a “GitOps” process.
 
