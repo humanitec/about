@@ -16,7 +16,7 @@ Documentation is important to understand the basic concepts, the features, as we
 
 ## Our Blog
 
-We love to write about technology topics. Our blog can be found [here](humanitec.com/blog).
+We love to write about technology topics. Our blog can be found [here](https://humanitec.com/blog).
 
 ## Open Positions
 
