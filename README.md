@@ -1,10 +1,10 @@
-# We are Humanitec. We help teams master Continuous Delivery.
+# We are Humanitec. We help teams master Continuous Delivery by providing them with "The Continuous Delivery API"
 
-We build an elegant, open API and a developer-focussed UI to master Continuous Delivery for Kubernetes-native applications. It helps teams increase development velocity by allowing engineers to easily spin up the tech they need on their own. Using Humanitec's abstractions and integrations, teams manage environments, simplify maintenance and prevent cloud vendor lock-in.
+We provide an elegant, open API and a developer-focused UI to master Continuous Delivery for Kubernetes-ready applications. We help teams increase development velocity by allowing engineers to easily spin up the tech they need on their own. Using our abstractions and integrations, teams manage environments, simplify maintenance and prevent cloud vendor lock-in.
 
 # Our Vision 
 
-We are still busy writing it down. Will be available shortly.
+You can find our vision on our [company info page](https://humanitec.com/company).
 
 # Our Roadmap 
 We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in [docs/roadmap.md](docs/roadmap.md).
