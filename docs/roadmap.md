@@ -6,7 +6,7 @@ This document provides a high-level view on our product roadmap for this and upc
 
 ### Provisioning External Resources
 
-Many applications rely on databases and services that run external to the cluster. Humanitec already supports the automatic generation of Postgres databases via Google CloudSQL. This feature would extend the range of services supported. A stretch objective here is also to provide a way for developers to build their own implementation if the set of services supported by Humanitec does not cover what they need. 
+Many applications rely on databases and services that run external to the cluster. Humanitec already supports the automatic generation of Postgres databases via Google CloudSQL. This feature would extend the range of services supported. A stretch objective here is also to provide a way for developers to build their own implementation if the set of services supported by Humanitec does not cover what they need.
 
 ### Environment Management
 
@@ -54,10 +54,13 @@ Humanitec is sitting on a large amount of data and so has the potential to provi
 ### Q1 2020
 
 #### Dynamic Environment Variable Management
+
 Environment management across environments is complex and error-prone. With this feature, environment variables are classified as one of 3 types:
+
 * **Static:** The same for each environment deployed in
 * **Dynamic:** Humanitec can infer the different values that a variable should have in each environment via a system of “placeholders” and string formatting
 * **Environment Specific:** Developers must either accept or update the value of the variable when being deployed to a different environment
+
 For example, a dynamic environmental variable definition which resolves to the external DNS name of a module called “api-server” would be:
 
         API_SERVER_NAME = "${modules.api-server.service.externalName}"
