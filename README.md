@@ -22,6 +22,10 @@ We love to write about technology topics. Our blog can be found [here](https://h
 
 We are always looking for talented developers that want to change the future of Continuous Delivery. Our job-page can be found [here](https://humanitec.com/open-positions).
 
+## Change Log
+
+We are documenting the changes we make with every release to production in a very simple format. You can find the overview [here](docs/change-log.md).
+
 ## Terms of Use
 
 Find the official terms of use for Humanitec [here](https://humanitec.com/terms-and-conditions).
