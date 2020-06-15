@@ -1,6 +1,20 @@
 # Humanitec Change Log
 
-This document provides an overview over the changes we are making with every release to production. Feel free to reach out to us in case of any specific questions.
+This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
+
+## Product Update June 12th, 2020
+
+General new features:
+
+- Option to create a diff between two deployment sets within one environment<br>
+![Diff Deployments](_assets/images/2020-06-12_Diff_Deployments.png)
+- Allow for patching of environments: apply a diff to a deployment set in any environment<br>
+![Patch Environments](_assets/images/2020-06-12_Patch_Environments.png)
+
+Onboarding support:
+
+- Added sample images that allow for a quicker onboarding (e.g., option to deploy first application without connecting own CI pipelines)<br>
+![Sample Images](_assets/images/2020-06-12_Sample_Images.png)
 
 ## Product Update May 29th, 2020
 
