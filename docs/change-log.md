@@ -2,6 +2,18 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 26th, 2020
+
+General new features:
+
+- Option to create multiple deployment drafts in an environment<br>
+![Multiple Deployment Drafts](_assets/images/2020-06-26_Multiple_Deployment_Drafts.png)
+
+Onboarding support:
+
+- First version of in-app guide explaining how to deploy your first application with Humanitec<br>
+![In-App Guide](_assets/images/2020-06-26_In-App_Guide.png)
+
 ## Product Update June 12th, 2020
 
 General new features:
