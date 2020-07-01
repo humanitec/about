@@ -2,35 +2,39 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q2 2020
+## Q3 2020
 
-### Provisioning External Resources
+## Seamless Onboarding Experience
 
-Many applications rely on databases and services that run external to the cluster. Humanitec already supports the automatic generation of Postgres databases via Google CloudSQL. This feature would extend the range of services supported. A stretch objective here is also to provide a way for developers to build their own implementation if the set of services supported by Humanitec does not cover what they need.
+Users wishing to try Humanitec should have a seamless onboarding experience. Providing full in-app support and guided tutorials will significantly shorten new users’ time-to-value and help them to get started faster. Additionally, one of the key activation points is connecting Humanitec to your own infrastructure, therefore it is essential to provide users a way to easily use packaged CI steps for major CI tools such as GitLab, GitHub, CircleCI, TravisCI, DroneCI, and Jenkins.
 
-### Environment Management
+## Event-Driven Jobs
 
-Humanitec allows developers to easily spin up and tear down environments on demand. Additionally, developers need to manage their workflows across multiple environments. This feature aims to take out the manual work associated with environment management and ease team workflow. It allows developers to compare deployments in different environments, patch the difference to another environment, manage variables per environment, as well as filter and label them for automation.
+It is often useful to be able to perform actions on events such as “new environment created”, “deployment completed”, or “environment deleted”. The actions could be as simple as posting a Slack message or as complex as running a suite of integration tests or initializing data. This feature covers running basic webhooks to enable things like Slack integration and running Kubernetes Jobs that can support things like running automated tests in an environment.
 
-### Published API
+## Volumes
 
-Much of what Humanitec can do will help with various forms of automation. For example, a test automation system may want to use Humanitec to spin up a new, clean environment to run tests in and then tear it down once it is done. Humanitec has the potential to add a whole set of use cases by defining and publishing a well-designed API.
+Many applications rely on persistent storage in the form of a filesystem. These filesystems are held in volumes that can be mounted to containers. Kubernetes provides a number of options for volumes that can be connected to multiple pods and have lifetimes that match or exceed that of the pod they are mounted to. This feature will allow developers to define what volumes need to be provided to the pod and where to mount those into containers.
 
-### Runtime Status
+## Runtime Monitoring
 
-Successful deployment does not mean successful running. Developers need to know the runtime status of what they have deployed. This feature aims to show developers an all-in-one overview of live pods statuses and provide basic monitoring of all services deployed with Humanitec.
+When running applications in production, monitoring is essential. With this feature, Humanitec will provide CPU, memory, and disk space statistics and will inform developers when these limits are reached. This allows for easier debugging and enables developers to make educated decisions while configuring their containers and replicas on Humanitec. Furthermore, Humanitec should provide the required integrations to most commonly used monitoring tools (e.g., Prometheus, Grafana, DataDog) to fully support development teams’ existing infrastructures. 
 
-### Automatic Deployments
+## Humanitec CLI
 
-Most of the engineering teams are either running automated deployments or aspire to in the future. Humanitec has all of the functionality required to automate deployments but lacks the ability to perform a deployment based on a trigger. This feature would allow developers to define deployment rules that could be run based on triggers. Rules would be of the form, if a new container image is built on branch _x_, deploy to environment _y_ and would be triggered on an event like: a new container image has been built by a CI pipeline.
+Many developers are not comfortable working with a GUI. At the same time, an API is hard to use for day-to-day deployments and application management. The Humanitec CLI will provide a middle ground between the API and the GUI. This feature is essential to pursue the API-first approach and provide full support to users that spend most of their time interacting with tools via their terminal. Using Humanitec CLI developers will be able to authenticate, create, and configure apps, deploy and manage environments, and much more. The CLI will also provide special functionality such as port forwarding into running applications or direct connection to managed databases.
 
-## Q3 2020 and beyond
+## Q4 2020 and beyond
 
-The following features are in our backlog and planned for implementation from Q3 2020 onwards. They are subject to change based on additional feedback we will gather until then.
+The following features are in our backlog and planned for implementation from Q4 2020 onwards. They are subject to change based on additional feedback we will gather until then.
+
+### Bring your Helm Charts 
+
+Many potential customers already have setups for Kubernetes involving Helm charts. Humanitec already has the ability to deploy arbitrary Helm charts alongside application modules. However, configuration through Humanitec is very limited. This feature aims to provide a similar level of support to users for arbitrary helm charts as they enjoy for modules fully managed by Humanitec.
 
 ### Fine-grained Permissions
 
-Humanitec is currently designed to reflect the permissions present in the organization’s source control system. Many larger companies and companies in regulated markets have more complex needs and so require a finer-grained permission structure. Examples include having different permissions for running deployment in different development environments or limiting who can create a new project.
+Humanitec currently has a very simple permission model: any member of an organization can perform all actions in that organization. Many larger companies and companies in regulated markets have more complex needs and so require a finer-grained permission structure. Examples include limiting who can deploy to different environments, who can create new apps, or who can configure external resources. These fine-grained permissions should use a Role-Based Access Control (RBAC) model. To allow easy integration with corporate systems, Humanitec should be able to function as a SAML Service Provider.
 
 ### Debug Flow Tools
 
@@ -38,7 +42,8 @@ As applications become more complex, it is harder to run the full application lo
 
 ### Shared Services
 
-Larger IT deployments in organizations often include services that are shared by multiple applications. (E.g. a product inventory service might be used by Point of Sale, logistics, forecasting, and financial reporting applications.)
+Larger IT deployments in organizations often include services that are shared by multiple applications. (E.g., a product inventory service might be used by Point of Sale, logistics, forecasting, and financial reporting applications.)
+
 For highly used services, a common pattern is to deploy the production version twice: once in the Production Environment and again in the Development environment. This allows developers to depend on the real service for testing while also not worrying about having to manage it as part of their workflow. This could be managed by Humanitec by marking an environment as being “exported” to all other development environments in all applications.
 
 ### On-premise Offering
@@ -50,6 +55,28 @@ Many companies in regulated industries are wary of the public cloud and so wish 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q2 2020
+
+#### Provisioning External Resources
+
+Many applications rely on databases and services that run external to the cluster. Humanitec already supports the automatic generation of Postgres databases via Google CloudSQL. This feature would extend the range of services supported. A stretch objective here is also to provide a way for developers to build their own implementation if the set of services supported by Humanitec does not cover what they need.
+
+#### Environment Management
+
+Humanitec allows developers to easily spin up and tear down environments on demand. Additionally, developers need to manage their workflows across multiple environments. This feature aims to take out the manual work associated with environment management and ease team workflow. It allows developers to compare deployments in different environments, patch the difference to another environment, manage variables per environment, as well as filter and label them for automation.
+
+#### Published API
+
+Much of what Humanitec can do will help with various forms of automation. For example, a test automation system may want to use Humanitec to spin up a new, clean environment to run tests in and then tear it down once it is done. Humanitec has the potential to add a whole set of use cases by defining and publishing a well-designed API.
+
+#### Runtime Status
+
+Successful deployment does not mean successful running. Developers need to know the runtime status of what they have deployed. This feature aims to show developers an all-in-one overview of live pods statuses and provide basic monitoring of all services deployed with Humanitec.
+
+#### Automatic Deployments
+
+Most of the engineering teams are either running automated deployments or aspire to in the future. Humanitec has all of the functionality required to automate deployments but lacks the ability to perform a deployment based on a trigger. This feature would allow developers to define deployment rules that could be run based on triggers. Rules would be of the form, if a new container image is built on branch _x_, deploy to environment _y_ and would be triggered on an event like: a new container image has been built by a CI pipeline.
 
 ### Q1 2020
 
