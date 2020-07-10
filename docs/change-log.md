@@ -2,6 +2,24 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 10th, 2020
+
+General new features:
+
+- Allow users to connect dynamic resources of type Postgres with Google Cloud Platform resource account<br>
+![Connect GCP Postgres](_assets/images/2020-07-10_Connect_GCP_Postgres.png)
+
+UI improvements:
+
+- Better overview over available image versoins<br>
+![List of available images](_assets/images/2020-07-10_Available_Images.png)
+- Improved database selector<br>
+![Database Selector](_assets/images/2020-07-10_Database_Selector.png)
+
+New API endpoints:
+
+- API endpoint for deployment automation - allowing users to create, update and delete rules for automated deployments; Humanitec deploy new images automatically based on the defined rules
+
 ## Product Update June 26th, 2020
 
 General new features:
