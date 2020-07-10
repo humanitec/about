@@ -8,8 +8,6 @@ General new features:
 
 - Allow users to connect dynamic resources of type Postgres with Google Cloud Platform resource account<br>
 ![Connect GCP Postgres](_assets/images/2020-07-10_Connect_GCP_Postgres.png)
-- Option to connect static Postgres and DNS resources<br>
-![Connect Static Resources](_assets/images/2020-07-10_Connect_Static_Resources.png)
 
 UI improvements:
 
