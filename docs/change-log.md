@@ -6,8 +6,6 @@ This document provides an overview over the changes we are making over time. Fee
 
 General new features:
 
-- Allow users to connect static resurces of type Postgres<br>
-![Connect Static Postgres](_assets/images/2020-07-24_Connect_Static_Postgres.png)
 - First version of automatic deployments based in user-defined rules<br>
 ![Rules for Automatic Deployments](_assets/images/2020-07-24_Automatic_Deyploments_Rules.png)<br>
 ![Status Notification for Automatic Deployment](_assets/images/2020-07-24_Automatic_Deployments_Notification.png)
