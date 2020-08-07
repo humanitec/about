@@ -2,6 +2,18 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update August 7th, 2020
+
+UI improvements:
+
+- Separation between *Profile Settings* and *Organization Settings*<br>
+![Separation of Settings](_assets/images/2020-08-04_Separation_of_Settings.png)
+
+Documentation update:
+
+- Release of the API documentation (currently in beta) available [here](https://api-docs.humanitec.com) incl. a first tutorial how to use the Humanitec API<br>
+![Humanitec API Docs](_assets/images/2020-08-04_API_Docs.png)
+
 ## Product Update July 24th, 2020
 
 General new features:
