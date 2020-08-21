@@ -4,11 +4,11 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update August 21st, 2020
 
-General new features:
-
-- Significant update of viewing container logs: container logs are now availbale for each deployment, making it much easier to debug issues
+- **Improved**: Container logs
+  - Users can now see logs for each historical deployment
+  - Fixed inconstiencies reported by users  
 ![Container Logs v2](_assets/images/2020-08-21_Container_Logs_v2.png)
-- Release of [Humanitec CircleCI Orb](https://circleci.com/orbs/registry/orb/humanitec/humanitec) for simple integration between CircleCI and Humanitec  
+- **New**: [Humanitec CircleCI Orb](https://circleci.com/orbs/registry/orb/humanitec/humanitec) for simple integration between CircleCI and Humanitec  
 ![CircleCI Integration](_assets/images/2020-08-21_CircleCI_Integration.png)
 
 ## Product Update August 7th, 2020
