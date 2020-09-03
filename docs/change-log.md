@@ -2,6 +2,19 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 4th, 2020
+
+- **New**: UI for Runtime status
+  - View the runtime status for deployed applications and easily debug errors when they occur
+  - Users are informed if any of the replicas are failing and the affected deployment and modules are marked with a warning
+  - To simplify debugging, container errors are reported for each replica separately and presented to the user together with the container log  
+![UI for Runtime status](_assets/images/2020-09-04_UI_Runtime_Status.png)
+- **New**: API for deleting resources
+- **Improved**: Live container logs
+  - Users do not have to refresh to see the latest logs
+  - Fixed UI issues and logs formatting
+- **Fixed**: Wrong DNS being shown for modules (user reported bug)
+
 ## Product Update August 21st, 2020
 
 - **Improved**: Container logs
