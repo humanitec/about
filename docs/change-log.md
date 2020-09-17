@@ -2,6 +2,16 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 18th, 2020
+
+- **New**: UI for adding AWS accounts for dynamic ressources  
+![UI for AWS accounts](_assets/images/2020-09-18_UI_AWS_Accounts.png)
+- **Improved**: UI for managing API Tokens
+  - See all API Tokens for an organization in one list
+  - Create new API Tokens
+  - View and revoke existing API Tokens  
+![UI for API Tokens](_assets/images/2020-09-18_UI_API_Tokens.png)
+
 ## Product Update September 4th, 2020
 
 - **New**: UI for Runtime status
