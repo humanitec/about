@@ -2,39 +2,27 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q3 2020
+## Q4 2020
 
-## Seamless Onboarding Experience
+### Volumes
 
-Users wishing to try Humanitec should have a seamless onboarding experience. Providing full in-app support and guided tutorials will significantly shorten new users’ time-to-value and help them to get started faster. Additionally, one of the key activation points is connecting Humanitec to your own infrastructure, therefore it is essential to provide users a way to easily use packaged CI steps for major CI tools such as GitLab, GitHub, CircleCI, TravisCI, DroneCI, and Jenkins.
+Volumes pose a particular area of complexity for Kubernetes applications. This feature aims to simplify handling of volumes by treating volumes as External Resources inside Humanitec. This means developers can simply declare a dependency on a volume and where it should be mounted and Humanitec will figure out how to provision or connect the volume.
 
-## Event-Driven Jobs
+### Role-Based Access Control
 
-It is often useful to be able to perform actions on events such as “new environment created”, “deployment completed”, or “environment deleted”. The actions could be as simple as posting a Slack message or as complex as running a suite of integration tests or initializing data. This feature covers running basic webhooks to enable things like Slack integration and running Kubernetes Jobs that can support things like running automated tests in an environment.
+Humanitec currently has a very simple permission model: any member of an organization can perform all actions in that organization. Many larger companies and companies in regulated markets have more complex needs and so require a finer-grained permission structure. Examples include limiting who can deploy to different environments, who can create new applications, or who can configure external resources. These fine-grained permissions should use a Role-Based Access Control (RBAC) model. To allow easy integration with corporate systems, Humanitec should be able to function as a SAML Service Provider.
 
-## Volumes
+### Better debugging for failed deployments
 
-Many applications rely on persistent storage in the form of a filesystem. These filesystems are held in volumes that can be mounted to containers. Kubernetes provides a number of options for volumes that can be connected to multiple pods and have lifetimes that match or exceed that of the pod they are mounted to. This feature will allow developers to define what volumes need to be provided to the pod and where to mount those into containers.
+Debugging failed deployments in Kubernetes is particularly complex because of the number of moving parts involved. Some errors are straightforward and come to light immediately (e.g. container cannot be pulled from the registry) while others (e.g. a container entering a crash-loop) can come to light many minutes after a deployment has been kicked off. This feature set aims to outline the sequence of steps performed by Humanitec when initiating a deployment. It informs the user once the step is performed successfully, or alternatively provides details for easier debugging if an error occurs.
 
-## Runtime Monitoring
-
-When running applications in production, monitoring is essential. With this feature, Humanitec will provide CPU, memory, and disk space statistics and will inform developers when these limits are reached. This allows for easier debugging and enables developers to make educated decisions while configuring their containers and replicas on Humanitec. Furthermore, Humanitec should provide the required integrations to most commonly used monitoring tools (e.g., Prometheus, Grafana, DataDog) to fully support development teams’ existing infrastructures. 
-
-## Humanitec CLI
-
-Many developers are not comfortable working with a GUI. At the same time, an API is hard to use for day-to-day deployments and application management. The Humanitec CLI will provide a middle ground between the API and the GUI. This feature is essential to pursue the API-first approach and provide full support to users that spend most of their time interacting with tools via their terminal. Using Humanitec CLI developers will be able to authenticate, create, and configure apps, deploy and manage environments, and much more. The CLI will also provide special functionality such as port forwarding into running applications or direct connection to managed databases.
-
-## Q4 2020 and beyond
+## Q1 2021 and beyond
 
 The following features are in our backlog and planned for implementation from Q4 2020 onwards. They are subject to change based on additional feedback we will gather until then.
 
-### Bring your Helm Charts 
+### Bring your Helm Charts
 
 Many potential customers already have setups for Kubernetes involving Helm charts. Humanitec already has the ability to deploy arbitrary Helm charts alongside application modules. However, configuration through Humanitec is very limited. This feature aims to provide a similar level of support to users for arbitrary helm charts as they enjoy for modules fully managed by Humanitec.
-
-### Fine-grained Permissions
-
-Humanitec currently has a very simple permission model: any member of an organization can perform all actions in that organization. Many larger companies and companies in regulated markets have more complex needs and so require a finer-grained permission structure. Examples include limiting who can deploy to different environments, who can create new apps, or who can configure external resources. These fine-grained permissions should use a Role-Based Access Control (RBAC) model. To allow easy integration with corporate systems, Humanitec should be able to function as a SAML Service Provider.
 
 ### Debug Flow Tools
 
@@ -55,6 +43,24 @@ Many companies in regulated industries are wary of the public cloud and so wish 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q3 2020
+
+#### Seamless Onboarding Experience
+
+Users wishing to try Humanitec should have a seamless onboarding experience. Providing full in-app support and guided tutorials will significantly shorten new users’ time-to-value and help them to get started faster. Additionally, one of the key activation points is connecting Humanitec to your own infrastructure, therefore it is essential to provide users a way to easily use packaged CI steps for major CI tools such as GitLab, GitHub, CircleCI, TravisCI, DroneCI, and Jenkins.
+
+#### Event-Driven Jobs
+
+It is often useful to be able to perform actions on events such as “new environment created”, “deployment completed”, or “environment deleted”. The actions could be as simple as posting a Slack message or as complex as running a suite of integration tests or initializing data. This feature covers running basic webhooks to enable things like Slack integration and running Kubernetes Jobs that can support things like running automated tests in an environment.
+
+#### Runtime Monitoring
+
+When running applications in production, monitoring is essential. With this feature, Humanitec will provide CPU, memory, and disk space statistics and will inform developers when these limits are reached. This allows for easier debugging and enables developers to make educated decisions while configuring their containers and replicas on Humanitec. Furthermore, Humanitec should provide the required integrations to most commonly used monitoring tools (e.g., Prometheus, Grafana, DataDog) to fully support development teams’ existing infrastructures. 
+
+#### Humanitec CLI
+
+Many developers are not comfortable working with a GUI. At the same time, an API is hard to use for day-to-day deployments and application management. The Humanitec CLI will provide a middle ground between the API and the GUI. This feature is essential to pursue the API-first approach and provide full support to users that spend most of their time interacting with tools via their terminal. Using Humanitec CLI developers will be able to authenticate, create, and configure apps, deploy and manage environments, and much more. The CLI will also provide special functionality such as port forwarding into running applications or direct connection to managed databases.
 
 ### Q2 2020
 
@@ -94,11 +100,11 @@ For example, a dynamic environmental variable definition which resolves to the e
 
 #### Deployment Sets
 
-***Deployment Version History***
+*Deployment Version History*
 
 The full state of each deployment to an environment is recorded as a “deployment set”. Deployment sets can be compared to show differences between them. A previous deployment set can be redeployed to perform a rollback. Cloning one environment to another is done by applying a deployment set from one environment into another. As part of this, the Dynamic Environment Variable Management feature ensures that environmental variables are correctly handled.
 
-***Serialization of Deployment Sets*** [to be completed in Q2]
+*Serialization of Deployment Sets* [to be completed in Q2]
 
 The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. In the future, these charts can be directed towards a git repository and so form part of a “GitOps” process.
 
@@ -106,7 +112,7 @@ The deployment set is the unit of state that is used to serialize out Helm Chart
 
 The current version of Humanitec has a tight dependency on GitHub. This feature relaxes that dependency.
 
-***Connect your CI***
+*Connect your CI*
 
 Rather than building containers directly from source code, Humanitec will hook into the end of your CI pipeline. This allows any successfully built and tested container to be used directly in Humanitec.
 
