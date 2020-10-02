@@ -2,6 +2,15 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 2nd, 2020
+
+- **New**: Export manifests for your chosen deployment set. Manifests can be downloaded as .yaml files and stored in a repository.  
+![UI to export manifests](_assets/images/2020-10-02_UI_Export_Manifests.png)
+- **New**: UI support for connecting your own GKE or EKS cluster via Static Resources.  
+![UI for GKE or EKS clusters](_assets/images/2020-10-02_UI_GKE_EKS_Clusters.png)
+
+- **Improved**: Possibility to add and confirm contact email through profile settings if it is not retrieved during registration.
+
 ## Product Update September 18th, 2020
 
 - **New**: UI for adding AWS accounts for dynamic ressources  
