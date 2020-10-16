@@ -2,6 +2,20 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 16th, 2020
+
+- **New**: UI and API for adding your AKS and EKS clusters.  
+![UI and API to add AKS and EKS clusters](_assets/images/2020-10-16_AKS_and_EKS_clusters.png)
+- **New**: UI and API for adding S3 Bucket resource definition and defining dependency within your modules.
+- **New**: Welcome emails to newly registered users.
+
+- **Improved**: Container runtime status added to application view - users can see at a glance if any of their modules are failing.  
+![Container runtime status](_assets/images/2020-10-16_Container_Runtime_Status.png)
+- **Improved**: Expandable deployment history view. Users can filter based on deployment comment and find their historical deployments easier.  
+![Expandable deployment history](_assets/images/2020-10-16_Expandable_Deployment_History.png)
+- **Improved**: CI integration guide - now presented as a wizzard.  
+![CI wizzard](_assets/images/2020-10-16_CI_Wizzard.png)
+
 ## Product Update October 2nd, 2020
 
 - **New**: Export manifests for your chosen deployment set. Manifests can be downloaded as .yaml files and stored in a repository.  
