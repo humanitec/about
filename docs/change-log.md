@@ -2,6 +2,18 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 30th, 2020
+
+- **New:** Deleting Resource Definitions via the UI. If the resource definition has any active resources associated with it, the user is informed about those resources and their suggested replacements. If the user proceeds with the deletion, the resource definition will be marked with pending deletion until all active resources are redeployed.  
+![Delete Resource Defintion](_assets/images/2020-10-30_Delete_Resource_Definition.png)
+
+- **Improved**: Input component for shared value overrides.
+- **Improved**: Snippet for Bitbucket integration.#
+
+- **Fixed**: Error handling in a case of a blank screen.
+- **Fixed**: Allowing users to select “None” for static resources that do not need a driver.
+- **Fixed**: Real-time updates for automated deployments.
+
 ## Product Update October 16th, 2020
 
 - **New**: UI and API for adding your AKS and EKS clusters.  
