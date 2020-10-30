@@ -8,7 +8,7 @@ This document provides an overview over the changes we are making over time. Fee
 ![Delete Resource Defintion](_assets/images/2020-10-30_Delete_Resource_Definition.png)
 
 - **Improved**: Input component for shared value overrides.
-- **Improved**: Snippet for Bitbucket integration.#
+- **Improved**: Snippet for Bitbucket integration.
 
 - **Fixed**: Error handling in a case of a blank screen.
 - **Fixed**: Allowing users to select “None” for static resources that do not need a driver.
