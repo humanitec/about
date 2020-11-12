@@ -2,6 +2,17 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 13th, 2020
+
+- **New:** A "My Apps" screen with all applications that a user has an access to as well as their respective environments. The user can choose to open the required application or an environment directly from the My Apps screen.  
+![My App Screen](_assets/images/2020-11-13_My_App_Screen.png)
+- **New:** Redirect to "My Apps" after deleting an application.
+- **New:** Introduced an error screen for javascript errors and 404s with a redirect to "My Apps".
+
+- **Fixed:**: Automated deployments do not show up in UI until they are finished.
+
+- **Improved:** Scroll bars across application.
+
 ## Product Update October 30th, 2020
 
 - **New:** Deleting Resource Definitions via the UI. If the resource definition has any active resources associated with it, the user is informed about those resources and their suggested replacements. If the user proceeds with the deletion, the resource definition will be marked with pending deletion until all active resources are redeployed.  
