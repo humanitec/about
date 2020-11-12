@@ -9,7 +9,7 @@ This document provides an overview over the changes we are making over time. Fee
 - **New:** Redirect to "My Apps" after deleting an application.
 - **New:** Introduced an error screen for javascript errors and 404s with a redirect to "My Apps".
 
-- **Fixed:**: Automated deployments do not show up in UI until they are finished.
+- **Fixed:** Automated deployments do not show up in UI until they are finished.
 
 - **Improved:** Scroll bars across application.
 
