@@ -2,6 +2,18 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 27th, 2020
+
+- **Fixed:** Selecting placeholder from prompt popup causes currently entered text to be ovewritten.
+- **Fixed:** After creating a draft from a diff the module detail page is not updated.
+- **Fixed:** Envtype list is cut off on static resources page.
+- **Fixed:** After deploying the user can directly see the currently running version instead of the draft.
+- **Fixed:** Variables are not displayed in the diff if it is removed.
+- **Fixed:** S3 bucket should only be available for adding to module when a S3 resource definition exists.
+- **Fixed:** user reported issues with user pagination and user invite via Github.
+
+- **Improved:** Based on user feedback, changed *Modules* to *Workloads* across application.
+
 ## Product Update November 13th, 2020
 
 - **New:** A "My Apps" screen with all applications that a user has an access to as well as their respective environments. The user can choose to open the required application or an environment directly from the My Apps screen.  
