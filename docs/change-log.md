@@ -2,6 +2,14 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 11th, 2020
+
+- **Improved:** Environments are ordered by creation date instead of alphabet.
+- **Improved:** Users can choose to delete an environment type and see associated environments.
+- **Improved:** A lot of great styling updates!
+
+- **Fixed:** After adding a managed workload (Redis) the workload dropdown selection is not cleared.
+
 ## Product Update November 27th, 2020
 
 - **Fixed:** Selecting placeholder from prompt popup causes currently entered text to be ovewritten.
