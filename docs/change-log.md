@@ -2,6 +2,26 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 25th, 2020
+
+- **New:** Add configuration as a file that will be accessible from your container (UI&API).  
+![Configuration as a File](_assets/images/2020-12-25_Configuration_as_a_file.png)
+- **New:** Specify Service account that a pod should adopt via UI.  
+![Specify Service Account](_assets/images/2020-12-25_Specify_Service_Account.png)
+- **New:** Create Webhooks Deployment (started/finished) and Environment (created/deleted) events. (UI&API).  
+![Create Webhooks](_assets/images/2020-12-25_Create_Webhooks.png)
+
+- **Improved:** Show deployers for all deployments.
+- **Improved:** Show who created a resource definition.
+- **Improved:** User experience for re-deploying a historical deployment set.
+
+- **Fixed:** It’s not possible to remove command overwrites and args.
+- **Fixed:** The overview of deploy changes does not show removed env variables.
+- **Fixed:** Container images dropdown for adding a workload is partially hidden.
+- **Fixed:** Adding substitute variables for s3bucket.
+- **Fixed:** Small UI issues on Firefox.
+- **Fixed:** Blinking smiley behavior :-)
+
 ## Product Update December 11th, 2020
 
 - **Improved:** Environments are ordered by creation date instead of alphabet.
