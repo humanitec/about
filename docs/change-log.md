@@ -2,6 +2,10 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update Janaury 8th, 2021
+
+We enjoyed some time off between the years and we hope you did too. Stay tuned for the first product update 2021 which we will publish on January 22nd.
+
 ## Product Update December 25th, 2020
 
 - **New:** Add configuration as a file that will be accessible from your container (UI&API).  
