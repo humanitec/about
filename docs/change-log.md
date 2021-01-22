@@ -6,7 +6,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 Here is our first product update 2021. We started with some important new features into the new year.
 
-- **New:** We created an Environment Settings Screen that bundles all environment-specific settings. We moved the *Automation Rules* and environment-specific *Shared values and secrets overrides* into this new screen.  
+- **New:** We created an Environment Settings Screen that bundles all environment-specific settings. We moved the *Automation Rules* and environment-specific *Shared values and secrets overrides* into this new screen. We now also allow users to specify a namespace in Kubernetes for each environment. This has been supprted by the API but not by the UI.  
 ![Environment Confguration Screen](_assets/images/2021-01-22_Environment_Settings_Screen.png)
 - **New:** We are now allowing users to delete environments directly from the environment dropdown menu on the App Details Screen.  
 ![Delete Environments](_assets/images/2021-01-22_Delete_Environments.png)
