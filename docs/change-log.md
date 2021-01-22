@@ -2,6 +2,21 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 22nd, 2021
+
+Here is our first product update 2021. We started with some important new features into the new year.
+
+- **New:** We created an Environment Settings Screen that bundles all environment-specific settings. We moved the *Automation Rules* and environment-specific *Shared values and secrets overrides* into this new screen.  
+![Environment Confguration Screen](_assets/images/2021-01-22_Environment_Settings_Screen.png)
+- **New:** We are now allowing users to delete environments directly from the environment dropdown menu on the App Details Screen.  
+![Delete Environments](_assets/images/2021-01-22_Delete_Environments.png)
+
+- **Improved:** Support multi-line values in *Shared values and secrets*.
+- **Improved:** Listing of dynamic resources.
+
+- **Fixed:** Adding overrides for shared variables cause console error *Cannot read property 'id' of undefined*.
+- **Fixed:** Missing UI elements after creating a new environment.
+
 ## Product Update Janaury 8th, 2021
 
 We enjoyed some time off between the years and we hope you did too. Stay tuned for the first product update 2021 which we will publish on January 22nd.
