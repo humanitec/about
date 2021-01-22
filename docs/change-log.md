@@ -10,6 +10,8 @@ Here is our first product update 2021. We started with some important new featur
 ![Environment Confguration Screen](_assets/images/2021-01-22_Environment_Settings_Screen.png)
 - **New:** We are now allowing users to delete environments directly from the environment dropdown menu on the App Details Screen.  
 ![Delete Environments](_assets/images/2021-01-22_Delete_Environments.png)
+- **New:** Out-of-the-box support for Amazon S3 buckets as Dynamic Resources.  
+![Dynamic S3 Buckets](_assets/images/2021-01-22_Dynamic_S3_Buckets.png)
 
 - **Improved:** Support multi-line values in *Shared values and secrets*.
 - **Improved:** Listing of dynamic resources.
