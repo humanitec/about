@@ -2,6 +2,20 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 5th, 2021
+
+- **New:** Added support to provision more than one resource of the same type for each workload.  
+![Multiple Resources of same Type](_assets/images/2021-02-05_Multiple_Resources.png)
+- **New:** Error messages on the workload/replica level now also include deployment errors and not only runtime errors (see update of deployment logic below).
+- **New:** Added support for Aiven (Database-as-a-Service provider).  
+![Added Aiven Support](_assets/images/2021-02-05_Aiven_Support.png)
+
+- **Improved:** Updated deployment logic. Deployments in Humanitec no longer wait for pods to start successfully. Instead, errors related to pulling an image of starting a container are now shown as runtime errors (see update of error messages above).
+- **Improved:** Both, our [GitHub Action](https://github.com/Humanitec/build-push-to-humanitec) as well as our [CircleCI Orb](https://circleci.com/developer/orbs/orb/humanitec/humanitec), now support the specification of additional docker arguments (e.g., `build-args`).
+- **Improved:** Updated documentation of environment variables & secrets and container configuration.
+
+- **Fixed:** Failing application deletion in the case of deployment errors.
+
 ## Product Update January 22nd, 2021
 
 Here is our first product update 2021. We started with some important new features into the new year.
