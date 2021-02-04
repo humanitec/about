@@ -9,7 +9,7 @@ This document provides an overview over the changes we are making over time. Fee
 - **New:** Added support for Aiven (Database-as-a-Service provider).  
 ![Added Aiven Support](_assets/images/2021-02-05_Aiven_Support.png)
 
-- **Changed:** We changed the default deployment behaviour so that workloads no longer wait for a successful readiness probe before terminating the old pods. This means that the state of the namespace will match the requested deployment, but will mean that pods might be in a failed state. These will be reported in the UI. It will also mean deployments complete much faster. We are working on Blue/Green Deployments to provide a reliable way of ensuring environment wide consistency.
+- **Changed:** We changed the default deployment behaviour so that workloads no longer wait for a successful readiness probe before terminating the old pods. This means that the state of the namespace will match the requested deployment, but will mean that pods might be in a failed state. These will be reported in the UI. It will also mean deployments complete much faster. We are working on [Blue/Green Deployments](roadmap.md#bluegreen-deployment-strategy) to provide a reliable way of ensuring environment wide consistency.
 
 - **Improved:** Both, our [GitHub Action](https://github.com/Humanitec/build-push-to-humanitec) as well as our [CircleCI Orb](https://circleci.com/developer/orbs/orb/humanitec/humanitec), now support the specification of additional docker arguments (e.g., `build-args`).
 - **Improved:** Updated documentation of environment variables & secrets and container configuration.
