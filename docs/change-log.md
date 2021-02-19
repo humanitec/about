@@ -2,6 +2,18 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 19th, 2021
+
+- **New:** Errors at the Environment level are now surfaced in UI.
+- **New:** Aiven added as an Account Type & [documentation](https://docs.humanitec.com/how-to-guides-devops/infrastructure-orchestration/manage-relational-databases/aiven) added for connecting Aiven managed databases.  
+![Aiven Managed DBs](_assets/images/2021-02-19_Aiven_Managed_DB.png)
+
+- **Improved:** Environments and Deployments pane in Workload Details screen expanded and Environment Tabs restructured.
+
+- **Fixed:** Clicking outside the Dynamic/Static Resource Definition dialog does not cause all data to be automatically lost.
+- **Fixed:** Form for specifying static DNS did not handle TLS certificates correctly.
+- **Fixed:** Many UI inconsistencies.
+
 ## Product Update February 5th, 2021
 
 - **New:** Workloads can now depend on multiple resources of the same type.  
