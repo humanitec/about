@@ -2,6 +2,12 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 5th, 2021
+
+- **New:** Pod status is now communicated on the Workload tile in the Active Deployment mode.
+
+- **Fixed:** It is now possible to replace a deleted resource definition with a new one of the same type with overlapping matching criteria while the original one is still in _pending deletion_ state.
+
 ## Product Update February 19th, 2021
 
 - **New:** Errors at the Environment level are now surfaced in UI.
