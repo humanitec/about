@@ -2,6 +2,17 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 19th, 2021
+
+- **New:** Forms for adding resource definitions now present fields in a more intuitive order and include help text.  
+![Form Update](_assets/images/2021-03-21_Form_Update.png)
+
+- **Improvement:** Draft can now be discarded even if it is the only draft. (A new blank draft is created in its place.)
+
+- **Fixed:** Behaviour of clones in the UI is corrected.  Clone includes comment from deployment it was created from and is properly represented in the draft. Code version can be updated in the draft applied to clone.
+- **Fixed:** Submitting variable value now possible when suggestions drop-down is shown.
+- **Fixed:** Live container statuses sometimes not shown after deployment.
+
 ## Product Update March 5th, 2021
 
 - **New:** Pod status is now communicated on the Workload tile in the Active Deployment mode.
