@@ -2,6 +2,10 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 2nd, 2021
+
+We will shift the product update to April 9th due to the short break over Easter.
+
 ## Product Update March 19th, 2021
 
 - **New:** Forms for adding resource definitions now present fields in a more intuitive order and include help text.  
