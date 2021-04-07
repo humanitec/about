@@ -1,10 +1,10 @@
-# We are Humanitec. 
+# We are Humanitec
 
 **We provide an out-of-the-box internal developer platform to accelerate adoption of DevOps practices and Continuous Delivery for cloud-native, Kubernetes-based applications.**
 
 ## Introduction
 
-Elite development teams breathe DevOps and Continuous Delivery. Following their lead, organizations that want to improve their performance embark on DevOps transformations and start adopting Continuous Delivery.#
+Elite development teams breathe DevOps and Continuous Delivery. Following their lead, organizations that want to improve their performance embark on DevOps transformations and start adopting Continuous Delivery.
 
 Despite moving to a loosely coupled architecture with matching dev team structure, investing in CI pipelines for all components, and automating a good chunk of testing, many find performance does not improve.
 
@@ -39,7 +39,7 @@ Developers work with applications that can be deployed to environments which the
 
 Humanitec is simple, extensible, and auditable.
 
--  **simple**: Developers can get up and running in minutes. Standard DevOps tasks such as deploying code to Kubernetes, setting up environments, or even provisioning tech like databases can be completed with one command or click.
+- **simple**: Developers can get up and running in minutes. Standard DevOps tasks such as deploying code to Kubernetes, setting up environments, or even provisioning tech like databases can be completed with one command or click.
 - **extensible**: Humanitec’s Open API allows you to integrate with tools of your choice and even extend Humanitec to interact with custom in-house technologies.
 - **auditable**: Everything that runs through Humanitec is tracked. This means you know what was deployed, when and by who. This includes the full configuration down to the last environment variable making rolling back configuration a doddle.
 
