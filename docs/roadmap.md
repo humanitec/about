@@ -38,6 +38,10 @@ Larger IT deployments in organizations often include services that are shared by
 
 For highly used services, a common pattern is to deploy the production version twice: once in the Production Environment and again in the Development environment. This allows developers to depend on the real service for testing while also not worrying about having to manage it as part of their workflow. This could be managed by Humanitec by marking an environment as being “exported” to all other development environments in all applications.
 
+### Deployment Pipelines
+
+It is often the case that additional actions need to be performed after deployment. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow action to be run based on the outcome of a deployment or to orchestrate additional actions.
+
 ### On-Premise Offering
 
 Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
