@@ -2,6 +2,13 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 9th, 2021
+
+- **New:** Added support for [Persistent Volumes](https://humanitec.com/blog/feature-announcement-persistent-volumes).  
+![Persistent Volumes](_assets/images/2021-04-09_Persistant_Volumes.png)  
+Mount paths are specied on the workload level.  
+![Configure Persistent Volumes](_assets/images/2021-04-09_Configure_Persistent_Volumes.png)
+
 ## Product Update April 2nd, 2021
 
 We will shift the product update to April 9th due to the short break over Easter.
