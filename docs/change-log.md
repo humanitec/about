@@ -4,17 +4,17 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update April 23rd, 2021
 
-- **New:** Added support for emptyDir volumes.
+- **New:** Added support for emptyDir volumes.  
 ![emptyDir volumes](_assets/images/2021-04-23_emptyDir_volumes.png)
 
 - **Improvement:** We reworked the behaviour of the Variables component on the Workload Details Page. Inconsistencies in terms of its navigation and handling were removed to ensure a reliable user experience for entering, editing and saving data.
-  - Improved keyboard accessibility
-  - Easier handling of Placeholder Paths
-  - Corrected behaviour for multi-line input
+  - Improved keyboard accessibility.
+  - Easier handling of Placeholder Paths.
+  - Corrected behaviour for multi-line input.
 
-- **Fixed:** It is no longer possible to cause a failed deployment due to a file being mounted into the root of a container
+- **Fixed:** It is no longer possible to cause a failed deployment due to a file being mounted into the root of a container.
 
-- **Fixed:** Many UI inconsistencies
+- **Fixed:** Many UI inconsistencies.
 
 ## Product Update April 9th, 2021
 
