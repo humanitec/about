@@ -2,6 +2,19 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 7th, 2021
+
+- **New:** Added support for [third-party container registries](https://humanitec.com/blog/third-party-container-registries-feature-announcement). 
+![third-party registries](_assets/images/2021-05-07_Third_Party_Registries.png)
+
+- **Fixed:** It is now possible to cancel the creation of a workload on the application details page.
+
+- **Fixed:** The image dropdown on the Workload Details Page no longer overflows.
+
+- **Improved:** Defined handling of special characters such as "\", '<' or '>' in the variables component on the Workload Details Page.
+
+- **Changed:** The full image name is now shown for automatic deployment comments.
+
 ## Product Update April 23rd, 2021
 
 - **New:** Added support for emptyDir volumes.  
