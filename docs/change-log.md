@@ -4,7 +4,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update May 7th, 2021
 
-- **New:** Added support for [third-party container registries](https://humanitec.com/blog/third-party-container-registries-feature-announcement). 
+- **New:** Added support for [third-party container registries](https://humanitec.com/blog/third-party-container-registries-feature-announcement).  
 ![third-party registries](_assets/images/2021-05-07_Third_Party_Registries.png)
 
 - **Fixed:** It is now possible to cancel the creation of a workload on the application details page.
