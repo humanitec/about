@@ -4,7 +4,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update May 21st, 2021
 
-- **New:** Added support for path based routing with Ingress on the Workload Details Page. This feature replaces the Public URL section.
+- **New:** Added support for path-based routing with Ingress on the Workload Details Page. This feature replaces the Public URL section.
   - DNS resource can now be added in the External Resources section.
   - Routing rules are defined within the newly added Ingress component.  
 ![path based routing](_assets/images/2021-05-21_Path_Based_Routing.png)
