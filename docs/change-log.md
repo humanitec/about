@@ -2,6 +2,23 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 21st, 2021
+
+- **New:** Added support for path based routing with Ingress on the Workload Details Page. This feature replaces the Public URL section.
+  - DNS resource can now be added in the External Resources section.
+  - Routing rules are defined within the newly added Ingress component.  
+![path based routing](_assets/images/2021-05-21_Path_Based_Routing.png)
+
+- **Changed:** Design and layout of App Settings. Added a danger zone and removed tabs from the UI to allow for a clearer overview and structure of the screen.
+
+- **Improved:** Extended error message handling via tooltips in the Variables component for invalid placeholder paths.
+
+- **Fixed:** It is now possible to add variables to a workload with multiple containers.
+
+- **Fixed:** Configuration of Webhooks.
+  - Closing the triggers-dropdown no longer removes all selected triggers.
+  - Existing Webhooks can be disabled/enabled.
+
 ## Product Update May 7th, 2021
 
 - **New:** Added support for [third-party container registries](https://humanitec.com/blog/third-party-container-registries-feature-announcement).  
