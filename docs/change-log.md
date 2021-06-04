@@ -2,6 +2,26 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 4th, 2021
+
+- **Changed:** Removed integration options for Bitbucket Pipelines, GitHub Actions and Circle CI from the Images tab in Organization settings. CI pipelines can be connected by simply notifying Humanitec about new image builds. [More information](https://docs.humanitec.com/how-to-guides-devops/infrastructure-orchestration/connect-ci-pipelines#add-new-image-sources).  
+![connect ci pipelines](_assets/images/2021-06-04_Connect_CI_pipeline.png)
+
+- **New:** Added support for Horizontal Pod Autoscaler on the Workload Details Page.  
+![horizontal pod autoscaler](_assets/images/2021-06-04_Horizontal_pod_autoscaler.png)
+
+- **Fixed:** Changes made in a Draft are no longer replicated to running and past deployments in the UI.
+
+- **Fixed:** When deleting an App the Drafts associated with it will no longer show up in subsequently created Apps of the same name.
+
+- **Fixed:** Ingress manifests are no longer missing from exported manifests of running and past deployments with allocated Ingress resources.
+
+- Several UI fixes e.g.:
+  - **Fixed:** When changing a Variable key in a Draft, the old value will now be displayed on the deployment Diff.
+  - **Improved:** When adding a file to a Draft, its path is displayed in addition to its mode on the deployment Diff.
+  - **Fixed:** Overflowing deployment Diffs and Workload errors are now scrollable.
+  - **Improved:** Active deployments that stopped running are marked as "Stopped".
+
 ## Product Update May 21st, 2021
 
 - **New:** Added support for path-based routing with Ingress on the Workload Details Page. This feature replaces the Public URL section.
