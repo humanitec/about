@@ -7,9 +7,6 @@ This document provides an overview over the changes we are making over time. Fee
 - **Changed:** Significantly simplified how to connect CI pipelines (like Bitbucket Pipelines, GitHub Actions, and Circle CI) from the Images tab in Organization settings. The CI pipelines just need to notify Humanitec about new image builds. Check out the docs for [more information](https://docs.humanitec.com/how-to-guides-devops/infrastructure-orchestration/connect-ci-pipelines#add-new-image-sources).  
 ![connect ci pipelines](_assets/images/2021-06-04_Connect_CI_pipeline.png)
 
-- **New:** Added support for Horizontal Pod Autoscaler on the Workload Details Page.  
-![horizontal pod autoscaler](_assets/images/2021-06-04_Horizontal_pod_autoscaler.png)
-
 - **Fixed:** Changes made in a Draft are no longer replicated to running and past deployments in the UI.
 
 - **Fixed:** When deleting an App, the Drafts associated with it will no longer show up in subsequently created Apps of the same name.
