@@ -4,7 +4,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update June 4th, 2021
 
-- **Changed:** Removed integration options for Bitbucket Pipelines, GitHub Actions and Circle CI from the Images tab in Organization settings. CI pipelines can be connected by simply notifying Humanitec about new image builds. [More information](https://docs.humanitec.com/how-to-guides-devops/infrastructure-orchestration/connect-ci-pipelines#add-new-image-sources).  
+- **Changed:** Significantly simplified how to connect CI pipelines (like Bitbucket Pipelines, GitHub Actions, and Circle CI) from the Images tab in Organization settings. The CI pipelines just need to notify Humanitec about new image builds. Check out the docs for [more information](https://docs.humanitec.com/how-to-guides-devops/infrastructure-orchestration/connect-ci-pipelines#add-new-image-sources).  
 ![connect ci pipelines](_assets/images/2021-06-04_Connect_CI_pipeline.png)
 
 - **New:** Added support for Horizontal Pod Autoscaler on the Workload Details Page.  
@@ -12,11 +12,11 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** Changes made in a Draft are no longer replicated to running and past deployments in the UI.
 
-- **Fixed:** When deleting an App the Drafts associated with it will no longer show up in subsequently created Apps of the same name.
+- **Fixed:** When deleting an App, the Drafts associated with it will no longer show up in subsequently created Apps of the same name.
 
 - **Fixed:** Ingress manifests are no longer missing from exported manifests of running and past deployments with allocated Ingress resources.
 
-- Several UI fixes e.g.:
+- Several UI fixes, including:
   - **Fixed:** When changing a Variable key in a Draft, the old value will now be displayed on the deployment Diff.
   - **Improved:** When adding a file to a Draft, its path is displayed in addition to its mode on the deployment Diff.
   - **Fixed:** Overflowing deployment Diffs and Workload errors are now scrollable.
