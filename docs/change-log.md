@@ -4,11 +4,11 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update June 18th, 2021
 
-- **New:** Added a image build versions overview for each container image registered with Humanitec. This allows to review image versions and filter by commit ID, branch or tag.  
+- **New:** Added an image build versions overview for each container image registered with Humanitec. This allows to review image versions and filter by commit ID, branch, or tag.  
 ![image build version overview](_assets/images/2021-06-18_Image_versions_overview.png)
 
 - **New:** Added information on resource details to the Workload Details Page of running deployments.  
-![resources details](_assets/images/2021-06-18_Resources_details.png)
+![resources details](_assets/images/2021-06-18_Resource_details.png)
 
 - **Fixed:** The environment runtime status is no longer mirrored on all environment tabs of an Application.
 
@@ -16,9 +16,9 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** Deleting a DNS resource now automatically removes all associated routing rules defined in the Ingress section of the Workload.
 
-- **Many UI fixes:**
+- Several UI fixed, including:
   - **Fixed:** The draft version dropdown on the App Details Page no longer overflows for large amount of draft versions.
-  - **Improved:** Added a automatic copy interaction to Ingress routes shown on the Workload Details Page of running deployments.
+  - **Improved:** Added an automatic copy interaction to Ingress routes shown on the Workload Details Page of running deployments.
   - **Improved:** Enhanced error message handling in several parts of the application.
 
 ## Product Update June 4th, 2021
