@@ -2,27 +2,27 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q2 2021
+## Q3 2021
 
-### Blue/Green Deployment Strategy
+### Deployment Pipelines
 
-The Blue/Green deployment strategy is a popular way of performing zero downtime deployments while retaining guarantees about the integrity of the whole environment. It works by deploying to a secondary (Green) environment and once this environment has been validated, cut the traffic from the current (Blue) environment to the new Green environment. The process is repeated, this time from Green to Blue at the next deployment. Compared with the zero-downtime “rolling update” strategy that Humanitec defaults to, a Blue/Green deployment strategy provides more control to operations and development teams deploying applications.
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+### Custom Workload Profiles
+
+Most teams adopting Humanitec already have workloads that they run in Kubernetes. The manifests being generated and applied to the cluster for these workloads can very often be directly transferred into Humanitec using the `humanitec/default-module` profile. More advanced setups often have some workloads that cannot be translated into an existing profile, for example services that have to be run as stateful sets. In some cases, ops teams might want to set their own defaults for some properties (e.g. minimum CPU) or include annotations or labels as part of the base profile that is deployed. This feature allows ops users to define their own Workload Profiles, specify which features a profile supports and which it does not, upload Helm Charts that form the basis of a workload profile and define a schema that can be used to define custom configuration for a workload profile.
 
 ### Cherry-Pick Workloads
 
 One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
 
-### Path-Based Routing
-
-Applications that are made up of multiple services usually serve different parts of the API surface from different services running in the same cluster. Routing can be handled via an ingress controller, an API gateway, or some other kind of proxy. These can be configured in a range of ways from Kubernetes Ingress objects to CRDs or annotations. This feature aims to create a system that allows developers to define routing information for their workloads while allowing Ops to define how DNS names are allocated and what technology is used to define the routing rules.
-
 ### Resources 2.0
 
 Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
 
-## Q3 2021 and beyond
+## Q4 2021 and beyond
 
-The following features are in our backlog and planned for implementation from Q4 2020 onwards. They are subject to change based on additional feedback we will gather until then.
+The following features are in our backlog and planned for implementation from Q4 2021 onwards. They are subject to change based on additional feedback we will gather until then.
 
 ### Canary Deployment Strategy
 
@@ -38,19 +38,37 @@ Larger IT deployments in organizations often include services that are shared by
 
 For highly used services, a common pattern is to deploy the production version twice: once in the Production Environment and again in the Development environment. This allows developers to depend on the real service for testing while also not worrying about having to manage it as part of their workflow. This could be managed by Humanitec by marking an environment as being “exported” to all other development environments in all applications.
 
-### Deployment Pipelines
-
-It is often the case that additional actions need to be performed after deployment. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow action to be run based on the outcome of a deployment or to orchestrate additional actions.
-
 ### On-Premise Offering
 
 Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
+
+### Single Sign-On (SSO)
+
+Many companies use Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will integrate with SSO solutions, most likely starting with SAML. This will allow organizations manage access to Humanitec using their existing tools and systems.
 
 ### Team Performance Monitoring
 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q2 2021
+
+#### Blue/Green Deployment Strategy
+
+The Blue/Green deployment strategy is a popular way of performing zero downtime deployments while retaining guarantees about the integrity of the whole environment. It works by deploying to a secondary (Green) environment and once this environment has been validated, cut the traffic from the current (Blue) environment to the new Green environment. The process is repeated, this time from Green to Blue at the next deployment. Compared with the zero-downtime “rolling update” strategy that Humanitec defaults to, a Blue/Green deployment strategy provides more control to operations and development teams deploying applications.
+
+#### Cherry-Pick Workloads
+
+One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
+
+#### Path-Based Routing
+
+Applications that are made up of multiple services usually serve different parts of the API surface from different services running in the same cluster. Routing can be handled via an ingress controller, an API gateway, or some other kind of proxy. These can be configured in a range of ways from Kubernetes Ingress objects to CRDs or annotations. This feature aims to create a system that allows developers to define routing information for their workloads while allowing Ops to define how DNS names are allocated and what technology is used to define the routing rules.
+
+#### Resources 2.0
+
+Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
 
 ### Q1 2021
 
