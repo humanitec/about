@@ -42,13 +42,13 @@ For highly used services, a common pattern is to deploy the production version t
 
 Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
 
+### Single Sign-On (SSO)
+
+Many companies are using Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will start providing a SSO solution (most likely based on SAML) on an organizational level to support system admins in their work.
+
 ### Team Performance Monitoring
 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
-
-### SSO
-
-Single sign-on (SSO) is an authentication method that enables users to securely authenticate with multiple applications and websites by using just one set of credentials.
 
 ## Past Quarters
 
