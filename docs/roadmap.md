@@ -44,7 +44,7 @@ Many companies in regulated industries are wary of the public cloud and so wish 
 
 ### Single Sign-On (SSO)
 
-Many companies are using Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will start providing a SSO solution (most likely based on SAML) on an organizational level to support system admins in their work.
+Many companies use Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will integrate with SSO solutions, most likely starting with SAML. This will allow organizations manage access to Humanitec using their existing tools and systems.
 
 ### Team Performance Monitoring
 
