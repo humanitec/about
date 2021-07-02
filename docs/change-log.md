@@ -16,7 +16,7 @@ This document provides an overview over the changes we are making over time. Fee
   - Improved keyboard accessibility with focus on links, table-, and list components.
   - Improved navigation flows throughout the application.
 
-- **Fixed:** It is now possible to remove priorly specified overrides for the container command in the container configuration of the Workload Details Page.
+- **Fixed:** It is now possible to remove previously specified overrides for the container command in the container configuration of the Workload Details Page.
 
 - **Fixed:** Environment status (Running/Stopped/Failed) and status icon are now in sync on the Environment Settings Page.
 
