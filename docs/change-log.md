@@ -2,6 +2,26 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 2nd, 2021
+
+- **New:** Workload cards can now be pinned to the top of the App Details Page. This allows users to set focus on most relevant workloads in the UI.  
+![pin workloads to top](_assets/images/2021-07-02_Workload_pinning.png)
+
+- **New:** Dynamic resources can now be connected to Humanitec via Azure accounts.
+
+- **Changed:** The deploy button has been moved into the draft- and deployment list items on the left hand side of the App Details Page.  
+![Deploy button](_assets/images/2021-07-02_Deploy_button.png)
+
+- **Improved:** Humanitec's accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
+  - Improved keyboard accessibility with focus on links, table-, and list components.
+  - Improved navigation flows throughout the application.
+
+- **Fixed:** It is now possible to remove previously specified overrides for the container command in the container configuration of the Workload Details Page.
+
+- **Fixed:** Environment status (Running/Stopped/Failed) and status icon are now in sync on the Environment Settings Page.
+
+- **Fixed:** User names are being shown again on active and past deployments on the App Details Page.
+
 ## Product Update June 18th, 2021
 
 - **New:** Added an image build versions overview for each container image registered with Humanitec. This allows to review image versions and filter by commit ID, branch, or tag.  
