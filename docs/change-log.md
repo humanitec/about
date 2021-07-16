@@ -2,6 +2,10 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 16th, 2021
+
+We will shift the product update to July 30th. Stay tuned for new features we've been working on.
+
 ## Product Update July 2nd, 2021
 
 - **New:** Workload cards can now be pinned to the top of the App Details Page. This allows users to set focus on most relevant workloads in the UI.  
