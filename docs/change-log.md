@@ -4,7 +4,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update July 16th, 2021
 
-Nothing to report for todays product update as our team has been taking some well earned time off in the past 2 weeks. The next update will be published on July 30th.
+Nothing to report for todays product update as our team has been taking some well earned time off in the past 2 weeks. The next update will be published on August 6th.
 
 ## Product Update July 2nd, 2021
 
