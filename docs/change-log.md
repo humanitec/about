@@ -2,6 +2,19 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update August 13th, 2021
+
+- **Fixed:** Draft deployments can now be accessed while a deployment is in progress.
+
+- **Fixed:** The environment status no longer defaults to "Stopped" after a successful deployment.
+
+- **Fixed:** Several UI issues, including:
+  - Entering multiple Placeholder Paths into the Value field of the Variables component no longer breaks the UI.
+  - Placeholder Paths in the Value field of the Variables component now support dash characters.
+  - The "More Environments" dropdown on the App Details Page no longer overflows for large amount of environments.
+
+- **Improved:** Keyboard accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1.
+
 ## Product Update July 16th, 2021
 
 Nothing to report for todays product update as our team has been taking some well earned time off in the past 2 weeks. The next update will be published on August 13th.
@@ -40,7 +53,7 @@ Nothing to report for todays product update as our team has been taking some wel
 
 - **Fixed:** Deleting a DNS resource now automatically removes all associated routing rules defined in the Ingress section of the Workload.
 
-- Several UI fixed, including:
+- Several UI fixes, including:
   - **Fixed:** The draft version dropdown on the App Details Page no longer overflows for large amount of draft versions.
   - **Improved:** Added an automatic copy interaction to Ingress routes shown on the Workload Details Page of running deployments.
   - **Improved:** Enhanced error message handling in several parts of the application.
