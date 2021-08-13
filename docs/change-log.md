@@ -13,7 +13,7 @@ This document provides an overview over the changes we are making over time. Fee
   - Placeholder Paths in the Value field of the Variables component now support dash characters.
   - The "More Environments" dropdown on the App Details Page no longer overflows for large amount of environments.
 
-- **Improved:** Keyboard accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1
+- **Improved:** Keyboard accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1.
 
 ## Product Update July 16th, 2021
 
