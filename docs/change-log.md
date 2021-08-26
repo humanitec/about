@@ -7,7 +7,7 @@ This document provides an overview over the changes we are making over time. Fee
 - **New:** Added support for custom Workload Profiles in the UI. Next to the default profile `default-module` users now have the option to choose a different profile according to their use case. Container images are added in a second step on the Workload Details Page.  
 ![workload profiles](_assets/images/2021-08-27_Workload_Profiles.png)
 
-- **New:** Resources can now be provisioned on App level. On the Application Details Page users have the option to add shared resources which can be referenced within the Workloads of their App.  
+- **New:** Resources can now be provisioned on App level. On the Application Details Page, users have the option to add shared resources that can be referenced within the Workloads of their App.  
 ![shared resources](_assets/images/2021-08-27_Shared_Resources.png)
 
 - **New:** Added support for partial clones. Instead of cloning the entire deployment by default, users can now choose to include / not include certain Workloads in their clone.  
@@ -19,15 +19,15 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Improved:** Container images are now sorted by date.
 
-- **Improved:** Several UI components have been transformed into link elements which allows users to open them in a separate browser tab.
+- **Improved:** Several UI components have been transformed into link elements that allows users to open them in a separate browser tab.
 
 - **Changed:** The design of several UI components:
-  - Increased colour contrasts in the light theme.
+  - Increased color contrasts in the light theme.
   - Increased the font size of label elements.
   - Adjusted the design of tooltips.
-  - Intensified the border colour of Workloads in the "Has changes" state.
+  - Intensified the border color of Workloads in the "Has changes" state.
 
-- **Changed:** The follow wordings:
+- **Changed:** The following wordings:
   - `External resources` has been renamed to `Resource dependencies` on the Workload Details Page.
   - The `Close` button has been replaced with a `Back to ...` button.
 
