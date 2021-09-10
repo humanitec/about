@@ -2,6 +2,32 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 10th, 2021
+
+- **Improved:** Numerous accessibility improvements for keyboard only users.
+
+- **Improved:** Better icons for resources.
+
+- **Fixed:** Corrected validation for namespace and container names.
+
+- **Fixed:** Resources not duplicated when workload duplicated.
+
+- **Fixed:** Placeholders for shared resources not expanded in Config Map.
+
+- **Fixed:** Better handling of long app and environment names.
+
+- **Fixed:** Organization names overflow organization-switcher dropdown.
+
+- **Fixed:** Menus at the bottom of lists are truncated as they go off the screen.
+
+- **Fixed:** Some resource and workload creation actions were not possible for users with some roles.
+
+- **Fixed:** Number of small interaction bugs with managing roles for users.
+
+- **Fixed:** Clone functionality in some cases is missing view of detailed changes.
+
+- **Fixed:** Discard clone causes a page refresh.
+
 ## Product Update August 27th, 2021
 
 - **New:** Added support for custom Workload Profiles in the UI. Next to the default profile `default-module` users now have the option to choose a different profile according to their use case. Container images are added in a second step on the Workload Details Page.  
