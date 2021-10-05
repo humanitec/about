@@ -43,34 +43,36 @@ Humanitec is simple, extensible, and auditable.
 - **extensible**: Humanitec’s Open API allows you to integrate with tools of your choice and even extend Humanitec to interact with custom in-house technologies.
 - **auditable**: Everything that runs through Humanitec is tracked. This means you know what was deployed, when and by who. This includes the full configuration down to the last environment variable making rolling back configuration a doddle.
 
-# Our Vision 
+## Our Vision
 
 You can find our vision on our [company info page](https://humanitec.com/company).
 
-# Our Roadmap 
+## Our Roadmap
+
 We are sharing our quarterly roadmap at the beginning of each quarter and evaluate what we achieved at the end of each quarter. We also have a high-level backlog of feature for future quarters. All the details are listed in [docs/roadmap.md](docs/roadmap.md).
 
-# Our Docs-Site 
+## Our Docs-Site
+
 Documentation is important to understand the basic concepts, the features, as well as to learn how to onboard to Humanitec in 10 minutes. All of this can be found [here](https://docs.humanitec.com). We also provide detailed documentation of our API which you can find [here](https://api-docs.humanitec.com).
 
-# Other Resources
+## Other Resources
 
-## Our Blog
+### Our Blog
 
 We love to write about technology topics. Our blog can be found [here](https://humanitec.com/blog).
 
-## Open Positions
+### Open Positions
 
-We are always looking for talented developers that want to change the future of Continuous Delivery. Our job-page can be found [here](https://humanitec.com/open-positions).
+We are always looking for talented developers that want to change the future of Continuous Delivery. Our job-page can be found [here](https://jobs.lever.co/humanitec).
 
-## Change Log
+### Change Log
 
 We are documenting the changes we make with every release to production in a very simple format. You can find the overview [here](docs/change-log.md).
 
-## Terms of Use
+### Terms of Use
 
 Find the official terms of use for Humanitec [here](https://humanitec.com/terms-and-conditions).
 
-## Privacy Policy
+### Privacy Policy
 
 Protecting your privacy is important to us. Find our privacy policy [here](https://humanitec.com/privacy-policy).
