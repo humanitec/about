@@ -2,6 +2,20 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
+## Q4 2021
+
+**### Deployment Pipelines**
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+**### Dependant Resources**
+
+Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+
+**### UI update: fresh looks and a more intuitive interface**
+
+Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+
 ## Q3 2021
 
 ### Deployment Pipelines
@@ -20,7 +34,7 @@ One of the major benefits of a microservice architecture is the ability to updat
 
 Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
 
-## Q4 2021 and beyond
+## Q1 2022 and beyond
 
 The following features are in our backlog and planned for implementation from Q4 2021 onwards. They are subject to change based on additional feedback we will gather until then.
 
