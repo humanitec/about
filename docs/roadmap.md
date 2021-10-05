@@ -16,24 +16,6 @@ Some resources require inputs form other resources to be provisioned. For exampl
 
 Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
 
-## Q3 2021
-
-### Deployment Pipelines
-
-It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
-
-### Custom Workload Profiles
-
-Most teams adopting Humanitec already have workloads that they run in Kubernetes. The manifests being generated and applied to the cluster for these workloads can very often be directly transferred into Humanitec using the `humanitec/default-module` profile. More advanced setups often have some workloads that cannot be translated into an existing profile, for example services that have to be run as stateful sets. In some cases, ops teams might want to set their own defaults for some properties (e.g. minimum CPU) or include annotations or labels as part of the base profile that is deployed. This feature allows ops users to define their own Workload Profiles, specify which features a profile supports and which it does not, upload Helm Charts that form the basis of a workload profile and define a schema that can be used to define custom configuration for a workload profile.
-
-### Cherry-Pick Workloads
-
-One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
-
-### Resources 2.0
-
-Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
-
 ## Q1 2022 and beyond
 
 The following features are in our backlog and planned for implementation from Q4 2021 onwards. They are subject to change based on additional feedback we will gather until then.
@@ -65,6 +47,24 @@ Many companies use Single Sign-On (SSO) to centrally govern and control system a
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+## Q3 2021
+
+#### Deployment Pipelines
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+#### Custom Workload Profiles
+
+Most teams adopting Humanitec already have workloads that they run in Kubernetes. The manifests being generated and applied to the cluster for these workloads can very often be directly transferred into Humanitec using the `humanitec/default-module` profile. More advanced setups often have some workloads that cannot be translated into an existing profile, for example services that have to be run as stateful sets. In some cases, ops teams might want to set their own defaults for some properties (e.g. minimum CPU) or include annotations or labels as part of the base profile that is deployed. This feature allows ops users to define their own Workload Profiles, specify which features a profile supports and which it does not, upload Helm Charts that form the basis of a workload profile and define a schema that can be used to define custom configuration for a workload profile.
+
+#### Cherry-Pick Workloads
+
+One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
+
+#### Resources 2.0
+
+Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
 
 ### Q2 2021
 
