@@ -13,10 +13,10 @@ This document provides an overview over the changes we are making over time. Fee
 - **Changed:** Organization Settings and Resources Management were moved from the User Menu to the Organization Menu.  
 ![organization menu](_assets/images/2021-10-19_Organization_Menu.png)
 
-- **Changed:** Accounts are now managed from a separate tab in the Organization Settings. Users can dynamically reference existing accounts when configuring resources from the Resources Management screen.
+- **Changed:** Accounts are now managed from a separate tab in the Organization Settings. Users can dynamically reference existing accounts when configuring resources from the Resources Management screen.  
 ![accounts](_assets/images/2021-10-19_Accounts.png)
 
-- **New:** It is now possible to define headers for "HTTP link" Liveness and Readiness probes on the Workload Details Page.
+- **New:** It is now possible to define headers for "HTTP link" Liveness and Readiness probes on the Workload Details Page.  
 ![http headers](_assets/images/2021-10-19_HTTP_Headers.png)
 
 - **Improved:** If a shared DNS resource is deleted, associated Ingress paths are automatically removed from the according Workloads as well.
