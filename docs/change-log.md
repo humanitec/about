@@ -2,6 +2,41 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 19th, 2021
+
+- **Changed:** Resources are no longer managed as "Dynamic Resources" and "Static Resources" in the Organization Settings. The implementation of a new Resources Management screen instead allows to manage the provisioning and allocation of resources in one place.  
+![resources management](_assets/images/2021-10-19_Resources_Management.png)
+
+- **New:** Next to Environment Types, Resource Definitions can now be matched to Environment Names, Apps as well as Resource IDs in the UI.  
+![resources matching](_assets/images/2021-10-19_Resources_Matching.png)
+
+- **Changed:** Organization Settings and Resources Management were moved from the User Menu to the Organization Menu.  
+![organization menu](_assets/images/2021-10-19_Organization_Menu.png)
+
+- **Changed:** Accounts are now managed from a separate tab in the Organization Settings. Users can dynamically reference existing accounts when configuring resources from the Resources Management screen.  
+![accounts](_assets/images/2021-10-19_Accounts.png)
+
+- **New:** It is now possible to define headers for "HTTP link" Liveness and Readiness probes on the Workload Details Page.  
+![http headers](_assets/images/2021-10-19_HTTP_Headers.png)
+
+- **Improved:** If a shared DNS resource is deleted, associated Ingress paths are automatically removed from the according Workloads as well.
+
+- **Improved:** Accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
+  - Enhanced keyboard accessibility throughout the application.
+  - Improved website content for screen readers.
+
+- **Fixed:** The UI no longer forces updates of secrets when editing an existing Resource Definition.
+
+- **Fixed:** Several interaction bugs when (de-)activating environment automation rules.
+
+- **Fixed:** The "Manage versions" overlay for Images in the Organization Settings no longer throws an error for images without an image tag.
+
+- **Fixed:** Several UI issues, including:
+  - The user dropdown on the "Manage deployers" overlay no longer opens by default and blocks the view.
+  - The "Active" toggle on the Webhooks component is no longer clickable by users in Developer role.
+  - Error states are no longer shared between account configuration overlays.
+  - Switching between drafts no longer causes issues on the UI.
+
 ## Product Update September 10th, 2021
 
 - **Improved:** Numerous accessibility improvements for keyboard only users.
