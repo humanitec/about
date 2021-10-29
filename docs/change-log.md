@@ -2,6 +2,22 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 29th, 2021
+
+- **New:** Added support for updating Account credentials.
+
+- **New:** Added a "Status" column to the Organization Members list. After an invitation is sent, the user's status is pending. When the recipient accepts the invitation, their user status switches to active.
+
+- **New:** The user role is now visible on the Profile Settings Page.
+
+- **Fixed:** Reselecting the currently active Organization in the Organization Menu no longer makes a hard refresh of the App Overview Page necessary.
+
+- **Improved:** Users are notified if their currently active environment on the App Details Page has been deleted and are automatically directed to the next environment.
+
+- **Improved:** Keyboard accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
+  - (Un-)pinning of Workloads.
+  - Editing of Files on the Workload Details Page.
+
 ## Product Update October 19th, 2021
 
 - **Changed:** Resources are no longer managed as "Dynamic Resources" and "Static Resources" in the Organization Settings. The implementation of a new Resources Management screen instead allows to manage the provisioning and allocation of resources in one place.  
