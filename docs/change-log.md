@@ -4,7 +4,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update October 29th, 2021
 
-- **New:** Added support for updating Account credentials.
+- **New:** Added support for updating Resource Account credentials.
 
 - **New:** Added a "Status" column to the Organization Members list. After an invitation is sent, the user's status is pending. When the recipient accepts the invitation, their user status switches to active.
 
