@@ -21,7 +21,7 @@ This document provides an overview over the changes we are making over time. Fee
 - **Fixed:** The scaling of replicas on the Workload Details Page of a running deployment is no longer limited to two. In addition to that can a Workload temporarily be disabled by scaling its replicas down to 0.
 
 - **Improved:** Accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
-  - Improved website content for screen readers.
+  - Improved app content for screen readers.
   - Improved keyboard accessibility of submenus and toggles.
 
 ## Product Update October 29th, 2021
