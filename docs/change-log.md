@@ -2,6 +2,30 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 17th, 2021
+
+- **New:** Added Cloudflare to the Accounts section in the UI.  
+![cloudflare account type](_assets/images/2021-11-17_Cloudflare_Account_Type.png)
+
+- **Changed:** Workloads are added via an overlay which allows users to change the underlying Workload Profile if needed.  
+![add workload flow](_assets/images/2021-11-17_Add_Workload_Flow.png)
+
+- **Improved:** A containers maximum and minimum resource requirements for CPU and Memory can now be cleared in the UI. This enables full support for all QoS (Quality of Service) classes in Kubernetes: BestEffort, Burstable and Guaranteed.
+
+- **Fixed:** An interaction bug related to selecting "all images except" on the environment automation component.
+
+- **Fixed:** An interaction bug related to duplicating Workloads.
+
+- **Fixed:** Several UX issues in relation to selecting and deleting draft deployments.
+
+- **Fixed:** The scaling of replicas on the Workload Details Page of a running deployment is no longer limited to two. In addition to that can a Workload temporarily be disabled by scaling its replicas down to 0.
+
+- **Fixed:** Validation for volume mount path now correctly requires a rooted path with at least 1 directory.
+
+- **Improved:** Accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
+  - Improved app content for screen readers.
+  - Improved keyboard accessibility of submenus and toggles.
+
 ## Product Update October 29th, 2021
 
 - **New:** Added support for updating Resource Account credentials.
