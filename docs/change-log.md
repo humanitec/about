@@ -20,6 +20,8 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** The scaling of replicas on the Workload Details Page of a running deployment is no longer limited to two. In addition to that can a Workload temporarily be disabled by scaling its replicas down to 0.
 
+- **Fixed:** Validation for volume mount path now correctly requires a rooted path with at least 1 directory.
+
 - **Improved:** Accessibility according to the Web Content Accessibility Guidelines (WCAG) 2.1:
   - Improved app content for screen readers.
   - Improved keyboard accessibility of submenus and toggles.
