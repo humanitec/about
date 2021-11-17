@@ -5,10 +5,10 @@ This document provides an overview over the changes we are making over time. Fee
 ## Product Update November 17th, 2021
 
 - **New:** Added Cloudflare to the Accounts section in the UI.  
-![cloudflare account type](_assets/images/2021-11-12_Cloudflare_Account_Type.png)
+![cloudflare account type](_assets/images/2021-11-17_Cloudflare_Account_Type.png)
 
 - **Changed:** Workloads are added via an overlay which allows users to change the underlying Workload Profile if needed.  
-![add workload flow](_assets/images/2021-11-12_Add_Workload_Flow.png)
+![add workload flow](_assets/images/2021-11-17_Add_Workload_Flow.png)
 
 - **Improved:** A containers maximum and minimum resource requirements for CPU and Memory can now be cleared in the UI. This enables full support for all QoS (Quality of Service) classes in Kubernetes: BestEffort, Burstable and Guaranteed.
 
