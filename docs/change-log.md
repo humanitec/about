@@ -2,6 +2,13 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 3rd, 2021
+
+- **Fixed:** Creating a new webhook no longer throws an error.
+- **Fixed:** It is no longer possible to switch the driver when editing an existing resource definition.
+- **Fixed:** A number of smaller interaction bugs with setting resource requirements for CPU and Memory.
+- **Fixed:** The help modal is fully accessible on the log in page again.
+
 ## Product Update November 17th, 2021
 
 - **New:** Added Cloudflare to the Accounts section in the UI.  
