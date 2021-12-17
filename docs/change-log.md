@@ -2,6 +2,12 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 17th, 2021
+
+- **Fixed:** When deleting a shared `Persistent Volume` resource, associated `Volume Mounts` are automatically removed from the Workload as well.
+- **Fixed:** Environment variables no longer throw an error for empty values.
+- **Fixed:** A Safari browser compatability issue.
+
 ## Product Update December 3rd, 2021
 
 - **Fixed:** Creating a new webhook no longer throws an error.
