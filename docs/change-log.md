@@ -2,17 +2,49 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 7th, 2022
+
+- **Improved:** Custom Workload Profiles based on [supported features](https://docs.humanitec.com/reference/workload-profiles/features) are dynamically displayed and editable in the UI.
+
+- **New:** Added support for [Labels](https://docs.humanitec.com/reference/workload-profiles/features/labels) & [Annotations](https://docs.humanitec.com/reference/workload-profiles/features/annotations) on the Workload Details Page.  
+![labels and annotations](_assets/images/2022-01-07_Labels_Annotations.png)
+
+- **New:** Added support for [CronJobs](https://docs.humanitec.com/reference/workload-profiles/features/schedules) on the Workload Details Page.  
+![cronjob schedule](_assets/images/2022-01-07_Cronjob_Schedule.png)
+
+- **Fixed:** On the App Details Page, Workload error states are now being indicated on the Workload card.  
+![workload card error state](_assets/images/2022-01-07_Workload_Card_Error.png)
+
+- **Fixed:** The edit overlay of Kubernetes cluster resources with the `humanitec/k8s-cluster-eks` driver no longer displays incorrect form parameters.
+
+- **Fixed:** An Environment Type can now be deleted in the UI if an environment with the same ID exists in the active Organization.
+
+- **Fixed:** The "Deploy changes" confirmation overlay no longer reloads after being submitted via keyboard enter.
+
+- **Fixed:** Validation of the "Resource ID" matching criterion on the Resource Management Page.
+
+- **Fixed:** Several UI issues, including:
+  - Corrected routing of "Back to" button on the Organization Settings Page.
+  - Updated "Learn more" link for Workload level error messages.
+  - Removed duplicate Ingress resource type from Resource Management Page.
+  - Improved handling of special characters in the Deployment Diff.
+
 ## Product Update December 17th, 2021
 
 - **Fixed:** When deleting a shared `Persistent Volume` resource, associated `Volume Mounts` are automatically removed from the Workload as well.
+
 - **Fixed:** Environment variables no longer throw an error for empty values.
+
 - **Fixed:** A Safari browser compatability issue.
 
 ## Product Update December 3rd, 2021
 
 - **Fixed:** Creating a new webhook no longer throws an error.
+
 - **Fixed:** It is no longer possible to switch the driver when editing an existing resource definition.
+
 - **Fixed:** A number of smaller interaction bugs with setting resource requirements for CPU and Memory.
+
 - **Fixed:** The help modal is fully accessible on the log in page again.
 
 ## Product Update November 17th, 2021
