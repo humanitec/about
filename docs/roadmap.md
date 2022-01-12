@@ -2,23 +2,23 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q4 2021
-
-### Deployment Pipelines
-
-It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+## Q1 2022
 
 ### Dependant Resources
 
 Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
 
-### UI update: fresh looks and a more intuitive interface
+### App Details Page UI Update
 
 Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
 
-## Q1 2022 and beyond
+### Increase Resource Driver Range And Flexibility
 
-The following features are in our backlog and planned for implementation from Q4 2021 onwards. They are subject to change based on additional feedback we will gather until then.
+Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
+
+## Q2 2022 and beyond
+
+The following features are in our backlog and planned for implementation from Q2 2022 onwards. They are subject to change based on additional feedback we will gather until then.
 
 ### Canary Deployment Strategy
 
@@ -38,17 +38,27 @@ For highly used services, a common pattern is to deploy the production version t
 
 Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
 
-### Single Sign-On (SSO)
-
-Many companies use Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will integrate with SSO solutions, most likely starting with SAML. This will allow organizations manage access to Humanitec using their existing tools and systems.
-
 ### Team Performance Monitoring
 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
 
-## Q3 2021
+### Q4 2021
+
+#### Deployment Pipelines
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+#### Dependant Resources
+
+Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+
+#### UI update: fresh looks and a more intuitive interface
+
+Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+
+### Q3 2021
 
 #### Deployment Pipelines
 
