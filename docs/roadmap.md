@@ -12,9 +12,9 @@ Some resources require inputs form other resources to be provisioned. For exampl
 
 Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
 
-### Improved Resource Driver Management
+### Increase Resource Driver Range And Flexibility
 
-Resource Drivers are used to establish a connection between Humanitec and your infrastructure. There is a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve their handling and flexibility. This includes the provisioning of generic drivers as well as the open-sourcing of drivers to simplify usage, extention and adapation for specific needs. Additionally are we planning to introduce virtual drivers. Since drivers can be implemented using the technology of other drivers, a virtual driver allows to do so by simply forwarding its inputs to another driver. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our Website.
+Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
 
 ## Q2 2022 and beyond
 
