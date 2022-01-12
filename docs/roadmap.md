@@ -2,41 +2,23 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q4 2021
+## Q1 2022
 
-### Deployment Pipelines
-
-It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
-
-### Dependant Resources
+## Dependant Resources
 
 Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
 
-### UI update: fresh looks and a more intuitive interface
+### App Details Page UI Update
 
 Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
 
-## Q3 2021
+### Improved Resource Driver Management
 
-### Deployment Pipelines
+Resource Drivers are used to establish a connection between Humanitec and your infrastructure. There is a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve their handling and flexibility. This includes the provisioning of generic drivers as well as the open-sourcing of drivers to simplify usage, extention and adapation for specific needs. Additionally are we planning to introduce virtual drivers. Since drivers can be implemented using the technology of other drivers, a virtual driver allows to do so by simply forwarding its inputs to another driver. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our Website.
 
-It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+## Q2 2022 and beyond
 
-### Custom Workload Profiles
-
-Most teams adopting Humanitec already have workloads that they run in Kubernetes. The manifests being generated and applied to the cluster for these workloads can very often be directly transferred into Humanitec using the `humanitec/default-module` profile. More advanced setups often have some workloads that cannot be translated into an existing profile, for example services that have to be run as stateful sets. In some cases, ops teams might want to set their own defaults for some properties (e.g. minimum CPU) or include annotations or labels as part of the base profile that is deployed. This feature allows ops users to define their own Workload Profiles, specify which features a profile supports and which it does not, upload Helm Charts that form the basis of a workload profile and define a schema that can be used to define custom configuration for a workload profile.
-
-### Cherry-Pick Workloads
-
-One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
-
-### Resources 2.0
-
-Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
-
-## Q1 2022 and beyond
-
-The following features are in our backlog and planned for implementation from Q4 2021 onwards. They are subject to change based on additional feedback we will gather until then.
+The following features are in our backlog and planned for implementation from Q2 2022 onwards. They are subject to change based on additional feedback we will gather until then.
 
 ### Canary Deployment Strategy
 
@@ -56,15 +38,43 @@ For highly used services, a common pattern is to deploy the production version t
 
 Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
 
-### Single Sign-On (SSO)
-
-Many companies use Single Sign-On (SSO) to centrally govern and control system and application access. Humanitec will integrate with SSO solutions, most likely starting with SAML. This will allow organizations manage access to Humanitec using their existing tools and systems.
-
 ### Team Performance Monitoring
 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q4 2021
+
+#### Deployment Pipelines
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+#### Dependant Resources
+
+Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+
+#### UI update: fresh looks and a more intuitive interface
+
+Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+
+### Q3 2021
+
+#### Deployment Pipelines
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
+#### Custom Workload Profiles
+
+Most teams adopting Humanitec already have workloads that they run in Kubernetes. The manifests being generated and applied to the cluster for these workloads can very often be directly transferred into Humanitec using the `humanitec/default-module` profile. More advanced setups often have some workloads that cannot be translated into an existing profile, for example services that have to be run as stateful sets. In some cases, ops teams might want to set their own defaults for some properties (e.g. minimum CPU) or include annotations or labels as part of the base profile that is deployed. This feature allows ops users to define their own Workload Profiles, specify which features a profile supports and which it does not, upload Helm Charts that form the basis of a workload profile and define a schema that can be used to define custom configuration for a workload profile.
+
+#### Cherry-Pick Workloads
+
+One of the major benefits of a microservice architecture is the ability to update individual parts of the application on their own schedule. As long as the contract between the services does not change, in theory, a single service can be promoted to another environment without impact. Humanitec currently only allows the promotion of all workloads in an application to another environment via "cloning". This feature will allow individual workloads to be cherry-picked into another environment while preserving the history of where the cherry-picked workloads came from.
+
+#### Resources 2.0
+
+Resource definitions and resource drivers provide a lot of the power and flexibility that Humanitec provides to ops and developer teams. After working with our resources concept with multiple different setups across different companies we have identified many areas of improvement. We aim to simplify both our UI and API while at the same time making the resources concept more powerful. This will expand what can be done with resources to include things like running message queues in cluster in some environments and as managed services in another or managing things like APMs or API Gateways in the cluster.
 
 ### Q2 2021
 
