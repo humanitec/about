@@ -2,7 +2,7 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
-## Product Update January 21th, 2022
+## Product Update January 21st, 2022
 
 - **New:** Added support for [Service Ports](https://docs.humanitec.com/reference/workload-profiles/features/service) on the Workload Details Page.  
 ![service ports](_assets/images/2022-01-21_Service_Ports.png)
