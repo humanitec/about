@@ -2,6 +2,24 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 21th, 2022
+
+- **New:** Added support for [Service Ports](https://docs.humanitec.com/reference/workload-profiles/features/service) on the Workload Details Page.  
+![service ports](_assets/images/2022-01-21_Service_Ports.png)
+
+- **Fixed:** Corrected form validation on the "Accept Invite" page.
+
+- **Fixed:** Switching Organization on the App Details or Workload Details Page no longer causes a "We can't find the app you are looking for" error (403).
+
+- **Fixed:** Defining `Volume Mounts` for shared `Peristent Volume` resources no longer causes a deployment to fail.
+
+- **Fixed:** Several UI issues, including:
+  - The user-dropdown on the "Manage deployers for x environment type" overlay as well as the image-dropdown on the "Create new container" overlay are no longer cut off.
+  - Removed redundant "More" link on dropdown menus.
+  - A number of interaction bugs with discarding deployment clones in the UI.
+
+- **Changed:** Initial input validation is triggered `on submit` instead of `on blur` in the majority of cases.
+
 ## Product Update January 7th, 2022
 
 - **Improved:** Custom Workload Profiles based on [supported features](https://docs.humanitec.com/reference/workload-profiles/features) are dynamically displayed and editable in the UI.
