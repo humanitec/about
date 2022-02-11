@@ -2,6 +2,22 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 11th, 2022
+
+- **Fixed:** The authentication flow for active users accepting invites to a new Organization.
+
+- **Fixed:** A temporary authentication issue related to new users accepting invites.
+
+- **Fixed:** An interaction bug related to discarding deployment clones in the UI.
+
+- **Fixed:** Error messages on the "Create new environment" overlay and the "Account details" form are no longer hidden in the UI.
+
+- **Improved:** Nested values are now supported by the resource `Details` overlay on the App Details- and Workload Details Page of running deployments.
+
+- **Improved:** The error message handling for users attempting to log in without a registered GitHub or Google account.
+
+- **Improved:** Existing `Volume Mounts` are now validated in the UI when being updated.
+
 ## Product Update January 21st, 2022
 
 - **New:** Added support for [Service Ports](https://docs.humanitec.com/reference/workload-profiles/features/service) on the Workload Details Page.  
@@ -11,7 +27,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** Switching Organization on the App Details or Workload Details Page no longer causes a "We can't find the app you are looking for" error (403).
 
-- **Fixed:** Defining `Volume Mounts` for shared `Peristent Volume` resources no longer causes a deployment to fail.
+- **Fixed:** Defining `Volume Mounts` for shared `Persistent Volume` resources no longer causes a deployment to fail.
 
 - **Fixed:** Several UI issues, including:
   - The user-dropdown on the "Manage deployers for x environment type" overlay as well as the image-dropdown on the "Create new container" overlay are no longer cut off.
