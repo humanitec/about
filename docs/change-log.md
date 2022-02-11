@@ -4,9 +4,9 @@ This document provides an overview over the changes we are making over time. Fee
 
 ## Product Update February 11th, 2022
 
-- **Fixed:** The authentication flow for active users accepting invites to a new Organization.
+- **Fixed:** The authentication flow for active Humanitec users accepting invites to a new Organization.
 
-- **Fixed:** A temporary authentication issue related to new users accepting invites.
+- **Fixed:** A temporary authentication issue related to new users accepting invites to an Organization.
 
 - **Fixed:** An interaction bug related to discarding deployment clones in the UI.
 
