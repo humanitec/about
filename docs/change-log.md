@@ -8,7 +8,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** An interaction bug related to editing existing `Volume Mounts` on the Workload Details Page.
 
-- **Fixed:**  Creating a draft from a deployment diff no longer times out in the UI.
+- **Fixed:** Creating a draft from a deployment diff no longer times out in the UI.
 
 - **Improved:** Service and container ports configured on the Workload Details Page must be in range 1 - 65535.
 
