@@ -2,6 +2,16 @@
 
 This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 25th, 2022
+
+- **Fixed:** A deployment issue with `Postgres` resources.
+
+- **Fixed:** An interaction bug related to editing existing `Volume Mounts` on the Workload Details Page.
+
+- **Fixed:**  Creating a draft from a deployment diff no longer times out in the UI.
+
+- **Improved:** Service and container ports configured on the Workload Details Page must be in range 1 - 65535.
+
 ## Product Update February 11th, 2022
 
 - **Fixed:** The authentication flow for active Humanitec users accepting invites to a new Organization.
