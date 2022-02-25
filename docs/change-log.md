@@ -1,6 +1,6 @@
 # Humanitec Change Log
 
-This document provides an overview over the changes we are making over time. Feel free to reach out to us in case of any specific questions.
+This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
 ## Product Update February 25th, 2022
 
@@ -10,7 +10,7 @@ This document provides an overview over the changes we are making over time. Fee
 
 - **Fixed:** Creating a draft from a deployment diff no longer times out in the UI.
 
-- **Improved:** Service and container ports configured on the Workload Details Page must be in range 1 - 65535.
+- **Improved:** Service and container ports configured on the Workload Details Page must be in the range 1 - 65535.
 
 ## Product Update February 11th, 2022
 
