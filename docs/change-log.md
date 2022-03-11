@@ -2,6 +2,27 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 11th, 2022
+
+- **Fixed:** Workloads based on the [default-cronjob profile](https://docs.humanitec.com/reference/workload-profiles/profiles/default-cronjob) are no longer marked as `failed` in a running deployment when there is no failure.
+
+- **Fixed:** When editing an existing resource definition on the Resource Management Page:
+  - Driver input values are reflected correctely in the UI.
+  - The UI no longer forces an update of secret values.
+
+- **Fixed:** When inviting a new user to an Organization that is already a member of a different Organization the UI no longer incorrectly displays an error message.
+
+- **Fixed:** Drafts based on deployment clones no longer persist in the UI after being deployed.
+
+- **Fixed:** The `Service account` field on the Workload Details Page can now be cleared.
+
+- **Fixed:** Workloads can be pinned via the `pin to top` button on the App Details Page.
+
+- **Fixed:** App- and workload level environment variables can have empty values.
+
+- **Improved:** The design of several resource icons on the Resource Management Page.  
+  ![resource icons](_assets/images/2022-03-11_Resource_Icons.png)
+
 ## Product Update February 25th, 2022
 
 - **Fixed:** A deployment issue with `Postgres` resources.
