@@ -2,6 +2,20 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
+## Q2 2022
+
+### More flexible Resource Types
+
+Humanitec already provides a range of core resource types such as [`dns`](https://docs.humanitec.com/integrations/resource-types/dns), [`postgres`](https://docs.humanitec.com/integrations/resource-types/postgres) and [`volume`](https://docs.humanitec.com/integrations/resource-types/volume). Since the introduction of Resource References (previously known as Dependent Resources) a lot more can be achieved with the resources system. We will be introducing a number of new types including `tsl-cert` for modelling TLS Certificates, `k8s-namespace` to make it easier to programmatically defined the name of namespaces and additional types to model dependencies on services in other applications or hosted in other platforms.
+
+### Virtual Drivers
+
+The introduction of generic drivers such as the [`humanitec/template`](https://docs.humanitec.com/integrations/resource-drivers/template) driver add a lot of power to the resource system. Unfortunately, using these drivers multiple times requires the driver inputs to be duplicated. This makes it hard to maintain and understand these [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions). Virtual Drivers will provide a way of encapsulating and reusing the inputs of a driver across multiple [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
+
+### Custom Workload Profile features
+
+[Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Pofiles.
+
 ## Q1 2022
 
 ### Dependant Resources
