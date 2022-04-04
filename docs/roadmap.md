@@ -16,21 +16,7 @@ The introduction of generic drivers such as the [`humanitec/template`](https://d
 
 [Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Pofiles.
 
-## Q1 2022
-
-### Dependant Resources
-
-Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
-
-### App Details Page UI Update
-
-Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
-
-### Increase Resource Driver Range And Flexibility
-
-Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
-
-## Q2 2022 and beyond
+## Q3 2022 and beyond
 
 The following features are in our backlog and planned for implementation from Q2 2022 onwards. They are subject to change based on additional feedback we will gather until then.
 
@@ -57,6 +43,20 @@ Many companies in regulated industries are wary of the public cloud and so wish 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q1 2022
+
+#### Dependant Resources
+
+Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+
+#### App Details Page UI Update
+
+Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+
+#### Increase Resource Driver Range And Flexibility
+
+Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
 
 ### Q4 2021
 
@@ -179,9 +179,9 @@ Most of the engineering teams are either running automated deployments or aspire
 
 Environment management across environments is complex and error-prone. With this feature, environment variables are classified as one of 3 types:
 
-* **Static:** The same for each environment deployed in
-* **Dynamic:** Humanitec can infer the different values that a variable should have in each environment via a system of “placeholders” and string formatting
-* **Environment Specific:** Developers must either accept or update the value of the variable when being deployed to a different environment
+- **Static:** The same for each environment deployed in
+- **Dynamic:** Humanitec can infer the different values that a variable should have in each environment via a system of “placeholders” and string formatting
+- **Environment Specific:** Developers must either accept or update the value of the variable when being deployed to a different environment
 
 For example, a dynamic environmental variable definition which resolves to the external DNS name of a module called “api-server” would be:
 
@@ -189,11 +189,11 @@ For example, a dynamic environmental variable definition which resolves to the e
 
 #### Deployment Sets
 
-*Deployment Version History*
+_Deployment Version History_
 
 The full state of each deployment to an environment is recorded as a “deployment set”. Deployment sets can be compared to show differences between them. A previous deployment set can be redeployed to perform a rollback. Cloning one environment to another is done by applying a deployment set from one environment into another. As part of this, the Dynamic Environment Variable Management feature ensures that environmental variables are correctly handled.
 
-*Serialization of Deployment Sets* [to be completed in Q2]
+_Serialization of Deployment Sets_ [to be completed in Q2]
 
 The deployment set is the unit of state that is used to serialize out Helm Charts that describe a particular deployment. In the future, these charts can be directed towards a git repository and so form part of a “GitOps” process.
 
@@ -201,7 +201,7 @@ The deployment set is the unit of state that is used to serialize out Helm Chart
 
 The current version of Humanitec has a tight dependency on GitHub. This feature relaxes that dependency.
 
-*Connect your CI*
+_Connect your CI_
 
 Rather than building containers directly from source code, Humanitec will hook into the end of your CI pipeline. This allows any successfully built and tested container to be used directly in Humanitec.
 
