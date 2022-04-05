@@ -6,7 +6,7 @@ This document provides a high-level view on our product roadmap for this and upc
 
 ### More flexible Resource Types
 
-Humanitec already provides a range of core resource types such as [`dns`](https://docs.humanitec.com/integrations/resource-types/dns), [`postgres`](https://docs.humanitec.com/integrations/resource-types/postgres) and [`volume`](https://docs.humanitec.com/integrations/resource-types/volume). Since the introduction of Resource References (previously known as Dependent Resources) a lot more can be achieved with the resources system. We will be introducing a number of new types including `tsl-cert` for modelling TLS Certificates, `k8s-namespace` to make it easier to programmatically defined the name of namespaces and additional types to model dependencies on services in other applications or hosted in other platforms.
+Humanitec already provides a range of core resource types such as [`dns`](https://docs.humanitec.com/integrations/resource-types/dns), [`postgres`](https://docs.humanitec.com/integrations/resource-types/postgres) and [`volume`](https://docs.humanitec.com/integrations/resource-types/volume). Since the introduction of Resource References (previously known as Dependent Resources) a lot more can be achieved with the resources system. We will be introducing a number of new types including `tls-cert` for modelling TLS Certificates, `k8s-namespace` to make it easier to programmatically define the name of namespaces and additional types to model dependencies on services in other applications or hosted in other platforms.
 
 ### Virtual Drivers
 
@@ -27,12 +27,6 @@ The Canary deployment strategy is a popular way of performing zero-downtime depl
 ### Debug Flow Tools
 
 As applications become more complex, it is harder to run the full application locally on the developer’s laptop. Moving development environments into the cloud solves that problem but makes it very hard to debug services under development. Humanitec is investigating a range of technical fixes to help developers bridge the gap between the local machine and the cloud.
-
-### Shared Services
-
-Larger IT deployments in organizations often include services that are shared by multiple applications. (E.g., a product inventory service might be used by Point of Sale, logistics, forecasting, and financial reporting applications.)
-
-For highly used services, a common pattern is to deploy the production version twice: once in the Production Environment and again in the Development environment. This allows developers to depend on the real service for testing while also not worrying about having to manage it as part of their workflow. This could be managed by Humanitec by marking an environment as being “exported” to all other development environments in all applications.
 
 ### On-Premise Offering
 
