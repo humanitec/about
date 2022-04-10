@@ -2,6 +2,20 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 8th, 2022
+
+- **Fixed**: The UI no longer prevents users from updating the credentials of an existing resource definition on the [Resource Management Page](https://docs.humanitec.com/reference/user-interface/resource-management).
+
+- **Fixed**: For existing resource definitions utilizing the `humanitec/template` driver, updating one field will no longer clear the adjacent input field.
+
+- **Fixed**: The validation of `sub-directories` specified as part of [volume mounts](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-persistent-volumes#define-a-volume-mount-for-a-container) on the [Workload Details Page](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
+
+- **Fixed:** Changes made to the [service account](https://docs.humanitec.com/reference/workload-profiles/features/service-account) of a Workload are no longer discarded if no container has been added yet.
+
+- **Fixed:** Added support for pinning Workloads via the `pin to top` button on Firefox.
+
+- **Fixed:** A number of small interaction bugs with duplicate or persisting error messages.
+
 ## Product Update March 11th, 2022
 
 - **Fixed:** Workloads based on the [default-cronjob profile](https://docs.humanitec.com/reference/workload-profiles/profiles/default-cronjob) are no longer marked as `failed` in a running deployment when there is no failure.
