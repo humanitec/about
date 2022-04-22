@@ -8,10 +8,10 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **New:** Images can now be added by image name. This allows to create container objects in Workloads that pull from registries not registered with Humanitec as described [here](https://docs.humanitec.com/using-humanitec/work-with-workloads/create-and-delete-containers#add-image-by-image-name).
 
-- **Fixed** An interaction bug related to copying the ingress path on running deployments.  
+- **Fixed:** An interaction bug related to copying the ingress path on running deployments.  
   ![copy ingress path](_assets/images/2022-04-22_Copy_Ingress_Path.png)
 
-- **Improved** Error messages for driver connection failures on cloudsql postgres database instances are now being fully surfaced in the UI.
+- **Improved:** Error messages for driver connection failures on cloudsql postgres database instances are now being fully surfaced in the UI.
 
 ## Product Update April 8th, 2022
 
