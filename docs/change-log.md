@@ -2,6 +2,26 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 6th, 2022
+
+- **Fixed:** [Persistent volumes](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-persistent-volumes) added as shared resources to an Application are no longer missing from the [deployment manifest](https://docs.humanitec.com/guides/manage-application-configuration/export-manifests-humanitec-and-gitops).
+
+- **Fixed:** Values defined as part of [app default values & secrets](https://docs.humanitec.com/guides/manage-application-configuration/manage-environment-variables-and-secrets#app-level) can be empty.
+
+- **Fixed:** [Variable placeholders](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables#using-placeholders) no longer break if a [resource dependancy](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-resource-dependencies) has the same ID as the Workload.
+
+- **Fixed:** Payload entries of [webhooks](https://docs.humanitec.com/using-humanitec/work-with-apps/add-webhooks) are now preserved in the UI.
+
+- **Fixed:** Users that hold the [Developer or Owner role](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#application-roles) on an Application can delete environments of types they have [Deployer rights](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#environment-type-roles) for.
+
+- **Fixed:** Selecting "Manage versions" on an image (inside the Images tab on the [Organization Settigs Page](https://docs.humanitec.com/reference/user-interface/organization-settings)) that is missing a tag will no longer throw an error in the UI.
+
+- **Fixed:** Container states are no longer shared between Workloads when navigating via the breadcrumb menu.
+
+- **Improved:** Enhanced error messaging for Azure authentication issues with [AKS clusters](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-kubernetes-clusters#azure-aks-cluster).
+
+- **Improved:** Changes made in the UI after a session expires are no longer lost with no warning. Instead the user will be directed to the [login page](https://app.humanitec.io/auth/login).
+
 ## Product Update April 22nd, 2022
 
 - **New:** Added support for [Resource References](https://docs.humanitec.com/reference/concepts/resources/references), which allow to reference the outputs of other resources from within [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
