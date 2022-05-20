@@ -2,6 +2,14 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 20th, 2022
+
+- **Changed:** Namespaces are now managed via [Humanitec Resources](https://docs.humanitec.com/reference/user-interface/resource-management) and are therefore no longer visible on the [Environment Settings Screen](https://docs.humanitec.com/reference/user-interface/environment-settings-screen). A resource definition of type `k8s-namespace` can be created using the `humanitec/static` or `humanitec/template` driver. Learn more [here](https://docs.humanitec.com/guides/orchestrate-infrastructure/define-namespaces).
+
+- **Fixed:** An interaction bug related to automatic [environment level overrides](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#environment-level) for certain [app default values and secrets](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#app-level).
+
+- **Fixed:** Clicking into the `value` field of a secret variable in the [shared values and secrets overrides](https://docs.humanitec.com/using-humanitec/work-with-environments/override-values-and-secrets#environment-level) section no longer causes the value to temporarily disappear in the UI.
+
 ## Product Update May 6th, 2022
 
 - **Fixed:** [Persistent volumes](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-persistent-volumes) added as shared resources to an Application are no longer missing from the [deployment manifest](https://docs.humanitec.com/guides/manage-application-configuration/export-manifests-humanitec-and-gitops).
