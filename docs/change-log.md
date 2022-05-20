@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update May 20th, 2022
 
-- **Changed:** Namespaces are now managed via [Humanitec Resources](https://docs.humanitec.com/reference/user-interface/resource-management) and are therefore no longer visible on the [Environment Settings Screen](https://docs.humanitec.com/reference/user-interface/environment-settings-screen). A resource definition of type `k8s-namespace` can be created using the `humanitec/static` or `humanitec/template` driver. Learn more [here](https://docs.humanitec.com/guides/orchestrate-infrastructure/define-namespaces?q=namespace).
+- **Changed:** Namespaces are now managed via [Humanitec Resources](https://docs.humanitec.com/reference/user-interface/resource-management) and are therefore no longer visible on the [Environment Settings Screen](https://docs.humanitec.com/reference/user-interface/environment-settings-screen). A resource definition of type `k8s-namespace` can be created using the `humanitec/static` or `humanitec/template` driver. Learn more [here](https://docs.humanitec.com/guides/orchestrate-infrastructure/define-namespaces).
 
 - **Fixed:** An interaction bug related to automatic [environment level overrides](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#environment-level) for certain [app default values and secrets](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#app-level).
 
