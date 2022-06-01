@@ -11,12 +11,12 @@ This document provides an overview of the changes we are making over time. Feel 
 ![cronjob schedules](_assets/images/2022-06-03_Cronjob_Schedules.png)
 
 - **Fixed:** On the [Resource Management Page](https://docs.humanitec.com/reference/user-interface/resource-management), deleting a matching criteria that has active resources associated with it no longer silently fails in the UI. The action has to be confirmed by the user.  
-![cronjob schedules](_assets/images/2022-06-03_Delete_Matching_Criteria.png).
+![cronjob schedules](_assets/images/2022-06-03_Delete_Matching_Criteria.png)
 
 - **Fixed:** An interaction bug related to the population of secret values in the [shared values and secrets overrides](https://docs.humanitec.com/using-humanitec/work-with-environments/override-values-and-secrets#environment-level) component.
 
 - **Fixed:** The handling of [placeholder values](https://docs.humanitec.com/reference/concepts/app-config/placeholders) when configuring a resource definition on the [Resource Management Page](https://docs.humanitec.com/reference/user-interface/resource-management). As usual, a literal `${` can be inserted by escaping the `{` with a backslash.  
-![escape placeholders](_assets/images/2022-06-03_Escape_Placeholder.png).
+![escape placeholders](_assets/images/2022-06-03_Escape_Placeholder.png)
 
 ## Product Update May 20th, 2022
 
