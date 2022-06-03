@@ -2,6 +2,22 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 3rd, 2022
+
+- **Improved:** The user experience for working with [cronjob schedules](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-cronjob-schedules) in the UI. Cron expressions...
+  - can be pasted into any of the schedule input fields.
+  - can be copied.
+  - are translated into human readable text.  
+![cronjob schedules](_assets/images/2022-06-03_Cronjob_Schedules.png)
+
+- **Fixed:** On the [Resource Management Page](https://docs.humanitec.com/reference/user-interface/resource-management), deleting a matching criteria that has active resources associated with it no longer silently fails in the UI. The action has to be confirmed by the user.  
+![cronjob schedules](_assets/images/2022-06-03_Delete_Matching_Criteria.png)
+
+- **Fixed:** An interaction bug related to the population of secret values in the [shared values and secrets overrides](https://docs.humanitec.com/using-humanitec/work-with-environments/override-values-and-secrets#environment-level) component.
+
+- **Fixed:** The handling of [placeholder values](https://docs.humanitec.com/reference/concepts/app-config/placeholders) when configuring a resource definition on the [Resource Management Page](https://docs.humanitec.com/reference/user-interface/resource-management). As usual, a literal `${` can be inserted by escaping the `{` with a backslash.  
+![escape placeholders](_assets/images/2022-06-03_Escape_Placeholder.png)
+
 ## Product Update May 20th, 2022
 
 - **Changed:** Namespaces are now managed via [Humanitec Resources](https://docs.humanitec.com/reference/user-interface/resource-management) and are therefore no longer visible on the [Environment Settings Screen](https://docs.humanitec.com/reference/user-interface/environment-settings-screen). A resource definition of type `k8s-namespace` can be created using the `humanitec/static` or `humanitec/template` driver. Learn more [here](https://docs.humanitec.com/guides/orchestrate-infrastructure/define-namespaces).
