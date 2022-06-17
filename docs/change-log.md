@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 17th, 2022
+
+- **New:** Deleting a [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) that has active resources depending on it will mark it as `Pending deletion` in the UI until all the resources associated with it are re-deployed.  
+![pending deletion](_assets/images/2022-06-17_Pending_Deletion.png)
+
+- **Changed:** Implemented a dedicated view-, add-, and edit-mode for several components to give users more control when making changes in the UI. See the [App Members](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#application-roles) section as an example:  
+![app members](_assets/images/2022-06-17_App_Members.png)
+
+- **Changed:** The colour contrast of the [dark- and light theme](https://docs.humanitec.com/reference/user-interface/top-bar#user-menu) according to the Web Content Accessibility Guidelines (WCAG) 2.1.
+
+- **Fixed:** Error states are no longer shared between the configuration overlays in the Accounts section of the [Organization Settings Page](https://docs.humanitec.com/reference/user-interface/organization-settings).
+
 ## Product Update June 3rd, 2022
 
 - **Improved:** The user experience for working with [cronjob schedules](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-cronjob-schedules) in the UI. Cron expressions...
