@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 8th, 2022
+
+- **New:** A loading bar is displayed on page load.
+
+- **Changed:** Users have to type in the name of an application to confirm its [deletion](https://docs.humanitec.com/using-humanitec/work-with-apps/create-apps#deleting-an-app).  
+![delete app](_assets/images/2022-07-08_Delete_Application.png)
+
+- **Improved:** Pending [invitations to a Humanitec organization](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#inviting-users-to-an-organization) display the time until expiration.  
+![invite expiration date](_assets/images/2022-07-08_Invite_Expiration_Date.png)
+
 ## Product Update June 17th, 2022
 
 - **New:** Removing a [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) that has active resources depending on it will mark it as `Pending deletion` in the UI until all the resources associated with it are re-deployed.  
