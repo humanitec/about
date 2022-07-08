@@ -14,7 +14,7 @@ The introduction of generic drivers such as the [`humanitec/template`](https://d
 
 ### Cost Control
 
-Humanitec enables self-service for engineering teams by allowing developers to spin up new environments and provision resources like databases, file storage, clusters, and many more on the fly. However, not all of those resources are used all the time, and enabling teams to oversee and control their infrastructure usage better can generate significant savings. The new Cost Control capabilities such as on-demand and scheduled environment pausing will help to reduce spendings on idle resources while maintaining the same level of self-service for developers.
+Humanitec allows developers to spin up entire environments on demand. However, not all of those environments are used all the time and idle environments still cost money. The new Cost Control capabilities such as on-demand and scheduled environment pausing will help to reduce spend on idle environments. At the same time, developers can still spin up paused environments on demand so they are not blocked.
 
 ## Q4 2022 and beyond
 
