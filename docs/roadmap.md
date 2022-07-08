@@ -2,23 +2,27 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q1 2022
+## Q3 2022
 
-### Dependant Resources
+### Virtual Drivers
 
-Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+The introduction of generic drivers such as the [`humanitec/template`](https://docs.humanitec.com/integrations/resource-drivers/template) driver add a lot of power to the resource system. Unfortunately, using these drivers multiple times requires the driver inputs to be duplicated. This makes it hard to maintain and understand these [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions). Virtual Drivers will provide a way of encapsulating and reusing the inputs of a driver across multiple [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
 
-### App Details Page UI Update
+### Custom Workload Profile features
 
-Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+[Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
 
-### Increase Resource Driver Range And Flexibility
+### Cost Control
 
-Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
+Humanitec enables self-service for engineering teams by allowing developers to spin up new environments and provision resources like databases, file storage, clusters, and many more on the fly. However, not all of those resources are used all the time, and enabling teams to oversee and control their infrastructure usage better can generate significant savings. The new Cost Control capabilities such as on-demand and scheduled environment pausing will help to reduce spendings on idle resources while maintaining the same level of self-service for developers.
 
-## Q2 2022 and beyond
+## Q4 2022 and beyond
 
-The following features are in our backlog and planned for implementation from Q2 2022 onwards. They are subject to change based on additional feedback we will gather until then.
+The following features are in our backlog and planned for implementation from Q4 2022 onwards. They are subject to change based on additional feedback we will gather until then.
+
+### Fleet Management
+
+Larger deployments of Humanitec use organizations as tenants to manage independent teams. For example, different Product groups within a company might each have their own individual Humanitec Organization. This becomes difficult for Platform Teams to manage as they need to stay on top of multiple Humanitec Organizations. Fleet Management is a series of tools for Platform Teams to manage multiple Humanitec Organizations centrally. This allows them to do things keep base configurations consistent or roll out updates to infrastructure in a controlled and managed way.
 
 ### Canary Deployment Strategy
 
@@ -28,21 +32,39 @@ The Canary deployment strategy is a popular way of performing zero-downtime depl
 
 As applications become more complex, it is harder to run the full application locally on the developer’s laptop. Moving development environments into the cloud solves that problem but makes it very hard to debug services under development. Humanitec is investigating a range of technical fixes to help developers bridge the gap between the local machine and the cloud.
 
-### Shared Services
-
-Larger IT deployments in organizations often include services that are shared by multiple applications. (E.g., a product inventory service might be used by Point of Sale, logistics, forecasting, and financial reporting applications.)
-
-For highly used services, a common pattern is to deploy the production version twice: once in the Production Environment and again in the Development environment. This allows developers to depend on the real service for testing while also not worrying about having to manage it as part of their workflow. This could be managed by Humanitec by marking an environment as being “exported” to all other development environments in all applications.
-
-### On-Premise Offering
-
-Many companies in regulated industries are wary of the public cloud and so wish to run all services used by their in house engineers themselves. Companies in this situation wishing to use Humanitec would, therefore, require an on-premise version of Humanitec. Being able to deploy and use Humanitec in this configuration is not particularly complex, however, the support process around it and the pace of receiving updates is the biggest challenge.
-
 ### Team Performance Monitoring
 
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q2 2022
+
+#### More flexible Resource Types
+
+Humanitec already provides a range of core resource types such as [`dns`](https://docs.humanitec.com/integrations/resource-types/dns), [`postgres`](https://docs.humanitec.com/integrations/resource-types/postgres) and [`volume`](https://docs.humanitec.com/integrations/resource-types/volume). Since the introduction of Resource References (previously known as Dependent Resources) a lot more can be achieved with the resources system. We will be introducing a number of new types including `tls-cert` for modelling TLS Certificates, `k8s-namespace` to make it easier to programmatically define the name of namespaces and additional types to model dependencies on services in other applications or hosted in other platforms.
+
+#### Virtual Drivers
+
+The introduction of generic drivers such as the [`humanitec/template`](https://docs.humanitec.com/integrations/resource-drivers/template) driver add a lot of power to the resource system. Unfortunately, using these drivers multiple times requires the driver inputs to be duplicated. This makes it hard to maintain and understand these [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions). Virtual Drivers will provide a way of encapsulating and reusing the inputs of a driver across multiple [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
+
+#### Custom Workload Profile features
+
+[Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
+
+### Q1 2022
+
+#### Dependant Resources
+
+Some resources require inputs form other resources to be provisioned. For example, an "RDS Instance for MySQL" is needed in order to provision a `mysql` database or an "Azure Service Bus Namespace" might be needed in order to provision an `azure-service-bus-topic`. For more sophisticated setups, it might be necessary to provision underlying infrastructure which other resources will then depend on. It might also be necessary to inject common inputs into multiple resources (e.g. individual subscriptions for multiple workloads must all subscribe to the same topic). The feature will allow resource definitions to depend on resources defined by other resource definitions.
+
+#### App Details Page UI Update
+
+Following several months of user testing and customer feedback we are planning on introducing a number of changes to improve the usability, predictability and scalability of our UI. The focus lies on the App Details Page, the control centre of an App. We want to address issues related to interaction design, information hierarchy, status communication as well as aesthetics while touching on UI patterns which are likely to change the look and feel of the Humanitec UI as a whole.
+
+#### Increase Resource Driver Range And Flexibility
+
+Resource Drivers are used to provision things that are consumed by workloads. Most commonly this is infrastructure such as databases or dns. There are a growing number of drivers available out-of-the-box in Humanitec. In this quarter we aim to improve the flexibility and range of our driver offering. This includes adding generic drivers that work with templates and IaC as well as open-sourcing many of our drivers. We also plan to extend how drivers can be defined - allowing drivers to be defined in terms of other drivers. This should make it easier for ops teams to define good defaults to reuse within their teams. A comprehensive overview of the Humanitec driver ecosystem as well as its integration and contribution options will be published in a central hub on our website.
 
 ### Q4 2021
 
