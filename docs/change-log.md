@@ -2,6 +2,21 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 22nd, 2022
+
+- **Changed:** Added a border as a visual indication for selected app deployments on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).
+
+- **Improved:** The deployment status is now displayed for past deployments on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).  
+![past deployment status](_assets/images/2022-07-22_Past_Deployments.png)
+
+- **Improved:** Entities are no longer deleted without a warning. The deletion has to be confirmed by the user.  
+![delete confirm](_assets/images/2022-07-22_Delete_Confirm.png)
+
+- **Improved:** Users attemping to downgrade their [organization level](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#organization-roles) or [app level](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#application-roles) role, have to confirm the role change in the UI.  
+![confirm role change](_assets/images/2022-07-22_Confirm_Role_Change.png)
+
+- **Fixed:** An interaction bug related to the "Active" toggle of the [Automations component](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/automate-deployments#create-an-automation-rule) on the [Environment Settings Screen](https://docs.humanitec.com/reference/user-interface/environment-settings-screen).
+
 ## Product Update July 8th, 2022
 
 - **New:** A loading bar is displayed on page load.
