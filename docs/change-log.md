@@ -18,7 +18,6 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Runtime errors triggered by an invalid [service account](https://docs.humanitec.com/reference/workload-profiles/features/service-account#description) are now exposed on the [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen#overview) of running deployments.
 
-
 ## Product Update July 22nd, 2022
 
 - **Changed:** Added a border as a visual indication for selected app deployments on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).
