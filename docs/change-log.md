@@ -2,6 +2,22 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update August 12th, 2022
+
+- **Improved:** Container images are no longer managed via a Humanitec specific ID. Instead, the image name (e.g. `registry.humanitec.io/public/sample-app:1.3.0`) is utilised as an identifier. The UI and documentation for the following features have been updated as a result of this:
+  - [Add new image source](https://docs.humanitec.com/guides/connect-ci-setup/connect-ci-pipelines#add-new-image-sources)
+  - [Create new container](https://docs.humanitec.com/using-humanitec/work-with-workloads/create-and-delete-containers#create-new-container)
+  - [Change container image version](https://docs.humanitec.com/using-humanitec/work-with-workloads/change-container-image-version#change-the-version-of-a-container-image-in-a-workload)
+  - [Create an automation rule](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/automate-deployments#create-an-automation-rule)
+
+- **Fixed:** An interaction bug related to deletion of [resource definitions](https://docs.humanitec.com/guides/orchestrate-infrastructure/dynamic-vs-static-resource-definitions) that have active resources associated with them. The confirmation modal now closes once the deletion has been confirmed.
+
+- **Fixed:** Long [Workload variables](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables#add-an-environment-variable) are no longer cut off in view-only mode. The full value can be viewed via a tooltip on hover.
+
+- **Fixed:** Long [Deploy comments](https://docs.humanitec.com/getting-started/create-sample-app#deploy-the-application) no longer overflow the active and past deployment cards on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview).
+
+- **Fixed:** Runtime errors triggered by an invalid [service account](https://docs.humanitec.com/reference/workload-profiles/features/service-account#description) are now exposed on the [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen#overview) of running deployments.
+
 ## Product Update July 22nd, 2022
 
 - **Changed:** Added a border as a visual indication for selected app deployments on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).
