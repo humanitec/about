@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update September 2nd, 2022
 
-- **Improved:** The UI for [container overrides](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) on the [Workload Details Page](https://docs.humanitec.com/reference/user-interface/workload-details-screen#container-panel) has been reworked. Command and argument overrides are now configured via a code editor.  
+- **Improved:** The UI for [container overrides](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) on the [Workload Details Page](https://docs.humanitec.com/reference/user-interface/workload-details-screen#container-panel) has been reworked. Command and argument overrides can now be defined as YAML.
 ![container overrides](_assets/images/2022-09-02_Container_Overrides.png)
 
 - **New:** Added support for archiving image versions on the [Organization Settings Page](https://docs.humanitec.com/reference/user-interface/organization-settings). This can be done by selecting the three dot menu of an image and clicking on `archive` next to a given version. Archived images remain accessible for use. An image can be `unarchived` anytime.  
