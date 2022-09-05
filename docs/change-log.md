@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 2nd, 2022
+
+- **Improved:** The UI for [container overrides](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) on the [Workload Details Page](https://docs.humanitec.com/reference/user-interface/workload-details-screen#container-panel) has been reworked. Command and argument overrides are now configured via a code editor.  
+![container overrides](_assets/images/2022-09-02_Container_Overrides.png)
+
+- **New:** Added support for archiving image versions on the [Organization Settings Page](https://docs.humanitec.com/reference/user-interface/organization-settings). This can be done by selecting the three dot menu of an image and clicking on `archive` next to a given version. Archived images remain accessible for use. An image can be `unarchived` anytime.  
+![archive image versions](_assets/images/2022-09-02_Archive_Image_Versions.png)
+
+- **Fixed:** Corrected the runtime status for container pods stuck in phase `pending`. The [Workload Details Page of an active deployment](https://docs.humanitec.com/reference/user-interface/workload-details-screen#active-deployment) will now show a warning with `No container status available, pod is pending`.
+
+- **Fixed:** An issue related log messages being cut off on the [Workload Details Page of an active deployment](https://docs.humanitec.com/reference/user-interface/workload-details-screen#active-deployment).
+
 ## Product Update August 12th, 2022
 
 - **Improved:** Container images are no longer managed via a Humanitec specific ID. Instead, the image name (e.g. `registry.humanitec.io/public/sample-app:1.3.0`) is utilised as an identifier. The UI and documentation for the following features have been updated as a result of this:
