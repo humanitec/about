@@ -2,7 +2,7 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters. It also lists roadmap items of past quarters.
 
-## Q3 2022
+## Q4 2022
 
 ### Virtual Drivers
 
@@ -12,13 +12,17 @@ The introduction of generic drivers such as the [`humanitec/template`](https://d
 
 [Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
 
-### Cost Control
+### Humanitec Operator
 
-Humanitec allows developers to spin up entire environments on demand. However, not all of those environments are used all the time and idle environments still cost money. The new Cost Control capabilities such as on-demand and scheduled environment pausing will help to reduce spend on idle environments. At the same time, developers can still spin up paused environments on demand so they are not blocked.
+Humanitec works in an interactive way with infrastructure. This means that Humanitec handles the whole deployment process by making calls to the affected systems (Kubernetes clusters, databases etc.) either directly or via drivers such as the [Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform). This approach can cause inconsistencies with deferred deployment strategies such as when using a GitOps operator like ArgoCD. The Humanitec Operator aims to move functionality currently managed server side by Humanitec into the cluster. This would allow things like resource provisioning to occur as part of a GitOps flow. As the operator also runs in-cluster it would also simplify the use of custom drivers since these would not need to be publicly exposed.
 
-## Q4 2022 and beyond
+### Resource Management UI update
 
-The following features are in our backlog and planned for implementation from Q4 2022 onwards. They are subject to change based on additional feedback we will gather until then.
+The [Resource Management Screen](https://docs.humanitec.com/reference/user-interface/resource-management) allows teams to manage the allocation and provisioning of resources such as data storage or DNS names for apps and environments deployed via Humanitec. A growing number of active services quickly leads to a complex matching structure between environments, applications and resources that becomes increasingly hard to keep track of. This is especially felt by ops teams needing to understand what is running where and wanting to make infrastructural adjustments in a multi-resource, -environment or -app set-up. With this UI update we aim to provide additional tools for Platform Teams to reason about and debug resource definitions and how they are used.
+
+## Q1 2023 and beyond
+
+The following features are in our backlog and planned for implementation from Q1 2023 onwards. They are subject to change based on additional feedback we will gather until then.
 
 ### Fleet Management
 
@@ -37,6 +41,20 @@ As applications become more complex, it is harder to run the full application lo
 Humanitec is sitting on a large amount of data and so has the potential to provide valuable insights about team performance. It would be relatively straightforward to measure time from “commit to production” for example.
 
 ## Past Quarters
+
+### Q3 2022
+
+#### Virtual Drivers
+
+The introduction of generic drivers such as the [`humanitec/template`](https://docs.humanitec.com/integrations/resource-drivers/template) driver add a lot of power to the resource system. Unfortunately, using these drivers multiple times requires the driver inputs to be duplicated. This makes it hard to maintain and understand these [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions). Virtual Drivers will provide a way of encapsulating and reusing the inputs of a driver across multiple [Resource Definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
+
+#### Custom Workload Profile features
+
+[Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
+
+#### Cost Control
+
+Humanitec allows developers to spin up entire environments on demand. However, not all of those environments are used all the time and idle environments still cost money. The new Cost Control capabilities such as on-demand and scheduled environment pausing will help to reduce spend on idle environments. At the same time, developers can still spin up paused environments on demand so they are not blocked.
 
 ### Q2 2022
 
