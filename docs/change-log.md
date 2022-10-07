@@ -2,13 +2,15 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
-## Product Update October 30th, 2022
+## Product Update October 7th, 2022
 
 - **Fixed:** The replicas input field on the [Workload Details Page of an active deployment](https://docs.humanitec.com/reference/user-interface/workload-details-screen#active-deployment) is no longer displayed as enabled for users without the [deployer role](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#environment-type-roles) on the environment type.
 
 - **Fixed:** An issue related to the [organization name](https://docs.humanitec.com/reference/user-interface/top-bar#organization-menu) being displayed as empty after users sign up to Humanitec.
 
 - **Fixed:** The confirm modal which is displayed when deleting [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) of a [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) that has active resources associated with it is no longer showing duplicate content.
+
+- **Improved:** The files editor which is utilised for the configuration of [webhooks](https://docs.humanitec.com/using-humanitec/work-with-apps/add-webhooks#create-a-webhook) and [files](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-files#working-with-the-file-editor) now contains a "Show whitespace characters" option to make users aware of potential formatting issues.
 
 - **Improved:** YAML input for [container command and argument overrides](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) can now be copy-pasted.
 
