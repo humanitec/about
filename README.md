@@ -1,51 +1,10 @@
 # We are Humanitec
 
-**We provide an out-of-the-box internal developer platform to accelerate adoption of DevOps practices and Continuous Delivery for cloud-native, Kubernetes-based applications.**
+Platform engineering is revolutionizing how enterprises build and run their cloud-native setups. Humanitec is at the core of this revolution, enabling teams to build [Internal Developer Platforms (IDPs)](https://humanitec.com/blog/what-is-an-internal-developer-platform) and reach true developer self-service.
 
-## Introduction
+Humanitec’s [Platform Orchestrator](https://humanitec.com/blog/what-is-a-platform-orchestrator) is the engine at the heart of a dynamic IDP. It lets platform teams, from growing startups to enterprises, remove bottlenecks by letting them build golden paths for developers. With a dynamic Internal Developer Platform, developers self-serve the tech they need to deploy and operate their apps, driving productivity and velocity.
 
-Elite development teams breathe DevOps and Continuous Delivery. Following their lead, organizations that want to improve their performance embark on DevOps transformations and start adopting Continuous Delivery.
-
-Despite moving to a loosely coupled architecture with matching dev team structure, investing in CI pipelines for all components, and automating a good chunk of testing, many find performance does not improve.
-
-- Deployment frequency remains low meaning each deployment is bigger, riskier, and more stressful than it needs to be.
-- Lead times remain high meaning customers are left waiting for that crucial bug fix.
-- Talented developers are increasingly frustrated and so are more likely to leave.
-
-Often adopting DevOps practices increases complexity for developers. This can happen by introducing new tooling (e.g. Terraform for IaC) and processes (e.g. new infrastructure must be approved by DevOps). Developers experience increased cognitive load which slows them down and increases frustration.
-
-The leading tech companies like Spotify and Airbnb have solved these problems by building their own internal developer platforms. These elevate the developer experience by making DevOps related tasks single actions for developers.
-
-Humanitec is your out-of-the-box internal developer platform for modern Kubernetes applications. It is modular and extensible - so use as much or as little as you need without compromising on your technology or tooling choices.
-
-*With Humanitec, you can shield your developers from the complexity of Continuous Delivery, driving higher deployment frequency, lower lead times, and greater developer satisfaction.*
-
-## Who is it for?
-
-Humanitec is used by teams of all sizes, ranging from teams of 5-10 engineers at startups to teams of 150+ developers at enterprise companies.
-
-With Humanitec, developers are autonomous. They can deploy their code to Kubernetes, spin up new environments, or even provision tech like databases. All of this without fiddling with manifests, cloud consoles, or Terraform. This all leads to a great developer experience.
-
-DevOps specialists in the team have the freedom and flexibility to choose the tools they think are best for their organization. With Humanitec, DevOps can define how infrastructure and managed services are provisioned across applications and types of environments.
-
-Humanitec is extensible and modular so it can be adapted to a wide range of situations. Out-of-the-box integrations make working with existing cloud setups quick and easy.
-
-## How does it work?
-
-Humanitec is available as API, CLI, and developer-focused UI. Humanitec can easily be integrated with your existing CI pipelines and your Kubernetes clusters, databases, and other managed services.
-![Humanitec Overview](_assets/images/Humanitec_Overview.png)
-
-Developers work with applications that can be deployed to environments which they can spin up on demand - automatically provisioning dependent resources. DevOps can configure where these environments are run and how dependent resources are provisioned.
-
-Humanitec is simple, extensible, and auditable.
-
-- **simple**: Developers can get up and running in minutes. Standard DevOps tasks such as deploying code to Kubernetes, setting up environments, or even provisioning tech like databases can be completed with one command or click.
-- **extensible**: Humanitec’s Open API allows you to integrate with tools of your choice and even extend Humanitec to interact with custom in-house technologies.
-- **auditable**: Everything that runs through Humanitec is tracked. This means you know what was deployed, when and by who. This includes the full configuration down to the last environment variable making rolling back configuration a doddle.
-
-## Our Vision
-
-You can find our vision on our [company info page](https://humanitec.com/company).
+Before Humanitec, building dynamic IDPs was hard and very expensive. It required significant budgets, talent and time. Humanitec makes this process much easier and efficient, while keeping platform teams and developers flexible along the way.
 
 ## Our Roadmap
 
