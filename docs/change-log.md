@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** The confirm modal which is displayed when deleting [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) of a [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) that has active resources associated with it is no longer showing duplicate content.
 
-- **Improved:** The files editor which is utilised for the configuration of [webhooks](https://docs.humanitec.com/using-humanitec/work-with-apps/add-webhooks#create-a-webhook) and [files](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-files#working-with-the-file-editor) now contains a "Show whitespace characters" option to make users aware of potential formatting issues.
+- **Improved:** The files editor which is utilised for the configuration of [webhooks](https://docs.humanitec.com/using-humanitec/work-with-apps/add-webhooks#create-a-webhook) and [files](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-files#working-with-the-file-editor) now contains a "show whitespace characters" option to make users aware of potential formatting issues.
 
 - **Improved:** YAML input for [container command and argument overrides](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) can now be copy-pasted.
 
