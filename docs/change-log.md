@@ -2,6 +2,12 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 31st, 2022
+
+- **New:** Introduced a set of functionalities for advanced container image management. A new API and updated UI allow for image management at scale, allowing users to identify, filter, archive and update images and their versions with ease. More information can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog.
+
+- **Fixed:** Provisioning a resource with an invalid [placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders) now returns an expected error code with more descriptive error message.  
+
 ## Product Update October 7th, 2022
 
 - **Fixed:** The replicas input field on the [Workload Details Page of an active deployment](https://docs.humanitec.com/reference/user-interface/workload-details-screen#active-deployment) is no longer displayed as enabled for users without the [deployer role](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#environment-type-roles) on the environment type.
