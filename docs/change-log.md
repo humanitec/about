@@ -4,7 +4,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update October 31st, 2022
 
-- **New:** Introduced a set of functionalities for advanced container image management. A new API and updated UI allow for image management at scale, allowing users to identify, filter, archive and update images and their versions with ease. More information can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog.
+- **New:** Introduced a new API and updated UI which allow for image management at scale. Users can now identify, filter, archive and update images and their versions with ease. More detailed information on new capabilities can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog.
+![advanced_image_management](_assets/images/2022-10-31_Advanced_Image_Management.png)
 
 - **Fixed:** Provisioning a resource with an invalid [placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders) now returns an expected error code with more descriptive error message.  
 
