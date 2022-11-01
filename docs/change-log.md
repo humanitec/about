@@ -2,12 +2,12 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
-## Product Update October 31st, 2022
+## Product Update October 28th, 2022
 
-- **New:** Introduced a new API and updated UI which allow for image management at scale. Users can now identify, filter, archive and update images and their versions with ease. More detailed information on new capabilities can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog.
-![advanced_image_management](_assets/images/2022-10-31_Advanced_Image_Management.png)
+- **New:** Introduced a new API and updated UI which allow for image management at scale. Users can now identify, filter, archive and update images and their versions with ease. More detailed information on new capabilities can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog. <br> <img width="480" alt="2022-10-31_Advanced_Image_Management" src="./_assets/images/2022-10-31_Advanced_Image_Management.png">
 
-- **Fixed:** Provisioning a resource with an invalid [placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders) now returns an expected error code with more descriptive error message.  
+
+- **Fixed:** Provisioning a resource with an invalid [placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders) now returns the expected error code with a more descriptive message.  
 
 ## Product Update October 7th, 2022
 
