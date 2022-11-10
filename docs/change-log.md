@@ -6,13 +6,13 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **New:** Added autocompletion of [placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) in `labels`, `variables` and `files` properties of a Workload in [Deployment Sets](sets-and-deltas.md#deployment-sets).
 
-- **Improved:** Performance of the `All deployment versions` functionality in the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview) for applications with a large number of past deployments.
+- **Improved:** Performance of the `All deployment versions` functionality in the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview) for Applications with a large number of past deployments.
  
 - **Fixed:** Image version selector no longer requests all versions even if `show archived` option wasn't checked. It caused performance issues for images with a large number of archived versions.
 
-- **Fixed:** Long [Deploy comments](https://docs.humanitec.com/getting-started/create-sample-app#deploy-the-application) no longer affect accessibility and alignment of action buttons in active deployment cards on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview).
+- **Fixed:** Long Deploy comments no longer affect accessibility and alignment of action buttons in active deployment cards on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview).
 
-- **Fixed:** An issue related to failing diff of a past deployment after adding a shared resource.
+- **Fixed:** An issue related to failing [Deployment Diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) of a past deployment after adding a [Shared Resource](https://docs.humanitec.com/using-humanitec/work-with-apps/shared-resources).
 
 ## Product Update October 28th, 2022
 
