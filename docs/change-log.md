@@ -2,10 +2,21 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 11th, 2022
+
+- **New:** Added autocompletion of [placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) in `labels`, `variables` and `files` properties of a workload in [Deployment Sets](sets-and-deltas.md#deployment-sets).
+
+- **Improved:** Performance of the `All deployment versions` functionality in the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview) for applications with a large number of past deployments.
+ 
+- **Fixed:** Image version selector no longer requests all versions even if `show archived` option wasn't checked. It caused performance issues for images with a large number of archived versions.
+
+- **Fixed:** Long [Deploy comments](https://docs.humanitec.com/getting-started/create-sample-app#deploy-the-application) no longer affect accessibility and alignment of action buttons in active deployment cards on the [App Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen#overview).
+
+- **Fixed:** An issue related to failing diff of a past deployment after adding a shared resource.
+
 ## Product Update October 28th, 2022
 
 - **New:** Introduced a new API and updated UI which allow for image management at scale. Users can now identify, filter, archive and update images and their versions with ease. More detailed information on new capabilities can be found in the [feature announcement article](https://humanitec.com/blog/container-image-management-made-hassle-free-feature-announcement) on Humanitec's blog. <br> <img width="480" alt="2022-10-31_Advanced_Image_Management" src="./_assets/images/2022-10-31_Advanced_Image_Management.png">
-
 
 - **Fixed:** Provisioning a resource with an invalid [placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders) now returns the expected error code with a more descriptive message.  
 
