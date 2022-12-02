@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update December 2nd, 2022
 
-- **New:** Released **Pausing & Resuming of Environments** feature which allows you to scale down all of the Workloads of type Deployment to 0 replicas with one click of a button or single API call. Resuming the environment will scale the Workloads back to the number of replicas that was set at the time of Pausing. This can help you save costs on unused infrastructure. You can find more detailed information on a dedicated [Docs page](https://docs.humanitec.com/using-humanitec/work-with-environments/pause-and-resume).
+- **New:** Released **Pausing & Resuming of Environments** feature which allows you to scale down all of the Workloads of type Deployment to 0 replicas with one click of a button or single API call. Resuming the environment will scale the Workloads back to the number of replicas that were set at the time of pausing. This can help you save costs on unused infrastructure. You can find more information in our [documentation](https://docs.humanitec.com/using-humanitec/work-with-environments/pause-and-resume).
 
 - **Improved:** There is no longer a limit of the number of Applications users can create via the UI.
 
