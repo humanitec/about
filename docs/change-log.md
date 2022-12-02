@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 2nd, 2022
+
+- **New:** Released **Pausing & Resuming of Environments** feature which allows you to scale down all of the Workloads of type Deployment to 0 replicas with one click of a button or single API call. Resuming the environment will scale the Workloads back to the number of replicas that was set at the time of Pausing. This can help you save costs on unused infrastructure. You can find more detailed information on a dedicated [Docs page](https://docs.humanitec.com/using-humanitec/work-with-environments/pause-and-resume).
+
+- **Improved:** There is no longer a limit of the number of Applications users can create via UI.
+
+- **Fixed:** The [Profile Settings](https://docs.humanitec.com/reference/user-interface/top-bar#user-menu) page now correctly lists users' [roles](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control) in all Organisations they belong to. 
+
+- **Fixed:** Resolved an issue where Placeholders autocompletion would not work properly with inputws typed manually and not selected from the dropdown. 
+
 ## Product Update November 11th, 2022
 
 - **New:** Added autocompletion of [placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) in `labels`, `variables` and `files` properties of a Workload in [Deployment Sets](sets-and-deltas.md#deployment-sets).
