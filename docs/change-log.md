@@ -8,7 +8,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved:** There is no longer a limit of the number of Applications users can create via the UI.
 
-- **Fixed:** The [Profile Settings](https://docs.humanitec.com/reference/user-interface/top-bar#user-menu) page now correctly lists users' [roles](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control) on all Organisations they belong to. 
+- **Fixed:** The [Profile Settings](https://docs.humanitec.com/reference/user-interface/top-bar#user-menu) page now correctly lists users' [roles](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control) on all Organisations they are a member of. 
 
 - **Fixed:** Resolved an issue where Placeholders autocompletion would not work properly with inputs typed manually and not selected from the dropdown. 
 
