@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** The [Profile Settings](https://docs.humanitec.com/reference/user-interface/top-bar#user-menu) page now correctly lists users' [roles](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control) on all Organisations they are a member of. 
 
-- **Fixed:** Resolved an issue where Placeholders autocompletion would not work properly with inputs typed manually and not selected from the dropdown. 
+- **Fixed:** Resolved an issue where Placeholder autocompletion would not work properly with inputs typed manually and not selected from the dropdown. 
 
 ## Product Update November 11th, 2022
 
