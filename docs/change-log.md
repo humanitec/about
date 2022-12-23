@@ -6,7 +6,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Auto-focus on input fields no longer steals focus from the user.
 
-- **Fixed:** Modals are no longer hidden of Firefox in the case of overflow.
+- **Fixed:** Modals are no longer hidden on Firefox in the case of overflow.
 
 - **Fixed:** The search filter in the images tab on the [Organization Settings Page](https://docs.humanitec.com/reference/user-interface/organization-settings) allows to filter images by name.
 
