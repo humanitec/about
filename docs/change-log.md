@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 23rd, 2022
+
+- **Fixed:** Auto-focus on input fields no longer steals focus from the user.
+
+- **Fixed:** Modals are no longer hidden of Firefox in the case of overflow.
+
+- **Fixed:** The search filter in the images tab on the [Organization Settings Page](https://docs.humanitec.com/reference/user-interface/organization-settings) allows to filter images by name.
+
+- **Improved:** It is no longer possible to [select an archived image version for a conatiner](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-images#change-the-image-on-a-container).
+
 ## Product Update December 2nd, 2022
 
 - **New:** Released **Pausing & Resuming of Environments** feature which allows you to scale down all of the Workloads of type Deployment to 0 replicas with one click of a button or single API call. Resuming the environment will scale the Workloads back to the number of replicas that were set at the time of pausing. This can help you save costs on unused infrastructure. You can find more information in our [documentation](https://docs.humanitec.com/using-humanitec/work-with-environments/pause-and-resume).
