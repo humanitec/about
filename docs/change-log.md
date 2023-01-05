@@ -2,15 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
-## Product Update January 6th, 2022
+## Product Update January 6th, 2023
+
+- **Improved:** More intuitive and easier to read design for table components across the application:
+    - Shared App Values & Secrets on [App Settings Screen](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#app-level);
+    - App Values & Secrets Overrides on [Envrionment Settings Screen](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#environment-level);
+    - [Variables](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables), [Files](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-files), and [Volume Mounts](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-persistent-volumes) on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
 
 - **Improved:** Responsive design of [Application Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen) has been improved.
 
 - **Fixed:** Workload variables with multiple [Placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) render correctly in the UI.
 
 - **Fixed:** [`Create new app`](https://docs.humanitec.com/getting-started/create-sample-app#create-an-app-in-humanitec) input field validation no longer expands beyond the base element.
-
-- **Fixed:** Alignment of the dropdown menu of Deployments on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
 
 - **Improved:** Reworded "mode" error message on Files component on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
 
