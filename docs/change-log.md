@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 6th, 2022
+
+- **Improved:** Responsive design of [Application Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen) has been improved.
+
+- **Fixed:** Workload variables with multiple [Placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) render correctly in the UI.
+
+- **Fixed:** [`Create new app`](https://docs.humanitec.com/getting-started/create-sample-app#create-an-app-in-humanitec) input field validation no longer expands beyond the base element.
+
+- **Fixed:** Alignment of the dropdown menu of Deployments on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
+
+- **Improved:** Reworded "mode" error message on Files component on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
+
 ## Product Update December 23rd, 2022
 
 - **Fixed:** Auto-focus on input fields no longer steals focus from the user.
