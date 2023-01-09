@@ -6,7 +6,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved:** More intuitive and easier to read design for table components across the application:
     - Shared App Values & Secrets on [App Settings Screen](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#app-level),
-    - App Values & Secrets Overrides on [Envrionment Settings Screen](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#environment-level),
+    - App Values & Secrets Overrides on [Environment Settings Screen](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-environment-variables-and-secrets#environment-level),
     - [Variables](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables), [Files](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-files), and [Volume Mounts](https://docs.humanitec.com/guides/orchestrate-infrastructure/manage-persistent-volumes) on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
 
 - **Improved:** Responsive design of [Application Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).
