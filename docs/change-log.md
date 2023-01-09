@@ -11,6 +11,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved:** Responsive design of [Application Details Screen](https://docs.humanitec.com/reference/user-interface/app-details-screen).
 
+- **Fixed:** Issue preventing users from updating CPU and Memory settings on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen) in the UI.
+
 - **Fixed:** Workload variables with multiple [Placeholders](https://docs.humanitec.com/reference/concepts/app-config/placeholders) render correctly in the UI.
 
 - **Fixed:** [`Create new app`](https://docs.humanitec.com/getting-started/create-sample-app#create-an-app-in-humanitec) input field validation no longer expands beyond the base element.
