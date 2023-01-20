@@ -8,7 +8,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Issue preventing users from discarding a draft of a cloned deployment.
 
-- **Fixed:** [Service account](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-service-accounts#service-account) name on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen) is no longer reset to `default` value after submiting the same name. 
+- **Fixed:** [Service account](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-service-accounts#service-account) name on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen) is no longer reset to `default` after re-submitting the currently defined name. 
 
 - **Improved:** Humanitec application's color palette has been update to better match the [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) criteria.
 
