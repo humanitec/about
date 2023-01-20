@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update January 20th, 2023
 
-- **New:** Humanitec's [Artefacts Service](https://api-docs.humanitec.com/#tag/ArtefactVersion) in addition to supporting branch and tag refs now also supports PR refs. 
+- **New:** The [Artefact Version API](https://api-docs.humanitec.com/#tag/ArtefactVersion) now supports PR refs. Next to branch- and tag refs artefact versions built on a PR branch can be pushed by users. 
 
 - **Fixed:** Issue preventing users from discarding a draft of a cloned deployment.
 
