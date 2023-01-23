@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 20th, 2023
+
+- **New:** The [Artefact Version API](https://api-docs.humanitec.com/#tag/ArtefactVersion) now supports PR refs. Next to branch- and tag refs artefact versions built on a PR branch can be pushed by users. 
+
+- **Fixed:** Issue preventing users from discarding a draft of a cloned deployment.
+
+- **Fixed:** [Service account](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-service-accounts#service-account) name on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen) is no longer reset to `default` after re-submitting the currently defined name. 
+
+- **Improved:** The color palette of the Humanitec UI has been updated to match better the [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/).
+
 ## Product Update January 6th, 2023
 
 - **Improved:** More intuitive and easier to read design for table components across the application:
