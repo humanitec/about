@@ -38,6 +38,10 @@ The Humanitec Command Line Interface (CLI) allows users to get your everyday Dev
 
 It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
 
+### Agent Based Approach for Deploying to Private Clusters
+
+A common approach used by SaaS products to access private resources is an agent. The agent runs inside the private infrastructure and calls out to Humanitec. This means that nothing in the private infrastructure is exposed to the public internet. This is considered best practice from a security perspective as nothing is exposed publicly and the operations team have complete control over what the agent has access to. It is also easier to administer than other approaches supported by Humanitec including bastion hosts and VPNs. The Humanitec Agent will give operations teams a flexible, easy to configure and secure way of using Humanitec with private infrastructure.
+
 ### Improved Deployment Diff
 
 Deployment Diffs allow users to see everything that has changed between two selected deployments in Humanitec. Seeing these differences is useful when trying to debug errors for example. To make the Deployment Diff even more powerful, we plan to enrich and restructure the information it contains and improve its visualisation.
