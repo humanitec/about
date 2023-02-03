@@ -6,7 +6,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **New:** Added support for [context placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders#using-context-in-resource-definitions) autocomplete in Resource Definitions.
 
-- **Improved:** [Issue #38](https://github.com/humanitec/build-push-to-humanitec/issues/38): [Humanitecs GitHub Actions workflow](https://docs.humanitec.com/guides/connect-ci-setup/connect-ci-pipelines#github-actions-workflow) now allows to skip the building step and use an existing container image instead.
+- **Improved:** [Humanitecs GitHub Actions workflow](https://docs.humanitec.com/guides/connect-ci-setup/connect-ci-pipelines#github-actions-workflow) now allows to skip the building step and use an existing container image instead ([Issue #38](https://github.com/humanitec/build-push-to-humanitec/issues/38)).
 
 - **Fixed:** An interaction bug related to [(un-)archiving container image versions](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-images#archive-an-image-version).
 
