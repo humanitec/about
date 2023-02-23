@@ -2,6 +2,25 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+
+## Product Update February 24th, 2023
+
+- **New:** Extended MariaDB and MySQL driver inputs with optional parameter `privilege list` that will be applied to the generated user.
+
+- **Fixed:** It is now possible to use browser's native Back button to return to the All Applications screen.
+
+- **Fixed:** Trailing whitespace characters are no longer removed from Shared App Values and Secrets inputs.
+
+- **Fixed:** A draft delta opened through a direct URL didn't render correctly in the UI.
+
+- **Fixed:** Long deployment commends expanding beyond [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) modal screen. 
+
+- **Fixed:** If a deployment is in progress, the following deployments will no longer be accepted. Instead, they will be rejected with an HTTP 409 error.
+
+- **Fixed:** Updating an array in the terraform driver no longer changes it into a map.
+
+- **Improved:** Input names of Readiness and Liveness probes on [Workload Details Screen](https://docs.humanitec.com/reference/user-interface/workload-details-screen).
+
 ## Product Update February 3rd, 2023
 
 - **New:** Added support for [context placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders#using-context-in-resource-definitions) autocomplete in Resource Definitions.
