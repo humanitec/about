@@ -5,6 +5,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update February 24th, 2023
 
+- **New:** Release of a new [resource management screen](https://docs.humanitec.com/reference/user-interface/resource-management). This UI update includes a redesign of existing features as well as support for new functionality to increase observability and control for platform teams. Check out the [feature announcement](https://humanitec.com/blog/resource-management-2-0-feature-announcement) on our blog to learn more.
+
 - **New:** Extended [MariaDB](https://docs.humanitec.com/integrations/resource-types/mariadb) and [MySQL](https://docs.humanitec.com/integrations/resource-types/mysql) driver inputs with optional parameter `privilege list` that will be applied to the generated user.
 
 - **Fixed:** It is now possible to use browser's native Back button to return to the [App Overview screen](https://docs.humanitec.com/reference/user-interface/app-overview-screen).
