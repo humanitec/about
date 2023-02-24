@@ -17,6 +17,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** If a deployment is in progress, the following deployments will no longer be accepted. Instead, they will be rejected with an HTTP 409 error.
 
+- **Improved:** Changed [cloning of the whole environment via UI](https://docs.humanitec.com/using-humanitec/work-with-environments/create-environment#create-a-new-environment) to use delta to match the process for [cloning individual workloads](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
+
 ## Product Update February 3rd, 2023
 
 - **New:** Added support for [context placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders#using-context-in-resource-definitions) autocomplete in Resource Definitions.
