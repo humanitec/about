@@ -15,7 +15,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Long deployment comments no longer overflow on the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) dialog box. 
 
-- **Fixed:** If a deployment is in progress, the following deployments will no longer be accepted. Instead, they will be rejected with an HTTP 409 error.
+- **Fixed:** To avoid disruption of ongoing deployments it is no longer possible to trigger a new deployment while a deployment is in progress.
 
 - **Improved:** Changed [cloning of the whole environment via UI](https://docs.humanitec.com/using-humanitec/work-with-environments/create-environment#create-a-new-environment) to use delta to match the process for [cloning individual workloads](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
 
