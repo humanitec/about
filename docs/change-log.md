@@ -5,7 +5,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update February 24th, 2023
 
-- **New:** Extended MariaDB and MySQL driver inputs with optional parameter `privilege list` that will be applied to the generated user.
+- **New:** Extended [MariaDB](https://docs.humanitec.com/integrations/resource-types/mariadb) and [MySQL](https://docs.humanitec.com/integrations/resource-types/mysql) driver inputs with optional parameter `privilege list` that will be applied to the generated user.
 
 - **Fixed:** It is now possible to use browser's native Back button to return to the All Applications screen.
 
