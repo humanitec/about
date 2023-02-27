@@ -19,7 +19,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** To avoid disruption of ongoing deployments it is no longer possible to trigger a new deployment while a deployment is in progress.
 
-- **Improved:** Changed [cloning of the whole environment via UI](https://docs.humanitec.com/using-humanitec/work-with-environments/create-environment#create-a-new-environment) to use delta to match the process for [cloning individual workloads](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
+- **Changed:** [Cloning of the whole environment via UI](https://docs.humanitec.com/using-humanitec/work-with-environments/create-environment#create-a-new-environment) to use delta to match the process for [cloning individual workloads](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
 
 ## Product Update February 3rd, 2023
 
