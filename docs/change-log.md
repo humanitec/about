@@ -2,6 +2,25 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+
+## Product Update February 24th, 2023
+
+- **New:** Release of a new [resource management screen](https://docs.humanitec.com/reference/user-interface/resource-management). This UI update includes a redesign of existing features as well as support for new functionality to increase observability and control for platform teams. Check out the [feature announcement](https://humanitec.com/blog/resource-management-2-0-feature-announcement) on our blog to learn more.
+
+- **New:** Extended [MariaDB](https://docs.humanitec.com/integrations/resource-types/mariadb) and [MySQL](https://docs.humanitec.com/integrations/resource-types/mysql) driver inputs with optional parameter `privilege list` that will be applied to the generated user.
+
+- **Fixed:** It is now possible to use browser's native Back button to return to the [App Overview screen](https://docs.humanitec.com/reference/user-interface/app-overview-screen).
+
+- **Fixed:** Trailing whitespace characters are no longer removed from [Shared App Values and Secrets](https://docs.humanitec.com/using-humanitec/work-with-apps/define-app-values-and-secrets#app-level) inputs.
+
+- **Fixed:** [Creating a delta via the API](https://api-docs.humanitec.com/#tag/Delta) and navigating to it by updating the draft id in the URL no longer causes the UI to be unresponsive.
+
+- **Fixed:** Long deployment comments no longer overflow on the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) dialog box. 
+
+- **Fixed:** To avoid disruption of ongoing deployments it is no longer possible to trigger a new deployment while a deployment is in progress.
+
+- **Changed:** [Cloning a whole environment](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments) now matches the process for cloning individual workloads. In both cases a new delta is created in the target environment.
+
 ## Product Update February 3rd, 2023
 
 - **New:** Added support for [context placeholder](https://docs.humanitec.com/reference/concepts/app-config/placeholders#using-context-in-resource-definitions) autocomplete in Resource Definitions.
