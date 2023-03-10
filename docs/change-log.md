@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 10th, 2023
+
+- **Improved:** The active resources displayed in the `Usage` tab on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details
+) now include a link to the enviornment they are matched to.
+
+- **Improved:** [Resource provisioning](https://docs.humanitec.com/reference/concepts/resources#provisioning-resources) errors now include information about the affected resource definition ID and resource type.
+
+- **Improved:** When attempting to define [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) that have already been defined for a resource definition of the same type, an error message pointing to the latter is shown.
+
+- **Fixed:** An interaction bug related to [cloning deployments](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
+
+- **Fixed:** Defining commands in the [container overrides section](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) of a workload.
 
 ## Product Update February 24th, 2023
 
