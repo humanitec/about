@@ -11,6 +11,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved:** When attempting to define [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) that have already been defined for a resource definition of the same type, an error message pointing to the latter is shown.
 
+- **Improved:** Added support for [artefact versions](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/artefact_version), [environment types](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/environment_type) and [applications](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/application) to the [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs).
+
 - **Fixed:** An interaction bug related to [cloning deployments](https://docs.humanitec.com/using-humanitec/work-with-environments/clone-between-environments).
 
 - **Fixed:** Defining commands in the [container overrides section](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) of a workload.
