@@ -2,6 +2,15 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 24th, 2023
+
+- **Fixed:** Input validation of [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details). Invalid values can no longer be submitted accidentally.
+- **Fixed:** Editing of [Liveness and Readiness container probe headers](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration). Values are now updated as expected.
+- **Fixed:** Configuring [Memory settings](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) on Windows and Chrome no longer causes unexpected behaviour in the UI.
+- **Fixed:** Deleting an active resource of a deleted app on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details) no longer throws an error.
+- **Fixed:** Invalid manifests returned by a [driver](https://docs.humanitec.com/reference/concepts/resources/drivers) no longer result in an unexpected error. An error stating that the generated manifest is invalid is now shown.
+- **Fixed:** Creating a [template driver](https://docs.humanitec.com/integrations/resource-drivers/template) that outputs a manifest with an invalid location value no longer silently fails. An error stating that the location in the specific [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) is invalid is now shown.
+
 ## Product Update March 10th, 2023
 
 - **Improved:** The active resources displayed in the `Usage` tab on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details
