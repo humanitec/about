@@ -7,7 +7,7 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions) earlier.
 - **Fixed:** Special character "*" in [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) added via API is now correctly interpreted as "all values".
 - **Fixed:** [Deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) is now rendered correctly for past deployments with null properties.
-- **Fixed:** Setting [Workload Variable's](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables) value to an empty string no longer renders as a deleted key in the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) view.
+- **Fixed:** Setting a [Workload Variable's](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables) value to an empty string no longer renders as a deleted key in the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) view.
 
 ## Product Update March 24th, 2023
 
