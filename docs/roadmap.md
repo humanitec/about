@@ -8,6 +8,10 @@ This document provides a high-level view on our product roadmap for this and upc
 
 Humanitec works in an interactive way with infrastructure. This means that Humanitec handles the whole deployment process by making calls to the affected systems (Kubernetes clusters, databases etc.) either directly or via drivers such as the [Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform). This approach can cause inconsistencies with deferred deployment strategies such as when using a GitOps operator like ArgoCD. The Humanitec Operator aims to move functionality currently managed server side by Humanitec into the cluster. This would allow things like resource provisioning to occur as part of a GitOps flow. As the operator also runs in-cluster it would also simplify the use of custom drivers since these would not need to be publicly exposed.
 
+### Agent Based Approach for Deploying to Private Clusters
+
+A common approach used by SaaS products to access private resources is an agent. The agent runs inside the private infrastructure and calls out to Humanitec. This means that nothing in the private infrastructure is exposed to the public internet. This is considered best practice from a security perspective as nothing is exposed publicly and the operations team have complete control over what the agent has access to. It is also easier to administer than other approaches supported by Humanitec including bastion hosts and VPNs. The Humanitec Agent will give operations teams a flexible, easy to configure and secure way of using Humanitec with private infrastructure.
+
 ### Custom Workload Profile Features
 
 [Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
@@ -20,17 +24,17 @@ Following several months of user testing and customer feedback, we are planning 
 
 A Deployment Set in Humanitec contains all of the environment-agnostic configurations for an Application. It describes the material things that should run or be provisioned in an environment. With the introduction of a new deployment set version (v1.0), we’re planning to replace legacy terminology with a naming convention better aligned with industry and Kubernetes standards and unify it across Humanitec’s UI, API and CLI. New vocabulary will be more familiar and intuitive for the platform teams and developers, improving the experience of using the Humanitec application, especially for new users.
 
-### Improved System Health Status Messaging
-
-Debugging a failure in a deployment is almost universal - at some point both developers and platform engineers will need to understand the causality and placement of errors. To increase visibility and support users when troubleshooting issues, status messaging in the Humanitec UI is being reworked. The health of an environment, deployment statuses as well as workload runtime statuses should be visible to the user at first sight and extensive error messaging in case of failures provided.
-
 ### Scoped API Tokens
 
 Almost all requests made to the Humanitec API require authentication. Humanitec allows users to retrieve API tokens from their organization settings to authenticate with the API. Scoped API tokens present a new way of creating and managing API tokens with increased security and visibility. To obtain a token, users will need to create a service user with an assigned set of RBAC roles. An API token can then be generated from the user and is used to interact with Humanitec’s API on the service user’s behalf.
 
-### Humanitec CLI Beta-level Release
+### Enhanced Error Reporting
 
-The Humanitec Command Line Interface (CLI) allows users to get your everyday DevOps tasks (e.g., create a new temporary environment to test new features, add new services to an application) done without ever leaving their favourite console. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
+Effective error messaging is crucial for identifying and resolving issues. Our goal is to increase the coverage and improve the informational value of errors in Humanitec. As part of this initiative, we aim to ensure that API errors are consistently reported on the Frontend and provide transparent explanations about the root cause of a problem.
+
+### General Availability of the Terraform Driver
+
+The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform) allows for the provisioning of resources via Terraform. While the driver is currently experimental and not yet publicly available, we are actively working towards making it generally accessible to our users. Our aim is to improve the capabilities and stability of the Terraform driver, providing a dependable solution for managing infrastructure resources
 
 ## Next
 
@@ -38,17 +42,13 @@ The Humanitec Command Line Interface (CLI) allows users to get your everyday Dev
 
 It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
 
-### Agent Based Approach for Deploying to Private Clusters
+### Improved System Health Status Messaging
 
-A common approach used by SaaS products to access private resources is an agent. The agent runs inside the private infrastructure and calls out to Humanitec. This means that nothing in the private infrastructure is exposed to the public internet. This is considered best practice from a security perspective as nothing is exposed publicly and the operations team have complete control over what the agent has access to. It is also easier to administer than other approaches supported by Humanitec including bastion hosts and VPNs. The Humanitec Agent will give operations teams a flexible, easy to configure and secure way of using Humanitec with private infrastructure.
+Debugging a failure in a deployment is almost universal - at some point both developers and platform engineers will need to understand the causality and placement of errors. To increase visibility and support users when troubleshooting issues, status messaging in the Humanitec UI is being reworked. The health of an environment, deployment statuses as well as workload runtime statuses should be visible to the user at first sight and extensive error messaging in case of failures provided.
 
-### Improved Deployment Diff
+### Humanitec CLI Beta-level Release
 
-Deployment Diffs allow users to see everything that has changed between two selected deployments in Humanitec. Seeing these differences is useful when trying to debug errors for example. To make the Deployment Diff even more powerful, we plan to enrich and restructure the information it contains and improve its visualisation.
-
-### Improved Deployment Clone Diff
-
-In Humanitec users make use of deployment clones to create new environments or to move a deployment from one environment to another. This is either done in form of a full clone, comprising the entire application, or a partial clone by only selecting a subset of workloads to be promoted. With the implementation of a deployment clone diff, differences between source and target environment are visualised, allowing users to define the state of their environments in a more transparent and flexible way.
+The Humanitec Command Line Interface (CLI) allows users to get your everyday DevOps tasks (e.g., create a new temporary environment to test new features, add new services to an application) done without ever leaving their favourite console. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
 
 ## Later
 
