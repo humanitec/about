@@ -2,6 +2,13 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 7th, 2023
+
+- **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
+- **Fixed:** Selecting an asterisk `*` as a [matching criterium](https://api-docs.humanitec.com/#tag/MatchingCriteria) via the API  is now correctly interpreted as "all values".
+- **Fixed:** [Deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) is now rendered correctly for past deployments with empty properties.
+- **Fixed:** Setting a [Workload Variable's](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables) value to an empty string no longer renders as a deleted key in the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) view.
+
 ## Product Update March 24th, 2023
 
 - **Fixed:** Input validation of [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details). Invalid values can no longer be submitted accidentally.
