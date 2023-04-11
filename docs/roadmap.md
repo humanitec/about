@@ -34,7 +34,7 @@ Effective error messaging is crucial for identifying and resolving issues. Our g
 
 ### General Availability of the Terraform Driver
 
-The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform) allows for the provisioning of resources via Terraform. While the driver is currently experimental and not yet publicly available, we are actively working towards making it generally accessible to our users. Our aim is to improve the capabilities and stability of the Terraform driver, providing a dependable solution for managing infrastructure resources
+The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform) allows for the provisioning of resources via Terraform. The current driver is experimental. This means that it is only made available to customers that we work especially closely with. The feedback we have received from these customers allows us to bring the Terraform Driver to General Availability. This means the driver works in a wide range of scenarios, reports errors well and is well documented.
 
 ## Next
 
@@ -44,7 +44,7 @@ It is often the case that additional actions need to be performed before or afte
 
 ### Improved System Health Status Messaging
 
-Debugging a failure in a deployment is almost universal - at some point both developers and platform engineers will need to understand the causality and placement of errors. To increase visibility and support users when troubleshooting issues, status messaging in the Humanitec UI is being reworked. The health of an environment, deployment statuses as well as workload runtime statuses should be visible to the user at first sight and extensive error messaging in case of failures provided.
+At some point, both developers and platform engineers will need to troubleshoot a failing system. Status messaging in the Humanitec UI is being reworked to increase visibility and support users when troubleshooting. This includes the health of an environment, deployment statuses as well as workload runtime statuses. Errors should be visible to the user at first sight and detailed error messaging should be found by digging deeper.
 
 ### Humanitec CLI Beta-level Release
 
