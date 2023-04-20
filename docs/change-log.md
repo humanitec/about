@@ -2,6 +2,8 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 21st, 2023
+
 ## Product Update April 7th, 2023
 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
