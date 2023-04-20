@@ -4,6 +4,12 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update April 21st, 2023
 
+- **New:** 
+- **New:** Introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets).
+- **Improved:** Added a "learn more" link to error messages for past deployments to make troubleshooting issues easier.
+- **Improved:** It is now possible to review usage of Humanitec's default resources in the [Resource Management screen](https://docs.humanitec.com/reference/user-interface/resource-management).
+- **Improved:** Deployment diff now shows changes even if the application hasn't been deployed.
+
 ## Product Update April 7th, 2023
 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
