@@ -5,6 +5,7 @@ This document provides an overview of the changes we are making over time. Feel 
 ## Product Update April 21st, 2023
 
 - **New:** Introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets).
+- **Improved:** The [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) UI has been revamped, making it easier for developers to compare app states and troubleshoot issues. Check out [the release announcement on our blog](https://humanitec.com/blog/spot-the-difference-introducing-humanitecs-improved-deployment-diff).
 - **Improved:** Added support for viewing error messages of past failed deployments.
 - **Improved:** It is now possible to view the active resources of Humanitec's default resource definitions in the Usage tab of the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details)
 - **Improved:** Deployment diff now shows changes even if the application hasn't been deployed.
