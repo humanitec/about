@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update April 21st, 2023
 
-- **New:** Introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets).
+- **New:** To increase the transparency of changes in Shared values and secrets and enable more functionality, like reverting to past values, we have introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets). Versioning of Shared values and secrets means that every change generates a new version of an app value or environment override. We have been collecting those versions for over six months, and you can access them either through UI or [API](https://api-docs.humanitec.com/#tag/ValueSetVersion). In addition to operations on individual values, API enables actions on the entire Value Sets.
 - **New:** Added support for defining [Shared values and secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) to the [Humanitec Terraform Provider (https://registry.terraform.io/providers/humanitec/humanitec/latest/docs. 
 
 - **Improved:** The [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) UI has been revamped, making it easier for developers to compare app states and troubleshoot issues. Check out [the release announcement on our blog](https://humanitec.com/blog/spot-the-difference-introducing-humanitecs-improved-deployment-diff).
