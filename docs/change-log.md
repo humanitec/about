@@ -11,7 +11,7 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Improved:** Added support for viewing error messages of past failed deployments.
 - **Improved:** It is now possible to view the active resources of Humanitec's default resource definitions in the "Usage" tab of the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details).
 - **Improved:** The deployment diff now shows changes for newly created applications that haven't been deployed yet.
-
+- **Improved:** The design of [private](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-resource-dependencies) and [shared resources](https://docs.humanitec.com/using-humanitec/work-with-apps/shared-resources) of running deployments. A direct link to the connected [Resource Definition](https://docs.humanitec.com/guides/orchestrate-infrastructure/dynamic-vs-static-resource-definitions) has been added for [Organization Administrators](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#organization-roles). 
 ## Product Update April 7th, 2023
 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
