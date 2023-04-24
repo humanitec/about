@@ -2,6 +2,15 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 21st, 2023
+
+- **New:** To increase the transparency of changes in Shared values and secrets and enable more functionality, like reverting to past values, we have introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets). Versioning of Shared values and secrets means that every change generates a new version of an app value or environment override. We have been collecting those versions for over six months, and you can access them either through UI or [API](https://api-docs.humanitec.com/#tag/ValueSetVersion). In addition to operations on individual values, API enables actions on the entire Value Sets.
+- **New:** Added support for defining [Shared values and secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) to the [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs). 
+- **Improved:** The [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) UI has been revamped, making it easier for developers to compare app states and troubleshoot issues. Check out [the release announcement on our blog](https://humanitec.com/blog/spot-the-difference-introducing-humanitecs-improved-deployment-diff).
+- **Improved:** Added support for viewing error messages of past failed deployments.
+- **Improved:** It is now possible to view the active resources of Humanitec's default resource definitions in the "Usage" tab of the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details).
+- **Improved:** The deployment diff now shows changes for newly created applications that haven't been deployed yet.
+- **Improved:** The design of [private](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-resource-dependencies) and [shared resources](https://docs.humanitec.com/using-humanitec/work-with-apps/shared-resources) of running deployments. A direct link to the connected [Resource Definition](https://docs.humanitec.com/guides/orchestrate-infrastructure/dynamic-vs-static-resource-definitions) has been added for [Organization Administrators](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#organization-roles). 
 ## Product Update April 7th, 2023
 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
