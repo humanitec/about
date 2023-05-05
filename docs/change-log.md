@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update May 5th, 2023 
 
-- **New:** Added "Deployed values" tab to the Past deployments overview screen which lists [Shared app values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/values/shared) available in the Environment at the deployment time.
+- **New:** Added a "Deployed values" tab to past deployments which lists all [Shared app values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/values/shared) used in the deployment.
 
 - **Improved:** More prominent [placeholder](https://developer.humanitec.com/platform-orchestrator/working-with/environments/placeholders/) styling including short descriptions for each placeholder name. 
 
@@ -14,7 +14,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** [Container images](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/manage-containers/#create-a-container) with unknown versions are no longer hidden in the UI.
 
-- **Fixed:** Resolved concurrency issues related to adding multiple [Shared secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) in parallel with [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs). 
+- **Fixed:** Resolved concurrency issues related to adding multiple [Shared secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) in parallel with the [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs). 
 
 ## Product Update April 21st, 2023
 
