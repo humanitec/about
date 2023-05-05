@@ -2,6 +2,20 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 5th, 2023 
+
+- **New:** Added a "Deployed values" tab to past deployments which lists all [Shared app values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/values/shared) used in the deployment.
+
+- **Improved:** More prominent [placeholder](https://developer.humanitec.com/platform-orchestrator/working-with/environments/placeholders/) styling including short descriptions for each placeholder name. 
+
+- **Improved:** Search filters are no longer case sensitive.
+
+- **Fixed:** A syntax error in the cURL request used to [connect a new CI pipeline to Humanitec](https://developer.humanitec.com/platform-orchestrator/working-with/ci/connect-ci-pipelines/#notify-humanitec).
+
+- **Fixed:** [Container images](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/manage-containers/#create-a-container) with unknown versions are no longer hidden in the UI.
+
+- **Fixed:** Resolved concurrency issues related to adding multiple [Shared secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) in parallel with the [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs). 
+
 ## Product Update April 21st, 2023
 
 - **New:** To increase the transparency of changes in Shared values and secrets and enable more functionality, like reverting to past values, we have introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets). Versioning of Shared values and secrets means that every change generates a new version of an app value or environment override. We have been collecting those versions for over six months, and you can access them either through UI or [API](https://api-docs.humanitec.com/#tag/ValueSetVersion). In addition to operations on individual values, API enables actions on the entire Value Sets.
