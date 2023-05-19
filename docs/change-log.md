@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update May 19th, 2023
+
+- **New:** Workload `Labels` now support the usage of [placeholders](https://developer.humanitec.com/platform-orchestrator/working-with/environments/placeholders).
+
+- **Improved:** The [matching criteria](https://developer.humanitec.com/platform-orchestrator/concepts/resources/matching/) of a [resource definition](https://developer.humanitec.com/platform-orchestrator/concepts/resources/definitions/) are no longer reordered on click of `delete`.
+
+- **Fixed:** The [configuration of an s3 bucket](https://developer.humanitec.com/platform-orchestrator/working-with/blob-storage/manage-blob-storage/#amazon-s3) with the [terraform driver](https://developer.humanitec.com/drivers/built-in-drivers/generic-terraform/) is no longer prevented by an error thrown on empty optional input fields.
+
+- **Fixed:** The creation date of [Humanitec users](https://api-docs.humanitec.com/#tag/UserRole) no longer shows an incorrect date (0001-01-01T00:00:00Z).
+
 ## Product Update May 5th, 2023 
 
 - **New:** Added a "Deployed values" tab to past deployments which lists all [Shared app values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/values/shared) used in the deployment.
@@ -19,26 +29,40 @@ This document provides an overview of the changes we are making over time. Feel 
 ## Product Update April 21st, 2023
 
 - **New:** To increase the transparency of changes in Shared values and secrets and enable more functionality, like reverting to past values, we have introduced [Versioning of Shared Values and overrides](https://docs.humanitec.com/using-humanitec/work-with-shared-values-and-secrets/versioning-of-values-and-secrets). Versioning of Shared values and secrets means that every change generates a new version of an app value or environment override. We have been collecting those versions for over six months, and you can access them either through UI or [API](https://api-docs.humanitec.com/#tag/ValueSetVersion). In addition to operations on individual values, API enables actions on the entire Value Sets.
+
 - **New:** Added support for defining [Shared values and secrets](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs/resources/value) to the [Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs). 
+
 - **Improved:** The [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) UI has been revamped, making it easier for developers to compare app states and troubleshoot issues. Check out [the release announcement on our blog](https://humanitec.com/blog/spot-the-difference-introducing-humanitecs-improved-deployment-diff).
 - **Improved:** Added support for viewing error messages of past failed deployments.
+
 - **Improved:** It is now possible to view the active resources of Humanitec's default resource definitions in the "Usage" tab of the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details).
+
 - **Improved:** The deployment diff now shows changes for newly created applications that haven't been deployed yet.
+
 - **Improved:** The design of [private](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-resource-dependencies) and [shared resources](https://docs.humanitec.com/using-humanitec/work-with-apps/shared-resources) of running deployments. A direct link to the connected [Resource Definition](https://docs.humanitec.com/guides/orchestrate-infrastructure/dynamic-vs-static-resource-definitions) has been added for [Organization Administrators](https://docs.humanitec.com/guides/manage-users-permissions/role-based-access-control#organization-roles). 
+
 ## Product Update April 7th, 2023
 
 - **Improved:** [Driver inputs](https://docs.humanitec.com/reference/concepts/resources/definitions#driver-inputs) are now validated against Driver Definition Schemas to catch misconfiguration errors in [resource definitions](https://docs.humanitec.com/reference/concepts/resources/definitions).
+
 - **Fixed:** Selecting an asterisk `*` as a [matching criterium](https://api-docs.humanitec.com/#tag/MatchingCriteria) via the API  is now correctly interpreted as "all values".
+
 - **Fixed:** [Deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) is now rendered correctly for past deployments with empty properties.
+
 - **Fixed:** Setting a [Workload Variable's](https://docs.humanitec.com/using-humanitec/work-with-workloads/work-with-environment-variables) value to an empty string no longer renders as a deleted key in the [deployment diff](https://docs.humanitec.com/using-humanitec/work-with-environments/deploy-to-environments/diff-deployments) view.
 
 ## Product Update March 24th, 2023
 
 - **Fixed:** Input validation of [matching criteria](https://docs.humanitec.com/reference/concepts/resources/definitions#matching-criteria) on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details). Invalid values can no longer be submitted accidentally.
+
 - **Fixed:** Editing of [Liveness and Readiness container probe headers](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration). Values are now updated as expected.
+
 - **Fixed:** Configuring [Memory settings](https://docs.humanitec.com/using-humanitec/work-with-workloads/manage-container-configuration#change-container-configuration) on Windows and Chrome no longer causes unexpected behaviour in the UI.
+
 - **Fixed:** Deleting an active resource of a deleted app on the [Resource Definition Details screen](https://docs.humanitec.com/reference/user-interface/resource-management#resource-definition-details) no longer throws an error.
+
 - **Fixed:** Invalid manifests returned by a [driver](https://docs.humanitec.com/reference/concepts/resources/drivers) no longer result in an unexpected error. An error stating that the generated manifest is invalid is now shown.
+
 - **Fixed:** Creating a [template driver](https://docs.humanitec.com/integrations/resource-drivers/template) that outputs a manifest with an invalid location value no longer silently fails. An error stating that the location in the specific [resource definition](https://docs.humanitec.com/reference/concepts/resources/definitions) is invalid is now shown.
 
 ## Product Update March 10th, 2023
