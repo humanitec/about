@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 2nd, 2023
+
+- **Fixed:** Clearning the [CPU limits on a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) no longer causes a failed deployment.
+
+- **Fixed:** Changes to [ingress rules](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#ingress) are now rendered correctly in the [deployment diff](https://developer.humanitec.com/platform-orchestrator/working-with/deployments/#deploying-to-an-environment).
+
+- **Fixed:** The creation of a data storage [resource definition](https://developer.humanitec.com/platform-orchestrator/resources/definitions) (e.g. Postgres, MySQL, MariaDB) no longer fails silently in the UI.
+
+- **Fixed:** The usage of a [placeholder](https://developer.humanitec.com/platform-orchestrator/reference/placeholders) (e.g. `platform-${context.env.id}`) for a Virtual Host defined inside a [AMQP resource definition](https://developer.humanitec.com/platform-orchestrator/reference/resource-types/#amqp) is no longer denied by the UI.
+
+- **Improved:** [Placeholders](https://developer.humanitec.com/platform-orchestrator/reference/placeholders) defined inside a [Redis resource definition](https://developer.humanitec.com/platform-orchestrator/reference/resource-types/#redis) are now surfaced in the UI after the definiton is created or updated.
+
 ## Product Update May 19th, 2023
 
 - **New:** Workload `Labels` now support the usage of [placeholders](https://developer.humanitec.com/platform-orchestrator/working-with/environments/placeholders).
