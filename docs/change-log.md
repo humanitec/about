@@ -2,6 +2,14 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update June 16th, 2023
+
+- **New:** [Resource Definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions) can now be filtered by their details (resource definition ID, resource type, driver type) as well as by [matching criteria](https://developer.humanitec.com/platform-orchestrator/resources/definitions/#matching-criteria) (environment type, environment ID, application ID, resource ID) on the resource management page.
+
+- **Fixed:** [AWS SQS queue](https://developer.humanitec.com/platform-orchestrator/reference/resource-types/#sqs) resources can now be added as [shared](https://developer.humanitec.com/platform-orchestrator/resources/dependent/#shared-resource-dependencies) or [private resource dependencies](https://developer.humanitec.com/platform-orchestrator/resources/dependent/#private-resource-dependencies) to an application or workload.
+
+- **Improved:** The size of text area inputs has been increased on the configuration modals for [creating and updating resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions/#manage-resource-definitions) to manage large (JSON) inputs more easily.
+
 ## Product Update June 2nd, 2023
 
 - **Fixed:** Clearning the [CPU limits on a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) no longer causes a failed deployment.
