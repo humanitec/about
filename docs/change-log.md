@@ -2,6 +2,17 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 7th, 2023
+
+- **Fixed:** The environment status for a successfully deployed [AKS cluster](https://developer.humanitec.com/platform-orchestrator/guides/kubernetes/#aks) is no longer shown as `stopped`.
+
+- **Fixed:** Selecting `cancel` on the filter for [resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions) in the UI now successfully clears any configured filters.
+
+- **Improved:** A number of issues related to content overflowing in the UI:
+  - Reviewing long [environment overrides values](https://developer.humanitec.com/platform-orchestrator/working-with/shared-values/#environment-overrides) no longer requires horizontal scrolling.
+  - A large number of workloads no longer leads to the [cloning modal](https://developer.humanitec.com/platform-orchestrator/working-with/environments/#clone-a-deployment-to-an-existing-environment) overflowing.
+  - Long inputs in the configuration overlay for [resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions) no longer require horizontal scrolling to access the `edit` button.
+
 ## Product Update June 16th, 2023
 
 - **New:** [Resource Definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions) can now be filtered by their details (resource definition ID, resource type, driver type) as well as by [matching criteria](https://developer.humanitec.com/platform-orchestrator/resources/definitions/#matching-criteria) (environment type, environment ID, application ID, resource ID) on the resource management page.
