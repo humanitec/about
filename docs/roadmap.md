@@ -12,6 +12,10 @@ Humanitec works in an interactive way with infrastructure. This means that Human
 
 A common approach used by SaaS products to access private resources is an agent. The agent runs inside the private infrastructure and calls out to Humanitec. This means that nothing in the private infrastructure is exposed to the public internet. This is considered best practice from a security perspective as nothing is exposed publicly and the operations team have complete control over what the agent has access to. It is also easier to administer than other approaches supported by Humanitec including bastion hosts and VPNs. The Humanitec Agent will give operations teams a flexible, easy to configure and secure way of using Humanitec with private infrastructure.
 
+### Deployment Pipelines
+
+It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+
 ### Custom Workload Profile Features
 
 [Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
@@ -19,10 +23,6 @@ A common approach used by SaaS products to access private resources is an agent.
 ### Global Navigation
 
 Following several months of user testing and customer feedback, we are planning on introducing several changes to improve the usability, predictability and scalability of our UI. The focus lies on creating a better experience for navigating the Humanitec application. We want to address issues related to information hierarchy and aesthetics by touching on UI patterns that will likely change the look and feel of the UI.
-
-### Deployment Set v1.0
-
-A Deployment Set in Humanitec contains all of the environment-agnostic configurations for an Application. It describes the material things that should run or be provisioned in an environment. With the introduction of a new deployment set version (v1.0), we’re planning to replace legacy terminology with a naming convention better aligned with industry and Kubernetes standards and unify it across Humanitec’s UI, API and CLI. New vocabulary will be more familiar and intuitive for the platform teams and developers, improving the experience of using the Humanitec application, especially for new users.
 
 ### Scoped API Tokens
 
@@ -38,9 +38,12 @@ The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resourc
 
 ## Next
 
-### Deployment Pipelines
+### Resource Classes
 
-It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
+Platform teams often offer multiple variations of the same type of resource, such as externally accessible S3, versioned S3, and sensitive data S3. Developers want to be able to specialise resource types in a systematic way, defining whether they want the "external" or "sensitive" version of the S3 resource. Resource classes enable the specialization of resource types by adding an optional "class" property that can be matched using specific criteria.
+
+### Custom Resource Types
+This feature allows users to define custom resource types within their Organization. Platform teams might want to create new resource types that are not natively supported by Humanitec or extending any existing resource types e.g. when non-standard authorization is required. With this feature, users can experiment with different resource types when modeling their resource setup in Humanitec.
 
 ### Improved System Health Status Messaging
 
@@ -49,6 +52,10 @@ At some point, both developers and platform engineers will need to troubleshoot 
 ### Humanitec CLI Beta-level Release
 
 The Humanitec Command Line Interface (CLI) allows users to get your everyday DevOps tasks (e.g., create a new temporary environment to test new features, add new services to an application) done without ever leaving their favourite console. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
+
+### Deployment Set v1.0
+
+A Deployment Set in Humanitec contains all of the environment-agnostic configurations for an Application. It describes the material things that should run or be provisioned in an environment. With the introduction of a new deployment set version (v1.0), we’re planning to replace legacy terminology with a naming convention better aligned with industry and Kubernetes standards and unify it across Humanitec’s UI, API and CLI. New vocabulary will be more familiar and intuitive for the platform teams and developers, improving the experience of using the Humanitec application, especially for new users.
 
 ## Later
 
