@@ -43,6 +43,7 @@ The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resourc
 Platform teams often offer multiple variations of the same type of resource, such as externally accessible S3, versioned S3, and sensitive data S3. Developers want to be able to specialise resource types in a systematic way, defining whether they want the "external" or "sensitive" version of the S3 resource. Resource classes enable the specialization of resource types by adding an optional "class" property that can be matched using specific criteria.
 
 ### Custom Resource Types
+
 This feature allows users to define custom resource types within their Organization. Platform teams might want to create new resource types that are not natively supported by Humanitec or extending any existing resource types e.g. when non-standard authorization is required. With this feature, users can experiment with different resource types when modeling their resource setup in Humanitec.
 
 ### Improved System Health Status Messaging
