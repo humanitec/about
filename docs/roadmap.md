@@ -2,7 +2,9 @@
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters.
 
-## Now
+It is divided up into things we are currently working on *Now*, what we'll be looking at *Next* and things we will be looking into at a *Later* point in time.
+
+## What we're working on Now
 
 ### Humanitec Operator
 
@@ -36,7 +38,7 @@ Effective error messaging is crucial for identifying and resolving issues. Our g
 
 The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform) allows for the provisioning of resources via Terraform. The current driver is experimental. This means that it is only made available to customers that we work especially closely with. The feedback we have received from these customers allows us to bring the Terraform Driver to General Availability. This means the driver works in a wide range of scenarios, reports errors well and is well documented.
 
-## Next
+## What we're working on Next
 
 ### Resource Classes
 
@@ -58,7 +60,7 @@ The Humanitec Command Line Interface (CLI) allows users to get your everyday Dev
 
 A Deployment Set in Humanitec contains all of the environment-agnostic configurations for an Application. It describes the material things that should run or be provisioned in an environment. With the introduction of a new deployment set version (v1.0), we’re planning to replace legacy terminology with a naming convention better aligned with industry and Kubernetes standards and unify it across Humanitec’s UI, API and CLI. New vocabulary will be more familiar and intuitive for the platform teams and developers, improving the experience of using the Humanitec application, especially for new users.
 
-## Later
+## What we'll be looking at Later
 
 ### Fleet Management
 
