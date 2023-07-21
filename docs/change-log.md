@@ -2,6 +2,14 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update July 21st, 2023
+
+- **Fixed:** Issues with [webhook triggers](https://developer.humanitec.com/platform-orchestrator/automation/webhooks/) component that prevented users from resetting it to individual triggers after being set to All triggers.
+
+- **Fixed:** Values from input fields in read-only mode are now fully accessible and scrollable.
+
+- **Fixed:** The autocomplete list of users is no longer exceeding the width of name input field in [Application's People management screen](https://developer.humanitec.com/platform-orchestrator/working-with/applications/#add-user-to-an-application).
+
 ## Product Update July 7th, 2023
 
 - **Fixed:** The environment status for a successfully deployed [AKS cluster](https://developer.humanitec.com/platform-orchestrator/guides/kubernetes/#aks) is no longer shown as `stopped`.
