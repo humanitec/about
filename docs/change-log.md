@@ -8,7 +8,7 @@ This document provides an overview of the changes we are making over time. Feel 
   
 - **Fixed:** [CPU settings of a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) are now always visible in the UI
   
-- **Fixed:** Issue where DNS name was not visible in a workload opened with a direct URL.
+- **Fixed:** A loading issue related to surfacing [routes specified for DNS resources](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/#add-ingress) in the UI.
   
 - **Fixed:** Issue where Git user name could not be reset to a blank string in a [terraform](https://developer.humanitec.com/drivers/built-in-drivers/generic-terraform/) resource definition.
   
