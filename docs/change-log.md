@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
   
 - **Fixed:** A loading issue related to surfacing [routes specified for DNS resources](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/#add-ingress) in the UI.
   
-- **Fixed:** Issue where Git user name could not be reset to a blank string in a [terraform](https://developer.humanitec.com/drivers/built-in-drivers/generic-terraform/) resource definition.
+- **Fixed:** Inputs can now be reset to a blank string in [terraform driver](https://developer.humanitec.com/drivers/built-in-drivers/generic-terraform/) based resource definitions. 
   
 - **Fixed:** Issues with incorrect formatting after updating JSON inputs in [resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions).
 
