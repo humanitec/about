@@ -2,13 +2,25 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update August 4th, 2023
+
+- **Improved:** A large number of [Container Image](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/manage-containers/#create-a-container) versions no longer impairs the performance of the version selection component.
+  
+- **Fixed:** The [CPU settings of a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) are no longer hidden in the UI when creating a delta via the [score-humanitec CLI](https://github.com/score-spec/score-humanitec).
+  
+- **Fixed:** A loading issue related to surfacing [routes specified for DNS resources](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/#add-ingress) in the UI.
+  
+- **Fixed:** Inputs can now be reset to a blank string in [terraform driver](https://developer.humanitec.com/drivers/built-in-drivers/generic-terraform/) based resource definitions. 
+  
+- **Fixed:** Issues with incorrect formatting after updating JSON inputs in [resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/definitions).
+
 ## Product Update July 21st, 2023
 
 - **Fixed:** Issues with [webhook triggers](https://developer.humanitec.com/platform-orchestrator/automation/webhooks/) component that prevented users from resetting it to individual triggers after being set to All triggers.
 
 - **Fixed:** Values from input fields in read-only mode are now fully accessible and scrollable.
 
-- **Fixed:** The autocomplete list of users is no longer exceeding the width of name input field in [Application's People management screen](https://developer.humanitec.com/platform-orchestrator/working-with/applications/#add-user-to-an-application).
+- **Fixed:** The autocomplete list of users is no longer exceeding the width of the name input field in [Application's People management screen](https://developer.humanitec.com/platform-orchestrator/working-with/applications/#add-user-to-an-application).
 
 ## Product Update July 7th, 2023
 
