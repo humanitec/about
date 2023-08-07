@@ -6,7 +6,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved:** A large number of [Container Image](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/manage-containers/#create-a-container) versions no longer impairs the performance of the version selection component.
   
-- **Fixed:** The [CPU settings of a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) are no longer hidden in the UI when creating a delta via the [score-humanitec CLI. ](https://github.com/score-spec/score-humanitec).
+- **Fixed:** The [CPU settings of a workload](https://developer.humanitec.com/platform-orchestrator/reference/workload-profiles/features/#container-resources) are no longer hidden in the UI when creating a delta via the [score-humanitec CLI](https://github.com/score-spec/score-humanitec).
   
 - **Fixed:** A loading issue related to surfacing [routes specified for DNS resources](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/#add-ingress) in the UI.
   
