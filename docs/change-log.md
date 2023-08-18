@@ -2,6 +2,21 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update August 18th, 2023
+
+- **New:** The [resource graph API endpoint](https://api-docs.humanitec.com/#tag/ResourceProvision/paths/~1orgs~1%7BorgId%7D~1apps~1%7BappId%7D~1envs~1%7BenvId%7D~1resources~1graph/post) allows developers to access the [resource graph](https://developer.humanitec.com/platform-orchestrator/resources/resource-graph/) before deployment. This enables them to assess any changes to resources before initiating a new deployment.
+
+- **Improved:** After registering for a new Humanitec account, a loading page has been introduced to signal the organization creation process.
+
+- **Improved:** Several minor UX improvements have been implemented:
+  - The visibility of the checkmark icon has been improved in the dark theme.
+  - The name of a duplicated workload is now limited to a maximum of 50 characters, the same as for non-duplicated workloads.
+  - The phrasing on the cronjob schedule modal has been adjusted to no longer display "edit" when in view-only mode.
+
+- **Improved:** Network API errors are now displayed in the UI during the [creation or modification of resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions/#manage-resource-definitions).
+
+- **Fixed:** Users who lack the permission to create drafts can no longer see the "Create draft from diff" button on the [compare deployments](https://developer.humanitec.com/platform-orchestrator/working-with/deployments/#comparing-deployments) page.
+
 ## Product Update August 4th, 2023
 
 - **Improved:** A large number of [Container Image](https://developer.humanitec.com/platform-orchestrator/working-with/workloads/manage-containers/#create-a-container) versions no longer impairs the performance of the version selection component.
