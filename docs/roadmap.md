@@ -26,10 +26,6 @@ It is often the case that additional actions need to be performed before or afte
 
 Following several months of user testing and customer feedback, we are planning on introducing several changes to improve the usability, predictability and scalability of our UI. The focus lies on creating a better experience for navigating the Humanitec application. We want to address issues related to information hierarchy and aesthetics by touching on UI patterns that will likely change the look and feel of the UI.
 
-### Scoped API Tokens
-
-Almost all requests made to the Humanitec API require authentication. Humanitec allows users to retrieve API tokens from their organization settings to authenticate with the API. Scoped API tokens present a new way of creating and managing API tokens with increased security and visibility. To obtain a token, users will need to create a service user with an assigned set of RBAC roles. An API token can then be generated from the user and is used to interact with Humanitec’s API on the service user’s behalf.
-
 ### Enhanced Error Reporting
 
 Effective error messaging is crucial for identifying and resolving issues. Our goal is to increase the coverage and improve the informational value of errors in Humanitec. As part of this initiative, we aim to ensure that API errors are consistently reported on the Frontend and provide transparent explanations about the root cause of a problem.
