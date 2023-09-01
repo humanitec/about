@@ -2,6 +2,20 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 1st, 2023
+
+- **New:** Added support for the `grpc` type for liveness and readiness [probes](https://developer.humanitec.com/integration-and-extensions/workload-profiles/features/#probes).
+
+- **New:** Added support for loading skeletons in the UI to indicate that data is still being loaded.
+
+- **Fixed:** Setting a number in the path field of a liveness [probe](https://developer.humanitec.com/integration-and-extensions/workload-profiles/features/#probes) in the UI no longer results in a failed deployment.
+
+- **Fixed:** Several minor UX improvements have been implemented:
+  - Info icon tooltips now open on keyboard focus.
+  - Validation for workload names has been extended to exclude names starting with a number or a dash, as these can result in failed deployments.
+  - Invalid email addresses can no longer be submitted when adding new members to an organization.
+  - An error is shown in the UI when a user attempts to sign up with an existing organization name.
+
 ## Product Update August 18th, 2023
 
 - **New:** The [resource graph API endpoint](https://api-docs.humanitec.com/#tag/ResourceProvision/paths/~1orgs~1%7BorgId%7D~1apps~1%7BappId%7D~1envs~1%7BenvId%7D~1resources~1graph/post) allows developers to access the [resource graph](https://developer.humanitec.com/platform-orchestrator/resources/resource-graph/) before deployment. This enables them to assess any changes to resources before initiating a new deployment.
