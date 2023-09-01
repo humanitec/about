@@ -12,7 +12,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Several minor UX improvements have been implemented:
   - Info icon tooltips now open on keyboard focus.
-  - Validation for workload names has been extended to exclude names starting with a number or a dash, as these can result in failed deployments.
+  - Validation for workload names has been extended to exclude names starting with a number or a dash, as these result in failed deployments.
   - Invalid email addresses can no longer be submitted when adding new members to an organization.
   - An error is shown in the UI when a user attempts to sign up with an existing organization name.
 
