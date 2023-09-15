@@ -2,6 +2,13 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update September 15th, 2023
+- **New:** To make Humanitec's UI more intuitive and easier to learn, we have reworked the information architecture of all subpages in the Applications navigation item. You can find more details on the changes in the [release announcement](https://humanitec.com/blog/introducing-the-redesigned-platform-orchestrator-ui) on our blog. 
+
+- **New:** The UI for cloning deployments to an existing environment has been revamped, making it easier for developers to control the state of their target environment. Check out the [release announcement](https://humanitec.com/blog/simplify-change-promotion-with-our-new-cloning-ui) on our blog for more information.
+
+- **Fixed:** Issue where [re-deploying a past deployment](https://developer.humanitec.com/platform-orchestrator/working-with/deployments/#rollback) would generate two new [draft deltas](https://developer.humanitec.com/platform-orchestrator/working-with/set-and-deltas/#deployment-deltas) instead of one. 
+
 ## Product Update September 1st, 2023
 
 - **New:** Added support for the `grpc` type for liveness and readiness [probes](https://developer.humanitec.com/integration-and-extensions/workload-profiles/features/#probes).
