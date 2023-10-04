@@ -30,10 +30,6 @@ Almost all requests made to the Humanitec API require authentication. Humanitec 
 
 Effective error messaging is crucial for identifying and resolving issues. Our goal is to increase the coverage and improve the informational value of errors in Humanitec. As part of this initiative, we aim to ensure that API errors are consistently reported on the Frontend and provide transparent explanations about the root cause of a problem.
 
-### General Availability of the Terraform Driver
-
-The [Humanitec Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform) allows for the provisioning of resources via Terraform. The current driver is experimental. This means that it is only made available to customers that we work especially closely with. The feedback we have received from these customers allows us to bring the Terraform Driver to General Availability. This means the driver works in a wide range of scenarios, reports errors well and is well documented.
-
 ## What we're working on Next
 
 ### Resource Classes
