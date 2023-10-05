@@ -22,7 +22,7 @@ We love to write about technology topics. Our blog can be found [here](https://h
 
 ### Open Positions
 
-We are always looking for talented developers that want to change the future of software delivery. Our job-page can be found [here](https://jobs.lever.co/humanitec).
+We are always looking for talented developers that want to change the future of software delivery. Our job-page can be found [here](https://humanitec.com/careers).
 
 ### Change Log
 
