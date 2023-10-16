@@ -26,31 +26,32 @@ It is often the case that additional actions need to be performed before or afte
 
 Almost all requests made to the Humanitec API require authentication. Humanitec allows users to retrieve API tokens from their organization settings to authenticate with the API. Scoped API tokens present a new way of creating and managing API tokens with increased security and visibility. To obtain a token, users will need to create a service user with an assigned set of RBAC roles. An API token can then be generated from the user and is used to interact with Humanitec’s API on the service user’s behalf.
 
-### Enhanced Error Reporting
-
-Effective error messaging is crucial for identifying and resolving issues. Our goal is to increase the coverage and improve the informational value of errors in Humanitec. As part of this initiative, we aim to ensure that API errors are consistently reported on the Frontend and provide transparent explanations about the root cause of a problem.
-
-## What we're working on Next
-
 ### Resource Classes
 
 Platform teams often offer multiple variations of the same type of resource, such as externally accessible S3, versioned S3, and sensitive data S3. Developers want to be able to specialise resource types in a systematic way, defining whether they want the "external" or "sensitive" version of the S3 resource. Resource classes enable the specialization of resource types by adding an optional "class" property that can be matched using specific criteria.
 
-### Custom Resource Types
+### Humanitec CLI Beta-level Release
 
-This feature allows users to define custom resource types within their Organization. Platform teams might want to create new resource types that are not natively supported by Humanitec or extending any existing resource types e.g. when non-standard authorization is required. With this feature, users can experiment with different resource types when modeling their resource setup in Humanitec.
+The Humanitec Command Line Interface (CLI) provides a convenient way of interacting with Humanitec. It allows for easy management of applications, environments and deployments, introspection of deployment errors and managing resource definitions as code by accepting YAML files. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
+
+## What we're working on Next
 
 ### Improved System Health Status Messaging
 
 At some point, both developers and platform engineers will need to troubleshoot a failing system. Status messaging in the Humanitec UI is being reworked to increase visibility and support users when troubleshooting. This includes the health of an environment, deployment statuses as well as workload runtime statuses. Errors should be visible to the user at first sight and detailed error messaging should be found by digging deeper.
 
-### Humanitec CLI Beta-level Release
+### Real-time Deployment Logs
 
-The Humanitec Command Line Interface (CLI) allows users to get your everyday DevOps tasks (e.g., create a new temporary environment to test new features, add new services to an application) done without ever leaving their favourite console. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
+This feature aims to enhance transparency and simplify troubleshooting by introducing live logs for deployments in progress. By exposing individual deployment steps, users can track the real-time provisioning of workloads and resources. This functionality offers a clear view of tasks currently in progress, those successfully completed, or those that have encountered issues. Ultimately, it enhances the deployment experience by providing users with detailed insights into the deployment process.
 
-### Deployment Set v1.0
+### Scalable Access Management
 
-A Deployment Set in Humanitec contains all of the environment-agnostic configurations for an Application. It describes the material things that should run or be provisioned in an environment. With the introduction of a new deployment set version (v1.0), we’re planning to replace legacy terminology with a naming convention better aligned with industry and Kubernetes standards and unify it across Humanitec’s UI, API and CLI. New vocabulary will be more familiar and intuitive for the platform teams and developers, improving the experience of using the Humanitec application, especially for new users.
+As more users are added to the internal Developer Platform, managing their access becomes increasingly challenging. Keeping up to date with all the individual changes and ensuring they are in sync with other internal user management systems puts additional load on the Platform teams and is prone to errors. By improving the access management inside Humanitec, we aim to minimise the manual work required.
+
+### Versioned Resource Definitions
+
+Resource definitions are changed over time as part of routine maintenance or development of an Internal Developer Platform, involving modifications such as updating resource definitions for example. The storage of versions for updated or deleted resource definitions enables a series of use cases. This includes the ability to track the version of a resource definition in use for a specific deployment or the option to regenerate a previous resource graph in case of a required roll back, offering more granular control when it comes to managing resources with Humanitec.
+
 
 ## What we'll be looking at Later
 
