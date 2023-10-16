@@ -46,7 +46,7 @@ This feature aims to enhance transparency and simplify troubleshooting by introd
 
 ### Scalable Access Management
 
-As the user base of an organization in Humanitec continues to grow, the task of overseeing and controlling user access becomes increasingly challenging. Staying on top of user changes and guaranteeing their alignment with internal user management systems puts additional cognitive load on platform teams and is prone to errors. Our objective in enhancing access management within Humanitec is to mitigate the need for manual interventions.
+As the user base of an organization in Humanitec continues to grow, the task of overseeing and controlling user access becomes increasingly challenging. Staying on top of user changes and guaranteeing their alignment with internal user management systems puts additional cognitive load on platform teams and is prone to errors. Our objective in enhancing access management within Humanitec is to reduce the need for manual interventions.
 
 ### Versioned Resource Definitions
 
