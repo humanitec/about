@@ -46,7 +46,7 @@ This feature aims to enhance transparency and simplify troubleshooting by introd
 
 ### Scalable Access Management
 
-As more users are added to the internal Developer Platform, managing their access becomes increasingly challenging. Keeping up to date with all the individual changes and ensuring they are in sync with other internal user management systems puts additional load on the Platform teams and is prone to errors. By improving the access management inside Humanitec, we aim to minimise the manual work required.
+As the user base of an organization in Humanitec continues to grow, the task of overseeing and controlling user access becomes increasingly challenging. Staying on top of user changes and guaranteeing their alignment with internal user management systems puts additional cognitive load on platform teams and is prone to errors. Our objective in enhancing access management within Humanitec is to mitigate the need for manual interventions.
 
 ### Versioned Resource Definitions
 
