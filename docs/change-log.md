@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Issue with the container probe header editing that incorrectly created a new entry instead of replacing content in the existing one.
 
-- **Fixed:** Broken formatting of Shared Values tables for entries with long inputs.
+- **Fixed:** Long inputs for [shared values](https://developer.humanitec.com/score/getting-started/set-shared-values-and-secrets) no longer overflow in the UI.
 
 ## Product Update September 15th, 2023
 - **New:** To make Humanitec's UI more intuitive and easier to learn, we have reworked the information architecture of all subpages in the Applications navigation item. You can find more details on the changes in the [release announcement](https://humanitec.com/blog/introducing-the-redesigned-platform-orchestrator-ui) on our blog. 
