@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update October 20th, 2023
 
-- **New:** The Humanitec Terraform Driver is now in General Availability! This major release allows more seamless integrations and management of infrastructure as code (IaC) with Terraform. Check out the [feature announcement](https://humanitec.com/blog/the-humanitec-terraform-driver-enters-general-availability) for more details.
+- **New:** The Humanitec Terraform driver is now generally available. Following a successful experimental beta phase, we have addressed implementation gaps, resulting in a more robust and reliable user experience. Check out the [feature announcement](https://humanitec.com/blog/the-humanitec-terraform-driver-enters-general-availability) for more details.
 
 - **Improved:** Lowered the latency on all authorization-related API calls through a new authorization management system, ensuring faster and more responsive interactions across our platform.
 
