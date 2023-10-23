@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update October 20th, 2023
+
+- **New:** The Humanitec Terraform driver is now generally available. Following a successful experimental beta phase, we have addressed implementation gaps, resulting in a more robust and reliable user experience. Check out the [feature announcement](https://humanitec.com/blog/the-humanitec-terraform-driver-enters-general-availability) for more details.
+
+- **Improved:** Lowered the latency on all authorization-related API calls through a new authorization management system, ensuring faster and more responsive interactions across our platform.
+
+- **Fixed:** Issue with the container probe header editing that incorrectly created a new entry instead of replacing content in the existing one.
+
+- **Fixed:** Long inputs for [shared values](https://developer.humanitec.com/score/getting-started/set-shared-values-and-secrets) no longer overflow in the UI.
+
 ## Product Update September 15th, 2023
 - **New:** To make Humanitec's UI more intuitive and easier to learn, we have reworked the information architecture of all subpages in the Applications navigation item. You can find more details on the changes in the [release announcement](https://humanitec.com/blog/introducing-the-redesigned-platform-orchestrator-ui) on our blog. 
 
