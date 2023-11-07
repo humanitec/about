@@ -22,10 +22,6 @@ It is often the case that additional actions need to be performed before or afte
 
 [Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
 
-### Scoped API Tokens
-
-Almost all requests made to the Humanitec API require authentication. Humanitec allows users to retrieve API tokens from their organization settings to authenticate with the API. Scoped API tokens present a new way of creating and managing API tokens with increased security and visibility. To obtain a token, users will need to create a service user with an assigned set of RBAC roles. An API token can then be generated from the user and is used to interact with Humanitec’s API on the service user’s behalf.
-
 ### Resource Classes
 
 Platform teams often offer multiple variations of the same type of resource, such as externally accessible S3, versioned S3, and sensitive data S3. Developers want to be able to specialise resource types in a systematic way, defining whether they want the "external" or "sensitive" version of the S3 resource. Resource classes enable the specialization of resource types by adding an optional "class" property that can be matched using specific criteria.
