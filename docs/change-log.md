@@ -4,7 +4,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update November 10th, 2023
 
-- **New:** We've introduced a new UI for managing service users in Humanitec, enhancing the security and transparency of API token management. For detailed information, check out the [release announcement](https://humanitec.com/blog/feature-announcement-new-service-user-ui) on our blog.
+- **New:** We've introduced a new UI for managing [service users](https://developer.humanitec.com/platform-orchestrator/security/service-users) in Humanitec, enhancing the security and transparency of API token management. For detailed information, check out the [release announcement](https://humanitec.com/blog/feature-announcement-new-service-user-ui) on our blog.
 
 - **Fixed:** The issue causing the UI to freeze when specifying an image by name while creating a new container for a workload has been resolved.
 
