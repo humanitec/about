@@ -2,6 +2,14 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 10th, 2023
+
+- **New:** We've introduced a new UI for managing service users in Humanitec, enhancing the security and transparency of API token management. For detailed information, check out the [release announcement](https://humanitec.com/blog/feature-announcement-new-service-user-ui) on our blog.
+
+- **Fixed:** The issue causing the UI to freeze when specifying an image by name while creating a new container for a workload has been resolved.
+
+- **Improved:** UI timestamps now include the timezone, offering context for tracking work within the UI.
+
 ## Product Update October 20th, 2023
 
 - **New:** The Humanitec Terraform driver is now generally available. Following a successful experimental beta phase, we have addressed implementation gaps, resulting in a more robust and reliable user experience. Check out the [feature announcement](https://humanitec.com/blog/the-humanitec-terraform-driver-enters-general-availability) for more details.
@@ -13,6 +21,7 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Fixed:** Long inputs for [shared values](https://developer.humanitec.com/score/getting-started/set-shared-values-and-secrets) no longer overflow in the UI.
 
 ## Product Update September 15th, 2023
+
 - **New:** To make Humanitec's UI more intuitive and easier to learn, we have reworked the information architecture of all subpages in the Applications navigation item. You can find more details on the changes in the [release announcement](https://humanitec.com/blog/introducing-the-redesigned-platform-orchestrator-ui) on our blog. 
 
 - **New:** The UI for cloning deployments to an existing environment has been revamped, making it easier for developers to control the state of their target environment. Check out the [release announcement](https://humanitec.com/blog/simplify-change-promotion-with-our-new-cloning-ui) on our blog for more information.
