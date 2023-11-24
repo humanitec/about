@@ -2,6 +2,18 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update November 24th, 2023
+
+- **Changed:** Humanitec IDs have been updated:
+  - Minimum length requirement reduced to 2 characters.
+  - Consecutive dashes are no longer permitted.
+
+- **Fixed:** Updating the `port` input of a [resource definition](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions/) in the UI no longer causes unexpected errors.
+
+- **Fixed:** [Private resource dependencies](https://developer.humanitec.com/platform-orchestrator/resources/dependent-resources/#private-resource-dependencies) are cleared from the UI upon deletion.
+
+- **Fixed:** The “Sign in with Google” button on the [login page](https://app.humanitec.io/auth/login) no longer flickers intermittently in the UI.
+
 ## Product Update November 10th, 2023
 
 - **New:** We've introduced a new UI for managing [service users](https://developer.humanitec.com/platform-orchestrator/security/service-users) in Humanitec, enhancing the security and transparency of API token management. For detailed information, check out the [release announcement](https://humanitec.com/blog/feature-announcement-new-service-user-ui) on our blog.
