@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Updating the `port` input of a [resource definition](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions/) in the UI no longer causes unexpected errors.
 
-- **Fixed:** [Private sesource dependencies](https://developer.humanitec.com/platform-orchestrator/resources/dependent-resources/#private-resource-dependencies) are cleared from the UI upon deletion.
+- **Fixed:** [Private resource dependencies](https://developer.humanitec.com/platform-orchestrator/resources/dependent-resources/#private-resource-dependencies) are cleared from the UI upon deletion.
 
 - **Fixed:** The “Sign in with Google” button on the [login page](https://app.humanitec.io/auth/login) no longer flickers intermittently in the UI.
 
