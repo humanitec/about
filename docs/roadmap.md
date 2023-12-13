@@ -6,10 +6,6 @@ It is divided up into things we are currently working on *Now*, what we'll be lo
 
 ## What we're working on Now
 
-### Humanitec Operator
-
-Humanitec works in an interactive way with infrastructure. This means that Humanitec handles the whole deployment process by making calls to the affected systems (Kubernetes clusters, databases etc.) either directly or via drivers such as the [Terraform driver](https://docs.humanitec.com/integrations/resource-drivers/terraform). This approach can cause inconsistencies with deferred deployment strategies such as when using a GitOps operator like ArgoCD. The Humanitec Operator aims to move functionality currently managed server side by Humanitec into the cluster. This would allow things like resource provisioning to occur as part of a GitOps flow. As the operator also runs in-cluster it would also simplify the use of custom drivers since these would not need to be publicly exposed.
-
 ### Agent Based Approach for Deploying to Private Clusters
 
 A common approach used by SaaS products to access private resources is an agent. The agent runs inside the private infrastructure and calls out to Humanitec. This means that nothing in the private infrastructure is exposed to the public internet. This is considered best practice from a security perspective as nothing is exposed publicly and the operations team have complete control over what the agent has access to. It is also easier to administer than other approaches supported by Humanitec including bastion hosts and VPNs. The Humanitec Agent will give operations teams a flexible, easy to configure and secure way of using Humanitec with private infrastructure.
@@ -18,23 +14,15 @@ A common approach used by SaaS products to access private resources is an agent.
 
 It is often the case that additional actions need to be performed before or after deployments. For example, tests can be run to verify the environment and if they pass the deployment can be automatically promoted to the next environment. A deployment pipeline defines a set of steps that specify how a service is deployed, verified or rolled back. This feature aims to allow actions to be run based on the outcome of a deployment or to orchestrate additional actions.
 
-### Custom Workload Profile Features
-
-[Workload Profiles](https://docs.humanitec.com/reference/workload-profiles) are a way to define the baseline configuration of a workload. Humanitec provides a number of default workload profiles and users have been able to add their own. Up to this point, platform teams have been limited to the UI provided by Humanitec. Custom Workload Profile features will allow platform teams to define schemas for their features and annotate these schemas to generate custom UI elements. This will allow platform teams to fully customize the developer experience for their Custom Workload Profiles.
-
 ### Resource Classes
 
 Platform teams often offer multiple variations of the same type of resource, such as externally accessible S3, versioned S3, and sensitive data S3. Developers want to be able to specialise resource types in a systematic way, defining whether they want the "external" or "sensitive" version of the S3 resource. Resource classes enable the specialization of resource types by adding an optional "class" property that can be matched using specific criteria.
 
-### Humanitec CLI Beta-level Release
-
-The Humanitec Command Line Interface (CLI) provides a convenient way of interacting with Humanitec. It allows for easy management of applications, environments and deployments, introspection of deployment errors and managing resource definitions as code by accepting YAML files. After conducting a final round of testing and development in closed beta, are we planning to release the CLI in open beta for public use.
-
-## What we're working on Next
-
 ### Improved System Health Status Messaging
 
 At some point, both developers and platform engineers will need to troubleshoot a failing system. Status messaging in the Humanitec UI is being reworked to increase visibility and support users when troubleshooting. This includes the health of an environment, deployment statuses as well as workload runtime statuses. Errors should be visible to the user at first sight and detailed error messaging should be found by digging deeper.
+
+## What we're working on Next
 
 ### Real-time Deployment Logs
 
@@ -47,7 +35,6 @@ As the user base of an organization in Humanitec continues to grow, the task of 
 ### Versioned Resource Definitions
 
 Resource definitions are changed over time as part of routine maintenance or development of an Internal Developer Platform, involving modifications such as updating resource definitions for example. The storage of versions for updated or deleted resource definitions enables a series of use cases. This includes the ability to track the version of a resource definition in use for a specific deployment or the option to regenerate a previous resource graph in case of a required roll back, offering more granular control when it comes to managing resources with Humanitec.
-
 
 ## What we'll be looking at Later
 
