@@ -2,6 +2,9 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 22nd, 2023
+
+Happy holidays! Our product engineering team will be taking a break until January 2024. Stay tuned for our next update in the new year!
 
 ## Product Update December 9th, 2023
 
