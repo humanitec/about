@@ -2,6 +2,10 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update December 22nd, 2023
+
+Happy holidays! Our product engineering team will be taking a break until January 2024. Stay tuned for our next update in the new year!
+
 ## Product Update December 9th, 2023
 
 - **Improved:** Placeholder highlighting in the UI now supports [Resource Selectors](https://developer.humanitec.com/platform-orchestrator/resources/resource-graph/#resource-selectors). Resource Selectors extend the syntax of Resource Reference Placeholders by appending either a `>` or a `<` symbol.
