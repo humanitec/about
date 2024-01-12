@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update Jan 12th, 2024
+
+- **New:** Added support for [Resource Classes](https://developer.humanitec.com/platform-orchestrator/resources/resource-classes/#overview) in the UI. This provides a way for teams to specialize the type of a resource e.g. `external` or `sensitive` S3 bucket.
+
+- **New:** Introduced support for [co-provisioning of resources](https://developer.humanitec.com/platform-orchestrator/resources/resource-graph/#co-provision-resources) in the UI. This allows for additional resources to be added to the Resource Graph without a Resource Reference required.
+
+- **Improved:** Enhanced the design and layout of the replica section in the UI, ensuring consistent status updates and improved error visibility.
+
+- **Fixed:** Resolved an issue where signing up with Google failed silently in certain instances. Users can now sign up without any disruptions.
+
 ## Product Update December 22nd, 2023
 
 Happy holidays! Our product engineering team will be taking a break until January 2024. Stay tuned for our next update in the new year!
