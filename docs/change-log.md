@@ -2,7 +2,7 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
-## Product Update Jan 12th, 2024
+## Product Update January 12th, 2024
 
 - **New:** Added support for [Resource Classes](https://developer.humanitec.com/platform-orchestrator/resources/resource-classes/#overview) in the UI. This provides a way for teams to specialize the type of a resource e.g. `external` or `sensitive` S3 bucket.
 
