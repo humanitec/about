@@ -2,6 +2,16 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update January 26th, 2024
+
+- **New:** Introduced a new status tab on the enviornment page, providing a view of the currently active deployment, including workloads and shared resources.
+
+- **Improved:** Status messaging in the UI. This addresses a series of issues related to inconsistent or or pending runtime statuses, ensuring a more reliable user experience.
+
+- **Fixed:** Matching criteria in UI no longer throw an error if a dot `.` is used in the Resource ID field. This allows to specify values such as `modules.workload-id.externals.my-bucket` or `shared.app-dns`.
+
+- **Fixed:** It is now possible to use the Terraform Driver with repositories hosted in Azure DevOps, resolving any previous compatibility issues.
+
 ## Product Update January 12th, 2024
 
 - **New:** Added support for [Resource Classes](https://developer.humanitec.com/platform-orchestrator/resources/resource-classes/#overview) in the UI. This provides a way for teams to specialize the type of a resource e.g. `external` or `sensitive` S3 bucket.
