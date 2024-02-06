@@ -29,7 +29,7 @@ This document provides an overview of the changes we are making over time. Feel 
 ### Versioned component changes:
 
 - **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
-- **Humanitec Operator:** A new chart version 0.1.3 (with app version 0.9.9) has been made avaible.
+- **Humanitec Operator:** A new chart version 0.1.3 (with app version 0.9.9) has been made available.
 
 ## Product Update December 22nd, 2023
 
