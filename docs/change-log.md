@@ -12,8 +12,9 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** It is now possible to use the [Terraform Driver](https://developer.humanitec.com/integration-and-extensions/drivers/examples/terraform-driver) with repositories hosted in Azure DevOps, resolving any previous compatibility issues.
 
-- Components:
-  - `humctl` - [0.13.2](https://github.com/humanitec/cli/releases/tag/v0.13.2)
+### Versioned component changes:
+
+- **Humanitec CLI:** A new version [0.13.2](https://github.com/humanitec/cli/releases/tag/v0.13.2) has been made available.
 
 ## Product Update January 12th, 2024
 
@@ -25,9 +26,10 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Resolved an issue where signing up with Google failed silently in certain instances. Users can now sign up without any disruptions.
 
-- Components:
-  - Operator - 0.9.8
-  - `humctl` - [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0)
+### Versioned component changes:
+
+- **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
+- **Humanitec Operator:** A new chart version 0.1.3 (with app version 0.9.9) has been made avaible.
 
 ## Product Update December 22nd, 2023
 
