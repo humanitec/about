@@ -12,6 +12,10 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** It is now possible to use the [Terraform Driver](https://developer.humanitec.com/integration-and-extensions/drivers/examples/terraform-driver) with repositories hosted in Azure DevOps, resolving any previous compatibility issues.
 
+### Versioned component changes:
+
+- **Humanitec CLI:** A new version [0.13.2](https://github.com/humanitec/cli/releases/tag/v0.13.2) has been made available.
+
 ## Product Update January 12th, 2024
 
 - **New:** Added support for [Resource Classes](https://developer.humanitec.com/platform-orchestrator/resources/resource-classes/#overview) in the UI. This provides a way for teams to specialize the type of a resource e.g. `external` or `sensitive` S3 bucket.
@@ -21,6 +25,11 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Improved:** Enhanced the design and layout of the replica section in the UI, ensuring consistent status updates and improved error visibility.
 
 - **Fixed:** Resolved an issue where signing up with Google failed silently in certain instances. Users can now sign up without any disruptions.
+
+### Versioned component changes:
+
+- **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
+- **Humanitec Operator:** A new chart version 0.1.3 (with app version 0.9.9) has been made available.
 
 ## Product Update December 22nd, 2023
 
