@@ -20,11 +20,11 @@ This document provides an overview of the changes we are making over time. Feel 
   - Improvements in resource status observability.
   - Support for pod labels in the Operator’s chart.
 
-- **[score-humanitec](https://github.com/score-spec/score-humanitec/releases/tag/0.10.1):** A new version `0.10.1` has been released:
+- **[score-humanitec](https://developer.humanitec.com/score/installation):** A new version [0.10.1](https://github.com/score-spec/score-humanitec/releases/tag/0.10.1) has been released:
   - Support for `-i|--image` flag, allowing to specify the image to override when the image property in a Score file has the value `.` ([issue #69](https://github.com/score-spec/score-humanitec/pull/69)).
   -  Support for allowing multiple resource classes for a single resource ID ([issue #67](https://github.com/score-spec/score-humanitec/issues/6)).
 
-- **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.3) has been made available.
+- **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/#mobile-docs-sidebar):** A new version [0.13.3](https://github.com/humanitec/cli/releases/tag/v0.13.3) has been made available.
 
 ## Product Update January 26th, 2024
 
@@ -38,7 +38,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 #### Versioned component changes:
 
-- **Humanitec CLI:** A new version [0.13.2](https://github.com/humanitec/cli/releases/tag/v0.13.2) has been made available.
+- **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/#mobile-docs-sidebar):** A new version [0.13.2](https://github.com/humanitec/cli/releases/tag/v0.13.2) has been made available.
 
 ## Product Update January 12th, 2024
 
@@ -52,8 +52,8 @@ This document provides an overview of the changes we are making over time. Feel 
 
 #### Versioned component changes:
 
-- **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
-- **Humanitec Operator:** A new chart version 0.1.3 (with app version 0.9.9) has been made available.
+- **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/#mobile-docs-sidebar):** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
+- **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new chart version 0.1.3 (with app version 0.9.9) has been made available.
 
 ## Product Update December 22nd, 2023
 
