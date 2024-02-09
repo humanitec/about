@@ -2,6 +2,24 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 9th, 2024
+
+- **Improved:** The "status" tab on the environments page now updates without requiring a hard refresh in certain instances when loading new deployments. Additionally, the "deployments" tab now displays the latest deployment.
+
+- **Changed:** [Shared values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/shared-values) are now validated to ensure they don't start with a digit. This prevents potential deployment failures when these values are referenced as part of a [placeholder](https://developer.humanitec.com/platform-orchestrator/reference/placeholders).
+
+- **Improved:** Various minor UI enhancements have been implemented, including:
+  - Addition of "Created at" and "Created by" details to [resource definitions](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions).
+  - Standardization of timestamp formats across the UI.
+  - Improved visibility of container logs through timestamp highlighting.
+
+### Versioned component changes:
+
+- **Humanitec Operator:** A new [Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation) version has been published. Chart version `0.1.4` and app version `0.10.0` include:
+  - Support for Azure workload identity.
+  - Improvements in resource status observability.
+  - Added support for pod labels in the operator’s chart.
+
 ## Product Update January 26th, 2024
 
 - **New:** Introduced a "status" tab on the enviornment page, providing a view of the currently active deployment, including workloads and shared resources.
