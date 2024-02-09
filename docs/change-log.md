@@ -14,7 +14,7 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Changed:** [Shared values and secrets](https://developer.humanitec.com/platform-orchestrator/working-with/shared-values) are now validated to ensure they don't start with a digit. This prevents potential deployment failures when these values are referenced as part of a [placeholder](https://developer.humanitec.com/platform-orchestrator/reference/placeholders).
 
 #### Versioned component changes:
-
+- **Humanitec CLI:** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.3) has been made available.
 - **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new version has been published. Chart version `0.1.4` and app version `0.10.0` include:
   - Support for Azure workload identity.
   - Improvements in resource status observability.
