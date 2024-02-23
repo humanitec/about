@@ -4,13 +4,13 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update February 23rd, 2024
 
-- **New:** Introduced the [Delete Active Resource API](https://api-docs.humanitec.com/#tag/ActiveResource/operation/deleteActiveResource), allowing to detach an active resource. A detached resource remains intact but is no longer connected to the Platform Orchestrator.
+- **New:** Introduced the [Delete Active Resources API](https://api-docs.humanitec.com/#tag/ActiveResource/operation/deleteActiveResource), allowing to detach an active resource. A detached resource remains intact but is no longer connected to the Platform Orchestrator.
 
 - **Fixed:** Switching frequently between Organizations no longer causes loading issues within an Application.
 
 #### Versioned component changes:
 
-- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.6` has been published:
+- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.6` has been released:
   - Fixed a bug related to simultaneous liveness check routines being sent to the same tunnel.
   - Updated the wstunnel library version for improved logging.
 
