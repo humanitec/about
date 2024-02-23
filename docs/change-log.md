@@ -8,11 +8,15 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Fixed:** Switching frequently between Organizations no longer causes loading issues within an Application.
 
+- **Improved:** Tables with more than five entries now display a count at the bottom, indicating the total number of items.
+
 #### Versioned component changes:
 
 - **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.6` has been released:
   - Fixed a bug related to simultaneous liveness check routines being sent to the same tunnel.
   - Updated the wstunnel library version for improved logging.
+
+- **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli):** Version [0.13.5](https://github.com/humanitec/cli/releases/tag/v0.13.5) is now available, featuring support for resource accounts.
 
 - **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** As part of the `v1.0.0` release, all deprecated resources have been removed. If you haven’t migrated yet, you can pin the provider to the latest `v0` version using:
 
