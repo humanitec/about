@@ -2,6 +2,31 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update February 23rd, 2024
+
+- **New:** Introduced the [Delete Active Resource API](https://api-docs.humanitec.com/#tag/ActiveResource/operation/deleteActiveResource), allowing to detach an active resource. A detached resource remains intact but is no longer connected to the Platform Orchestrator.
+
+- **Fixed:** Switching frequently between Organizations no longer causes loading issues within an Application.
+
+#### Versioned component changes:
+
+- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.6` has been published:
+  - Fixed a bug related to simultaneous liveness check routines being sent to the same tunnel.
+  - Updated the wstunnel library version for improved logging.
+
+- **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** As part of the `v1.0.0` release, all deprecated resources have been removed. If you haven’t migrated yet, you can pin the provider to the latest `v0` version using:
+
+```
+terraform {
+  required_providers {
+    humanitec = {
+      source  = "humanitec/humanitec"
+      version = "~> 0"
+    }
+  }
+}
+```
+
 ## Product Update February 9th, 2024
 
 - **Improved:** The "status" tab on the environments page now updates without requiring a hard refresh in certain instances when loading new deployments. Additionally, the "deployments" tab now displays the latest deployment.
@@ -53,6 +78,7 @@ This document provides an overview of the changes we are making over time. Feel 
 #### Versioned component changes:
 
 - **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/#mobile-docs-sidebar):** A new version [0.13.0](https://github.com/humanitec/cli/releases/tag/v0.13.0) has been made available.
+
 - **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new chart version 0.1.3 (with app version 0.9.9) has been made available.
 
 ## Product Update December 22nd, 2023
