@@ -10,7 +10,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 #### Versioned component changes:
 
-- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.7` has been released.
+- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.7` has been made available. This release includes a check on agent startup to validate the ids in the [ORGS list](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/#configuration) as valid Humanitec ids.
 
 - **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new version has been published. Chart version `0.1.6` and app version `0.10.2` including cookies secrets storage optimization (including GCP cleanup).
 
