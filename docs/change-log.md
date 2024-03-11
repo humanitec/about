@@ -19,7 +19,7 @@ This document provides an overview of the changes we are making over time. Feel 
     - `humctl score init` simplifies your next score configuration with a score starter file.
     - `humctl score validate` to validate your score file locally.
     - `humctl score available-resource-types` to list available resource types available to be used.
-    - `humctl resources` graph to inspect your resource graph.
+    - `humctl resources graph` to inspect your resource graph.
   -  `0.14.2` is now installing shell completions on osx by default when using brew for an improved UX.
 
 - **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** A new version `v1.0.1` has been released, introducing example of a resource definition with secret_refs and private git.
