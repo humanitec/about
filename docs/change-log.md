@@ -2,6 +2,36 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update March 8th, 2024
+
+- **New:** Introduced Deployment Pipelines, which allow to configure multi-step workflows and automate common processes and interactions around Applications and Environments. You can find more information in the updated [developer documentation](https://developer.humanitec.com/integration-and-extensions/humanitec-pipelines/overview/) and the [release announcement](https://humanitec.com/blog/feature-announcement-humanitec-deployment-pipelines) on our blog.
+
+- **New:** The Terraform Driver can be configured to run in a target Kubernetes cluster instead of the Humanitec infrastructure. Learn more [here](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#running-the-terraform-runner-in-a-target-cluster).
+
+- **New:** Added a rich set of examples for Score and Resource Management related capabilities (Pipelines to follow soon). Explore the full collection [here](https://developer.humanitec.com/examples/). 
+
+- **Improved:** Deleting a [Resource Definition](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions) in UI is now also possible from its details view, not only the list of all resource definitions.
+
+- **Fixed:** Resources of type [base-env](https://developer.humanitec.com/platform-orchestrator/reference/resource-types/#base-env) are now consistently listed in the [shared resources](https://developer.humanitec.com/platform-orchestrator/resources/dependent-resources/#shared-resource-dependencies) section of the UI (even in cases of long provisioning times).
+
+#### Versioned component changes:
+
+- **[Humanitec Agent](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/):** A new version `1.1.7` has been made available. This release includes a check on agent startup to validate the ids in the [ORGS list](https://developer.humanitec.com/integration-and-extensions/humanitec-agent/installation/#configuration) as valid Humanitec ids.
+
+- **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new version has been published. Chart version `0.1.6` and app version `0.10.2` including cookies secrets storage optimization (including GCP cleanup).
+
+- **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli):** Version [0.14.2](https://github.com/humanitec/cli/releases/tag/v0.14.2) is now available. Changes since last announcement:
+  - `0.14.0` Introducing additional commands:
+    - `humctl score init` simplifies your next score configuration with a score starter file.
+    - `humctl score validate` to validate your score file locally.
+    - `humctl score available-resource-types` to list available resource types to be used.
+    - `humctl resources graph` to inspect your resource graph.
+  -  `0.14.2` is now installing shell completions on osx by default when using brew for an improved UX.
+
+- **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** A new version `v1.0.1` has been released, introducing example of a resource definition with secret_refs and private git.
+
+- **[score-humanitec](https://developer.humanitec.com/score/installation):** A new version [0.10.2](https://github.com/score-spec/score-humanitec/releases/tag/0.10.2) has been released.
+
 ## Product Update February 23rd, 2024
 
 - **New:** Introduced the [Delete Active Resources API](https://api-docs.humanitec.com/#tag/ActiveResource/operation/deleteActiveResource), allowing to detach an active resource. A detached resource remains intact but is no longer connected to the Platform Orchestrator.
