@@ -4,9 +4,15 @@ This document provides an overview of the changes we are making over time. Feel 
 
 ## Product Update March 8th, 2024
 
-- **New:** Introduced Deployment Pipelines which allow to configure multi-step workflows and automate common processes and interactions around Applications and Environments. You can find more information in the updated [developer documentation](https://developer.humanitec.com/integration-and-extensions/humanitec-pipelines/overview/) and the [release announcement](https://humanitec.com/blog/feature-announcement-humanitec-deployment-pipelines) on our blog.
+- **New:** Introduced Deployment Pipelines, which allow to configure multi-step workflows and automate common processes and interactions around Applications and Environments. You can find more information in the updated [developer documentation](https://developer.humanitec.com/integration-and-extensions/humanitec-pipelines/overview/) and the [release announcement](https://humanitec.com/blog/feature-announcement-humanitec-deployment-pipelines) on our blog.
+
+- **New:** The Terraform Driver can be configured to run in a target Kubernetes cluster instead of the Humanitec infrastructure. Learn more [here](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#running-the-terraform-runner-in-a-target-cluster).
+
+- **New:** Added a rich set of examples for Score and Resource Management related capabilities (Pipelines to follow soon). Explore the full collection [here](https://developer.humanitec.com/examples/). 
 
 - **Improved:** Deleting a [Resource Definition](https://developer.humanitec.com/platform-orchestrator/resources/resource-definitions) in UI is now also possible from its details view, not only the list of all resource definitions.
+
+- **Fixed:** Resources of type [base-env](https://developer.humanitec.com/platform-orchestrator/reference/resource-types/#base-env) are now consistently listed in the [shared resources](https://developer.humanitec.com/platform-orchestrator/resources/dependent-resources/#shared-resource-dependencies) section of the UI (even in cases of long provisioning times).
 
 #### Versioned component changes:
 
