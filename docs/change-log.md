@@ -8,9 +8,9 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **New:** The Pods status section in a workload view now explicitly highlights any pods running in a previous revision to better visualize the workload's state.
 
-- **Improved** The `artefact` trigger in Humanitec Pipelines now enforces serial execution, so a batch will be kept open until the previous batch has finished running. No explicit concurrency-group setting is required.
+- **Improved:** The `artefact` trigger in Humanitec Pipelines now enforces serial execution, so a batch will be kept open until the previous batch has finished running. No explicit concurrency-group setting is required.
 
-- **Improved** Terraform Driver now provides a more meaningful message when the [service account](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#runner-object) specified in the external runner configuration does not exist in the target namespace.
+- **Improved:** Terraform Driver now provides a more meaningful message when the [service account](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#runner-object) specified in the external runner configuration does not exist in the target namespace.
   
 - **Fixed:** Minor [RBAC](https://developer.humanitec.com/platform-orchestrator/security/rbac) issue that hid the option to create new applications in UI for users with the Manager role.
 
