@@ -11,9 +11,9 @@ This document provides an overview of the changes we are making over time. Feel 
 - **Fixed:** Minor [RBAC](https://developer.humanitec.com/platform-orchestrator/security/rbac) issue that hid the option to create new applications in UI for users with the Manager role.
 
 - **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli):** Version [0.18.0](https://github.com/humanitec/cli/releases/tag/v0.18.0) is now available. Changes since the last announcement:
-  - `0.15.0` adding the possibility to filter active resource usage by deployment.
-  - `0.16.1` introducing the `--strict` flag for the `score validate` command, ensuring it fails on warnings.
   - `0.17.0` adding a new `--fail` flag for `humctl api` command to exit with a non-zero exit code for response >= 400.
+  - `0.16.1` introducing the `--strict` flag for the `score validate` command, ensuring it fails on warnings.
+  - `0.15.0` adding the possibility to filter active resource usage by deployment.
  
 - **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** A new version `v1.1.0` has been released, adding Terraform resources to manage [Workload Profiles](https://developer.humanitec.com/integration-and-extensions/workload-profiles/custom-workload-profiles/) and Workload Profile Chart Versions.
     
