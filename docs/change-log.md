@@ -8,7 +8,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved** Terraform Driver now provides a more meaningful message when the [service account](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#runner-object) specified in the external runner configuration does not exist in the target namespace.
   
-- **Fixed:** Minor [RBAC](https://developer.humanitec.com/platform-orchestrator/security/rbac) issue that hid the option to create new applications for users with the Manager role.
+- **Fixed:** Minor [RBAC](https://developer.humanitec.com/platform-orchestrator/security/rbac) issue that hid the option to create new applications in UI for users with the Manager role.
 
 - **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli):** Version [0.18.0](https://github.com/humanitec/cli/releases/tag/v0.18.0) is now available. Changes since the last announcement:
   - `0.15.0` adding the possibility to filter active resource usage by deployment.
