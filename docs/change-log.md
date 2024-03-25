@@ -6,7 +6,7 @@ This document provides an overview of the changes we are making over time. Feel 
 
 - **Improved** The `artefact` trigger in Humanitec Pipelines now enforces serial execution, so a batch will be kept open until the previous batch has finished running. No explicit concurrency-group setting is required.
 
-- **Improved** Terraform driver now provides a more meaningful message when the [service account](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#runner-object) specified in the external runner configuration does not exist in the target namespace.
+- **Improved** Terraform Driver now provides a more meaningful message when the [service account](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#runner-object) specified in the external runner configuration does not exist in the target namespace.
   
 - **Fixed:** Minor [RBAC](https://developer.humanitec.com/platform-orchestrator/security/rbac) issue that hid the option to create new applications for users with the Manager role.
 
@@ -14,6 +14,8 @@ This document provides an overview of the changes we are making over time. Feel 
   - `0.15.0` adding the possibility to filter active resource usage by deployment.
   - `0.16.1` introducing the `--strict` flag for the `score validate` command, ensuring it fails on warnings.
   - `0.17.0` adding a new `--fail` flag for `humctl api` command to exit with a non-zero exit code for response >= 400.
+ 
+- **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** A new version `v1.1.0` has been released, adding Terraform resources to manage [Workload Profiles](https://developer.humanitec.com/integration-and-extensions/workload-profiles/custom-workload-profiles/) and Workload Profile Chart Versions.
     
 ## Product Update March 8th, 2024
 
