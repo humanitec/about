@@ -42,12 +42,12 @@ This document provides an overview of the changes we are making over time. Feel 
 - **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new version has been published. Chart version `0.1.6` and app version `0.10.2` including cookies secrets storage optimization (including GCP cleanup).
 
 - **[Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli):** Version [0.14.2](https://github.com/humanitec/cli/releases/tag/v0.14.2) is now available. Changes since last announcement:
+  -  `0.14.2` is now installing shell completions on osx by default when using brew for an improved UX.
   - `0.14.0` Introducing additional commands:
     - `humctl score init` simplifies your next score configuration with a score starter file.
     - `humctl score validate` to validate your score file locally.
     - `humctl score available-resource-types` to list available resource types to be used.
     - `humctl resources graph` to inspect your resource graph.
-  -  `0.14.2` is now installing shell completions on osx by default when using brew for an improved UX.
 
 - **[Humanitec Terraform Provider](https://registry.terraform.io/providers/humanitec/humanitec/latest/docs):** A new version `v1.0.1` has been released, introducing example of a resource definition with secret_refs and private git.
 
