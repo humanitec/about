@@ -2,6 +2,20 @@
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 
+## Product Update April 5th, 2024
+
+- **New:** Introduced a user details page for an overview of user information and RBAC settings. Access it by clicking on a user's name in the [Organization Members](https://developer.humanitec.com/platform-orchestrator/security/organization-members) page.
+
+- **New:** Added support for two new properties in the [Terraform Driver](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform):
+  - [runner_pod_template](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#:~:text=humanitec%2Dterraform.-,runner_pod_template,-string): Enables users to configure the pod where the external runner job operates.
+  - [manifests_output](https://developer.humanitec.com/integration-and-extensions/drivers/generic-drivers/terraform/#:~:text=manifests_output,-string): Allows to specify a list of manifests, which the driver will output.
+
+- **Fixed:** Resolved issue where long email addresses caused the UI to break on the [Organization Members](https://developer.humanitec.com/platform-orchestrator/security/organization-members) page.
+
+#### Versioned component changes:
+
+- **[Humanitec Operator](https://developer.humanitec.com/integration-and-extensions/humanitec-operator/installation):** A new chart version `0.1.7` and app version `0.11.0` has been released. The number of provisinoing attempts by the resource driver (3 by default) is now configurable, which addresses the issue of long deployments being marked as timeouts in certain instances.
+
 ## Product Update March 22nd, 2024
 
 - **New:** Each workload screen in an active deployment in the UI now shows more information on the resource used to provision the workload.
