@@ -1,5 +1,8 @@
 # Humanitec Roadmap
 
+> [!NOTE]
+> This repository has been archived. For the latest updates and change log information, please refer to our developer documentation available at: [developer.humanitec.com/updates/roadmap](developer.humanitec.com/updates/roadmap/)
+
 This document provides a high-level view on our product roadmap for this and upcoming quarters.
 
 It is divided up into things we are currently working on *Now*, what we'll be looking at *Next* and things we will be looking into at a *Later* point in time.
