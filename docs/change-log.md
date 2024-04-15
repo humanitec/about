@@ -1,7 +1,7 @@
 # Humanitec Change Log
 
 > [!NOTE]
-> This repository has been archived. For the latest updates and change log information, please refer to our developer documentation available at: [developer.humanitec.com/updates/change-log](developer.humanitec.com/updates/change-log)
+> This repository has been archived. For the latest updates and change log information, please refer to our developer documentation available at: [developer.humanitec.com/updates/change-log](https://developer.humanitec.com/updates/change-log)
 
 This document provides an overview of the changes we are making over time. Feel free to reach out to us in case of any specific questions.
 

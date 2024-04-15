@@ -1,7 +1,7 @@
 # Humanitec Roadmap
 
 > [!NOTE]
-> This repository has been archived. For the latest updates and change log information, please refer to our developer documentation available at: [developer.humanitec.com/updates/roadmap](developer.humanitec.com/updates/roadmap/)
+> This repository has been archived. For the latest updates and change log information, please refer to our developer documentation available at: [developer.humanitec.com/updates/roadmap](https://developer.humanitec.com/updates/roadmap/)
 
 This document provides a high-level view on our product roadmap for this and upcoming quarters.
 
