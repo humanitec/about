@@ -1,5 +1,5 @@
 > [!NOTE]
-> This repository has been archived. For the latest updates, please refer to the [Humanitec homepage](https://humanitec.com) and [developer documentation](https://developer.humanitec.com/updates/change-log).
+> This repository has been archived. For the latest updates, please refer to the [Humanitec homepage](https://humanitec.com) and [developer documentation](https://developer.humanitec.com/updates/change-log)
 
 # We are Humanitec
 
