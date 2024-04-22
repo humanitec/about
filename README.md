@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository has been archived. For the latest updates, please refer to the [Humanitec homepage](https://humanitec.com) and [developer documentation](https://developer.humanitec.com/updates/change-log)
+
 # We are Humanitec
 
 Platform engineering is revolutionizing how enterprises build and run their cloud-native setups. Humanitec is at the core of this revolution, enabling teams to build [Internal Developer Platforms (IDPs)](https://humanitec.com/blog/what-is-an-internal-developer-platform) and reach true developer self-service.
